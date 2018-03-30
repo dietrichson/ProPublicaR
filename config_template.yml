@@ -1,0 +1,3 @@
+default:
+  ProPublica:
+    campaign-finance: <Your Key Goes Here>
