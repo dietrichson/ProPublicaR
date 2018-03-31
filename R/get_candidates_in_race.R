@@ -22,5 +22,7 @@ get_candidates_in_race <- function(state, chamber, district, cycle=2018, return_
                                     cycle,state,chamber,district)
   if(return_value[1]=='query')
     return(query)
-  pp_query(query)
+  tmp <- pp_query(query)
+  class(tmp) <- c(class(tmp),'pp_candidate_list')
+  tmp
 }
