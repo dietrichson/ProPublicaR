@@ -26,6 +26,6 @@ Get Candidates in Race
 }
 \examples{
 \dontrun{
-get_candidates_in_race(2018, 'MI', 'house', 11)
+get_candidates_in_race( 'MI', 'house', 11)
 }
 }
