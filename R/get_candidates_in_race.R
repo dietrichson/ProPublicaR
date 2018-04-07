@@ -18,11 +18,19 @@ get_candidates_in_race <- function(state, chamber, district, cycle=2018, return_
     stop("Incorrect state")
   if(!chamber%in%c('house','senate'))
     stop('Incorrect Chamber. (Should be \'house\' or \'senate\' (lowercase).')
-  query <- candidatesURL <- sprintf('%s/races/%s/%s/%s.json',
-                                    cycle,state,chamber,district)
+
+  if(state%in%c('AK','MT','ND','SD','VT','WY')&chamber=='house'){
+    # These are the at-large districts
+    candidatesURL <- sprintf('%s/races/%s/%s.json',
+                             cycle,state,chamber)
+  } else{
+    candidatesURL <- sprintf('%s/races/%s/%s/%s.json',
+                             cycle,state,chamber,district)
+
+  }
   if(return_value[1]=='query')
-    return(query)
-  tmp <- pp_query(query)
+    return(candidatesURL)
+  tmp <- pp_query(candidatesURL)
   class(tmp) <- c(class(tmp),'pp_candidate_list')
   tmp
 }

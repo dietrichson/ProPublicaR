@@ -38,18 +38,17 @@ pp_convert_to_data_frame.pp_candidate_list <- function(what, which_part= c('resu
       as.data.frame(x[1])
     }) %>% data.table::rbindlist() %>% as.data.frame
 
-  if(which_part[1] == 'summary')
-    tmp <- as.data.frame(what[['summary']])
+  if(which_part[1] == 'summary'){
+    tmp <- lapply(what[['summary']], function(x)ifelse(is.null(x), NA, x))
+  }
 
   if(which_part[1] == 'meta'){
     tmp$results <- NULL
     tmp$summary <- NULL
-    tmp <- lapply(tmp,function(x){
-      if(is.null(x)){return(NA)}
-      else{return(x)}}
-    )
-    tmp <- as.data.frame(tmp)
+    tmp <- lapply(tmp, function(x)ifelse(is.null(x), NA, x))
   }
+
+  tmp <- as.data.frame(tmp)
 
   tmp <- .fix_column_names(tmp)
 
