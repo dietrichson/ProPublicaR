@@ -8,22 +8,27 @@
 #' @param version API version. Currently v1.
 #'
 #' @return a list object with the return values.
-#' @import httr
+#' @import httr config
 #' @export
 #'
 #' @examples
 #' \dontrun{
+#' pp_query('2018/races/MI/house/11.json',version='v1')
 #' pp_query('2018/races/MI/house/11.json',API='campaign-finance',version='v1')
 #' }
-pp_query <- function(query, API=c('campaign-finance'), version='v1'){
+pp_query <- function(query, API=c('campaign-finance', 'congress'), version='v1', myAPI_Key){
   # First check that API-key is available
-  myAPI_Key <- config::get('ProPublica')[[API]]
+  if (missing(myAPI_Key)) {
+    myAPI_Key <- config::get('ProPublica')[[API]] # config::get('ProPublica')[[1]] # config::get('ProPublica')[['campaign-finance']] #
+  }
+
   if(is.null(myAPI_Key))
     stop("API key not found. \nHint: This should be in config.yml in your working directory or higher.")
   # Construct URL
   myURL <-
     switch (API,
             'campaign-finance' = 'https://api.propublica.org/campaign-finance/',
+            'congress' = 'https://api.propublica.org/congress/',
             NULL #defaults
     )
   if(is.null(myURL)) stop('API not supported.')
