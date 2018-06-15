@@ -8,7 +8,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' get_candidate2('P60005915', 2016)
+#' get_candidate('P60005915', 2016)
 #' }
 get_candidate <- function(FEC_ID, cycle=2018, myAPI_Key){
   API = 'campaign-finance'
