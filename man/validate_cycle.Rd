@@ -19,5 +19,4 @@ Validate that year is correct
 validate_cycle(1979)#TRUE
 validate_cycle(1979)#FALSE
 validate_cycle(16) #FALSE
-cycle=2016
 }
