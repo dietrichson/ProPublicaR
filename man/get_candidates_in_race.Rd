@@ -5,7 +5,7 @@
 \title{Get Candidates in Race}
 \usage{
 get_candidates_in_race(state, chamber, district, cycle = 2018,
-  return_value = c("results", "query"))
+  return_value = c("results", "query"), myAPI_Key)
 }
 \arguments{
 \item{state}{State abbreviation}
@@ -26,6 +26,6 @@ Get Candidates in Race
 }
 \examples{
 \dontrun{
-get_candidates_in_race( 'MI', 'house', 11)
+get_candidates_in_race('MI', 'house', 11)
 }
 }

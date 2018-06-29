@@ -6,9 +6,11 @@
 #' @export
 #' @import stringr
 #' @examples
-#' validate_state(MI)#TRUE
-#' validate_state(IM) #FALSE
+#' validate_state("MI")#TRUE
+#' validate_state("IM") #FALSE
 validate_state <- function(us_state){
+  if(!is.character(us_state))
+    warning('State Abbreviation should be a character')
   # Catch uppercase/lowercase error
   if(toupper(us_state)!=us_state)
     warning('State Abbreviation should be upper case.')

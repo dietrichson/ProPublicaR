@@ -2,20 +2,20 @@
 % Please edit documentation in R/get_candidate.R
 \name{get_candidate}
 \alias{get_candidate}
-\title{Get Candidate Info}
+\title{Get Candidate Info
+GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}}
 \usage{
-get_candidate(FEC_ID, cycle = 2018)
+get_candidate(FEC_ID, cycle = 2018, myAPI_Key)
 }
 \arguments{
 \item{FEC_ID}{The FEC-assigned 9-character ID of a candidate.}
 
-\item{cycle}{The election cycle}
+\item{cycle}{The election cycle must be even-numbered year between 1996 and 2018}
+}
+\value{
+a list object with the return values about candidate basic information
 }
 \description{
 Get Candidate Info
-}
-\examples{
-\dontrun{
-get_candidate('P60005915', 2016)
-}
+GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}
 }

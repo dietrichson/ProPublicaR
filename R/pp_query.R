@@ -13,15 +13,14 @@
 #'
 #' @examples
 #' \dontrun{
-#' pp_query('2018/races/MI/house/11.json',version='v1')
-#' pp_query('2018/races/MI/house/11.json',API='campaign-finance',version='v1')
+#' pp_query('115/bills/hr21.json', API = 'congress', version='v1')
+#' pp_query('2018/races/MI/house/11.json', API='campaign-finance',version='v1')
 #' }
 pp_query <- function(query, API=c('campaign-finance', 'congress'), version='v1', myAPI_Key){
   # First check that API-key is available
   if (missing(myAPI_Key)) {
-    myAPI_Key <- config::get('ProPublica')[[API]] # config::get('ProPublica')[[1]] # config::get('ProPublica')[['campaign-finance']] #
+    myAPI_Key <- config::get('ProPublica')[[API]] 
   }
-
   if(is.null(myAPI_Key))
     stop("API key not found. \nHint: This should be in config.yml in your working directory or higher.")
   # Construct URL

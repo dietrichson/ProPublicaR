@@ -16,6 +16,6 @@ TRUE if correct FALSE otherwise
 Validate that a abbreviaton is correct
 }
 \examples{
-validate_state(MI)#TRUE
-validate_state(IM) #FALSE
+validate_state("MI")#TRUE
+validate_state("IM") #FALSE
 }

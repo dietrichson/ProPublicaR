@@ -2,7 +2,7 @@
 % Please edit documentation in R/validate_cycle.R
 \name{validate_cycle}
 \alias{validate_cycle}
-\title{Validate that year is correct}
+\title{Validate that year cycle is correct}
 \usage{
 validate_cycle(cycle)
 }
@@ -13,10 +13,10 @@ validate_cycle(cycle)
 TRUE if correct FALSE otherwise
 }
 \description{
-Validate that year is correct
+Validate that year cycle is correct
 }
 \examples{
-validate_cycle(1979)#TRUE
+validate_cycle(1996)#TRUE
 validate_cycle(1979)#FALSE
 validate_cycle(16) #FALSE
 }
