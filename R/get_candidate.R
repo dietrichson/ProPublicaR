@@ -1,14 +1,18 @@
 #' Get Candidate Info
+#' https://www.propublica.org/datastore/apis
 #' GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}
+#' 
 #' @param FEC_ID The FEC-assigned 9-character ID of a candidate.
 #' @param cycle The election cycle must be even-numbered year between 1996 and 2018
+#' @param myAPI_key use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
 #'
 #' @return a list object with the return values about candidate basic information
 #' @export
 #'
 #' @examples
-#' get_candidate('P60005915', 2016)
-#' }
+#' \dontrun{
+#' get_candidate('P60005915', 2016)}
+#' 
 get_candidate <- function(FEC_ID, cycle=2018, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){

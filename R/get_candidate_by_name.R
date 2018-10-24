@@ -1,9 +1,10 @@
 #' Get Candidate Info
-#' 
+#' https://www.propublica.org/datastore/apis
 #' HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/search
 #'
 #' @param NAME The first or last name of the candidate.
 #' @param cycle The election cycle
+#' @param myAPI_key use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
 #'
 #' @return
 #' @export

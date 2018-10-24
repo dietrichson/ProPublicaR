@@ -1,11 +1,11 @@
 #' Get Top 20 Candidates in Specific Financial Category
-#' 
+#' https://www.propublica.org/datastore/apis
 #' HTTP Request
 #' GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/new
 #'
 #' @param cycle The election cycle: Four-digit even-numbered year between 2010 and 2018
 #' @param myAPI_Key  use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
-#'
+#' 
 #' @return List of returned JSON from endpoint that retrieves ithe 20 most recently added FEC candidates for a given campaign cycle from the campaign-finance API from ProPublica. 
 #' @export
 #'

@@ -2,7 +2,9 @@
 % Please edit documentation in R/get_candidate_by_name.R
 \name{get_candidate_by_name}
 \alias{get_candidate_by_name}
-\title{Get Candidate Info}
+\title{Get Candidate Info
+https://www.propublica.org/datastore/apis
+HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/search}
 \usage{
 get_candidate_by_name(NAME, cycle = 2018, myAPI_Key)
 }
@@ -10,8 +12,12 @@ get_candidate_by_name(NAME, cycle = 2018, myAPI_Key)
 \item{NAME}{The first or last name of the candidate.}
 
 \item{cycle}{The election cycle}
+
+\item{myAPI_key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
 }
 \description{
+Get Candidate Info
+https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/search
 }
 \examples{

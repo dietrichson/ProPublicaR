@@ -6,6 +6,7 @@
 #' @param query The query to be executed
 #' @param API Which API are you accessing
 #' @param version API version. Currently v1.
+#' @param myAPI_Key To use the Campaign Finance/congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
 #'
 #' @return a list object with the return values.
 #' @import httr config
@@ -18,11 +19,16 @@
 #' }
 pp_query <- function(query, API=c('campaign-finance', 'congress'), version='v1', myAPI_Key){
   # First check that API-key is available
-  if (missing(myAPI_Key)) {
-    myAPI_Key <- config::get('ProPublica')[[API]] 
+  if(missing(myAPI_Key) & !file.exists("config.yml"))
+    stop("API key not found or is missing. \nHint: This should be in config.yml in your working directory or higher.")
+  if (missing(myAPI_Key) & file.exists("config.yml") & is.null(config::get('ProPublica')[[API]])) {
+   stop("API key is missing and in config.yml is null for the API") 
+  } else {
+    if(missing(myAPI_Key) & file.exists("config.yml") & !is.null(config::get('ProPublica')[[API]])){
+      myAPI_Key <- config::get('ProPublica')[[API]]  
+    }
   }
-  if(is.null(myAPI_Key))
-    stop("API key not found. \nHint: This should be in config.yml in your working directory or higher.")
+
   # Construct URL
   myURL <-
     switch (API,

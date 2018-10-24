@@ -2,15 +2,21 @@
 % Please edit documentation in R/get_top20_candidate_of_FinancialCategory.R
 \name{get_top20_candidate_of_FinancialCategory}
 \alias{get_top20_candidate_of_FinancialCategory}
-\title{Get Top 20 Candidates in Specific Financial Category}
+\title{Get Top 20 Candidates in Specific Financial Category
+https://www.propublica.org/datastore/apis
+HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/leaders/{category}}
 \usage{
 get_top20_candidate_of_FinancialCategory(category, cycle = 2018, myAPI_Key)
 }
 \arguments{
-\item{category}{TOne of the values from the following categories:'candidate-loan', 'contribution-total', 'debts-owed', 'disbursements-total', 'end-cash', 'individual-total', 'pac-total', 'receipts-total' and 'refund-total'.}
+\item{category}{One of the values from the following categories:'candidate-loan', 'contribution-total', 'debts-owed', 'disbursements-total', 'end-cash', 'individual-total', 'pac-total', 'receipts-total' and 'refund-total'.}
 
 \item{cycle}{The election cycle}
+
+\item{myAPI_key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
 }
 \description{
+Get Top 20 Candidates in Specific Financial Category
+https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/leaders/{category}
 }

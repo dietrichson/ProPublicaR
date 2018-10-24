@@ -2,12 +2,16 @@
 % Please edit documentation in R/get_recent_late_contributions_candidate.R
 \name{get_recent_late_contributions_candidate}
 \alias{get_recent_late_contributions_candidate}
-\title{Get Recent Late Contributions to a Specific Candidate}
+\title{Get Recent Late Contributions to a Specific Candidate
+https://www.propublica.org/datastore/apis
+HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}/48hour}
 \usage{
 get_recent_late_contributions_candidate(cycle = 2018, FEC_ID, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}
+
+\item{FEC_ID}{The FEC-assigned 9-character ID of a candidate.}
 
 \item{myAPI_Key}{To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
 }
@@ -15,6 +19,8 @@ get_recent_late_contributions_candidate(cycle = 2018, FEC_ID, myAPI_Key)
 List of returned JSON from endpoint that retrieves the most recent late contributions to candidates from the campaign-finance API from ProPublica.
 }
 \description{
+Get Recent Late Contributions to a Specific Candidate
+https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}/48hour
 }
 \examples{

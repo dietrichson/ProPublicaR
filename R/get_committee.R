@@ -1,6 +1,5 @@
 #' Get Committee Info
-#' HTTP Request
-#' GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}
+#' HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}
 #'
 #' @param FEC_ID The FEC-assigned 9-character ID of a committee.
 #' @param cycle The election cycle

@@ -3,6 +3,7 @@
 \name{get_candidate}
 \alias{get_candidate}
 \title{Get Candidate Info
+https://www.propublica.org/datastore/apis
 GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}}
 \usage{
 get_candidate(FEC_ID, cycle = 2018, myAPI_Key)
@@ -11,11 +12,19 @@ get_candidate(FEC_ID, cycle = 2018, myAPI_Key)
 \item{FEC_ID}{The FEC-assigned 9-character ID of a candidate.}
 
 \item{cycle}{The election cycle must be even-numbered year between 1996 and 2018}
+
+\item{myAPI_key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
 }
 \value{
 a list object with the return values about candidate basic information
 }
 \description{
 Get Candidate Info
+https://www.propublica.org/datastore/apis
 GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}
+}
+\examples{
+\dontrun{
+get_candidate('P60005915', 2016)}
+
 }

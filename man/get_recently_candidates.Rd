@@ -2,7 +2,10 @@
 % Please edit documentation in R/get_recently_candidates.R
 \name{get_recently_candidates}
 \alias{get_recently_candidates}
-\title{Get Top 20 Candidates in Specific Financial Category}
+\title{Get Top 20 Candidates in Specific Financial Category
+https://www.propublica.org/datastore/apis
+HTTP Request
+GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/new}
 \usage{
 get_recently_candidates(cycle = 2018, myAPI_Key)
 }
@@ -15,6 +18,8 @@ get_recently_candidates(cycle = 2018, myAPI_Key)
 List of returned JSON from endpoint that retrieves ithe 20 most recently added FEC candidates for a given campaign cycle from the campaign-finance API from ProPublica.
 }
 \description{
+Get Top 20 Candidates in Specific Financial Category
+https://www.propublica.org/datastore/apis
 HTTP Request
 GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/new
 }
