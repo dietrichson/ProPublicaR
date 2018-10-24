@@ -1,4 +1,5 @@
 #' Get Top 20 Candidates in Specific Financial Category
+#' 
 #' https://www.propublica.org/datastore/apis
 #' HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/leaders/{category}
 #'
@@ -6,10 +7,11 @@
 #' @param cycle The election cycle
 #' @param myAPI_key use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
 #'
-#' @return
+#' @return List of returned JSON from endpoint that retrieves a specific FEC candidate for a given campaign cycle.
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' get_top20_candidate_of_FinancialCategory('pac-total', 2016)
 #' }
 get_top20_candidate_of_FinancialCategory <- function(category, cycle=2018, myAPI_Key){

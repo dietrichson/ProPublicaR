@@ -10,6 +10,11 @@ get_committee_filings(FEC_ID, cycle = 2018, myAPI_Key)
 \item{FEC_ID}{The FEC-assigned 9-character ID of a committee.}
 
 \item{cycle}{The election cycle}
+
+\item{myAPI_Key}{To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+}
+\value{
+List of returned JSON from endpoint that retrieves the 20 most recent FEC filings from the specified committee. Electronic filings are available back to 2001. Paper filings by Senate candidate committees and senatorial party committees go back to 1999.
 }
 \description{
 HTTP Request GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/filings

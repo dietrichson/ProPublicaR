@@ -1,4 +1,5 @@
 #' Get Candidate Info
+#' 
 #' https://www.propublica.org/datastore/apis
 #' HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/search
 #'
@@ -6,11 +7,13 @@
 #' @param cycle The election cycle
 #' @param myAPI_key use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
 #'
-#' @return
+#' @return List of returned JSON from endpoint that retrieves federal candidates by last name, using a query string parameter.
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' get_candidate_by_name('Wilson', 2016)
+#' }
 #' 
 get_candidate_by_name <- function(NAME, cycle=2018, myAPI_Key){
   API = 'campaign-finance'

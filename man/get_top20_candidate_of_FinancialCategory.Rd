@@ -2,9 +2,7 @@
 % Please edit documentation in R/get_top20_candidate_of_FinancialCategory.R
 \name{get_top20_candidate_of_FinancialCategory}
 \alias{get_top20_candidate_of_FinancialCategory}
-\title{Get Top 20 Candidates in Specific Financial Category
-https://www.propublica.org/datastore/apis
-HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/leaders/{category}}
+\title{Get Top 20 Candidates in Specific Financial Category}
 \usage{
 get_top20_candidate_of_FinancialCategory(category, cycle = 2018, myAPI_Key)
 }
@@ -15,8 +13,15 @@ get_top20_candidate_of_FinancialCategory(category, cycle = 2018, myAPI_Key)
 
 \item{myAPI_key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
 }
+\value{
+List of returned JSON from endpoint that retrieves a specific FEC candidate for a given campaign cycle.
+}
 \description{
-Get Top 20 Candidates in Specific Financial Category
 https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/leaders/{category}
+}
+\examples{
+\dontrun{
+get_top20_candidate_of_FinancialCategory('pac-total', 2016)
+}
 }
