@@ -3,9 +3,8 @@
 \name{get_recently_candidates}
 \alias{get_recently_candidates}
 \title{Get Top 20 Candidates in Specific Financial Category
-https://www.propublica.org/datastore/apis
-HTTP Request
-GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/new}
+ 
+HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/new (https://www.propublica.org/datastore/apis)}
 \usage{
 get_recently_candidates(cycle = 2018, myAPI_Key)
 }
@@ -19,9 +18,8 @@ List of returned JSON from endpoint that retrieves ithe 20 most recently added F
 }
 \description{
 Get Top 20 Candidates in Specific Financial Category
-https://www.propublica.org/datastore/apis
-HTTP Request
-GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/new
+ 
+HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/new (https://www.propublica.org/datastore/apis)
 }
 \examples{
 \dontrun{
