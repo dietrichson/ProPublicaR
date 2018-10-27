@@ -1,6 +1,6 @@
-#' Get Amendments for a Specific Bill
+#' Get Subjects for a Specific Bill
 #'
-#' HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}/amendments.json. Use this request type to get Library of Congress-assigned subjects about a particular bill. 
+#' HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}/subjects.json. Use this request type to get Library of Congress-assigned subjects about a particular bill.
 #'
 #' @param bill_id a bill slug, for example hr4881 - these can be found in the recent bill response.
 #' @param congress 105-115@param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
@@ -12,15 +12,15 @@
 #'
 #' @examples
 #' \dontrun{
-#' get_amendments_bill(115, 'hr1628')
+#' get_subjects_for_bill(115, 'hr1628')
 #' }
-get_amendments_bill <- function(congress, bill_id, myAPI_Key){
+get_subjects_for_bill <- function(congress, bill_id, myAPI_Key){
   API = 'congress'
   if(!congress %in% 105:115){
     stop("Congress has to be 105-115")
   }
   if(is.character(bill_id)){
-  query <- sprintf("%s/bills/%s/amendments.json", congress, bill_id)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+    query <- sprintf("%s/bills/%s/subjects.json", congress, bill_id)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   } else {stop("bill_id has to be character")}
 }
