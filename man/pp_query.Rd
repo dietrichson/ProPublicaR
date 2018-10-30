@@ -4,7 +4,8 @@
 \alias{pp_query}
 \title{Execute a query against the ProPublica API}
 \usage{
-pp_query(query, API = c("campaign-finance"), version = "v1")
+pp_query(query, API = c("campaign-finance", "congress"), version = "v1",
+  myAPI_Key)
 }
 \arguments{
 \item{query}{The query to be executed}
@@ -12,6 +13,8 @@ pp_query(query, API = c("campaign-finance"), version = "v1")
 \item{API}{Which API are you accessing}
 
 \item{version}{API version. Currently v1.}
+
+\item{myAPI_Key}{To use the Campaign Finance/congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
 }
 \value{
 a list object with the return values.
@@ -22,6 +25,7 @@ This function is primarily meant to be used by other functions in the package, b
 }
 \examples{
 \dontrun{
-pp_query('2018/races/MI/house/11.json',API='campaign-finance',version='v1')
+pp_query('115/bills/hr21.json', API = 'congress', version='v1')
+pp_query('2018/races/MI/house/11.json', API='campaign-finance',version='v1')
 }
 }

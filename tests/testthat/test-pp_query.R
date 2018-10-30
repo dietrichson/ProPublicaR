@@ -1,13 +1,12 @@
 context("pp_query")
 
 test_that("get error if API key is null", {
-  if(is.null(config::get('ProPublica')[['campaign-finance']])){expect_error(pp_query('2018/races/MI/house/11.json', API='campaign-finance',version='v1'), 
-                                                                            "API key not found. \nHint: This should be in config.yml in your working directory or higher.")}
-  if(is.null(config::get('ProPublica')[['congress']])){expect_error(pp_query('115/bills/hr21.json',API = 'congress', version='v1'),"API key not found. \nHint: This should be in config.yml in your working directory or higher.")}
+  if(file.exists("config.yml") & is.null(config::get('ProPublica')[['campaign-finance']])){expect_error(pp_query('2018/races/MI/house/11.json', API='campaign-finance',version='v1'),"API key not found or is missing. \nHint: This should be in config.yml in your working directory or higher.")}
+  if(is.null(config::get('ProPublica')[['congress']])){expect_error(pp_query('115/bills/hr21.json',API = 'congress', version='v1'),"API key not found or is missing. \nHint: This should be in config.yml in your working directory or higher.")}
   if(is.null(myAPI_Key)){expect_error(pp_query('2018/races/MI/house/11.json', API='campaign-finance',version='v1'), 
-                                      "API key not found. \nHint: This should be in config.yml in your working directory or higher.")}
+  "API key not found. \nHint: This should be in config.yml in your working directory or higher.")}
   if(is.null(config::get('ProPublica')[['campaign-finance']]) & !exists("myAPI_Key")){expect_error(pp_query('115/bills/hr21.json',API = 'congress', version='v1'), 
-                                      "API key not found. \nHint: This should be in config.yml in your working directory or higher.")}
+  "API key not found. \nHint: This should be in config.yml in your working directory or higher.")}
 })
 
 test_that("get error if API not support", {

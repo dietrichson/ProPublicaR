@@ -2,7 +2,9 @@
 % Please edit documentation in R/get_recent_late_contributions_committee.R
 \name{get_recent_late_contributions_committee}
 \alias{get_recent_late_contributions_committee}
-\title{Get Recent Late Contributions to a Specific Committee}
+\title{Get Recent Late Contributions to a Specific Committee
+https://www.propublica.org/datastore/apis
+HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/48hour}
 \usage{
 get_recent_late_contributions_committee(cycle = 2018, FEC_ID, myAPI_Key)
 }
@@ -13,7 +15,12 @@ get_recent_late_contributions_committee(cycle = 2018, FEC_ID, myAPI_Key)
 
 \item{myAPI_Key}{To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
 }
+\value{
+List of returned JSON from endpoint that retrieves the most recent late contributions to a specific committee.
+}
 \description{
+Get Recent Late Contributions to a Specific Committee
+https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/48hour
 }
 \examples{

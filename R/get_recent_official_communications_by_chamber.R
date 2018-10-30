@@ -1,0 +1,23 @@
+#' Get Recent Official Communications by Chamber
+#'
+#' To get lists of official communications to Congress for a specific chamber, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/committees/{committee-id}/subcommittees/{subcommittee-id}.json
+#'
+#' @param congress 	114-115 for House, 96-115 for Senate
+#' @param chamber house or senate 
+#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#'
+#' @return List of returned JSON from endpoint that retrieves the 20 most recent official communications to Congress for a specific chamber for the specified chamber, either house or senate.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' get_recent_official_communications_by_chamber(115, 'house')
+#' }
+get_recent_official_communications_by_chamber <- function(congress, chamber, myAPI_Key){
+  API = 'congress'
+  if(!chamber %in% c('house', 'senate')){
+    stop("Incorrect chamber. Should be \'senate\' or \'house'\ , lowercase")
+  }
+  query <- sprintf("%s/communications/%s.json", congress, chamber)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
+}

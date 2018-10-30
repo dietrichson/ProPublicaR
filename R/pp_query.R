@@ -28,7 +28,6 @@ pp_query <- function(query, API=c('campaign-finance', 'congress'), version='v1',
       myAPI_Key <- config::get('ProPublica')[[API]]  
     }
   }
-
   # Construct URL
   myURL <-
     switch (API,

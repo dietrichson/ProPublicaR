@@ -1,4 +1,4 @@
-#' Get a Specific Bill: to get details about a particular bill, including actions taken and votes
+#' Get a Specific Bill
 #'
 #'The attributes house_passage_vote and senate_passage_vote are populated (with the date of passage) only upon successful passage of the bill. Bills before the 113th Congress (prior to 2013) have fewer attribute values than those from the 113th Congress onward, because the more recent bill data comes from the bulk data provided by the Government Publishing Office. Details for the older bills came from scraping Thomas.gov, the former congressional site of the Library of Congress. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}.json
 #'
@@ -6,7 +6,7 @@
 #' @param congress 105-115
 #' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
 #'
-#' @return List of returned JSON from endpoint that retrieves details about a particular bill
+#' @return List of returned JSON from endpoint that retrieves details about a particular bill, including actions taken and votes
 #' @export
 #'
 #' @examples
