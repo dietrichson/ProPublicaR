@@ -16,5 +16,6 @@
 validate_district <- function(us_district){
   if(!is.numeric(us_district))
     warning('District Abbreviation should be a numeric')
+  us_congressional_districts <- us_congressional_districts
   us_district%in%us_congressional_districts$district_number
 }

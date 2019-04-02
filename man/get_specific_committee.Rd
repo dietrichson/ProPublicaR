@@ -23,7 +23,9 @@ To get information about a single Senate or House committee, including the membe
 }
 \examples{
 \dontrun{
-get_specific_committee(115, "senate",lists_of_committees(115, "senate")$results[[1]]$committees[[1]]$id)
+get_specific_committee(115, "senate",
+lists_of_committees(115, "senate")$results[[1]]$committees[[1]]$id)
+
 get_specific_committee(115, "senate", "SSAF")
 }
 }

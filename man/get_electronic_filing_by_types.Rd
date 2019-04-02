@@ -22,6 +22,8 @@ HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/filings
 \examples{
 \dontrun{
 get_electronic_filing_by_types(2016, 'F24')
-get_electronic_filing_by_types(2016, matrix(unlist(get_electronic_filing_form_types(2016)$results), ncol = 2, byrow = TRUE)[8])
+get_electronic_filing_by_types(2016, 
+matrix(unlist(get_electronic_filing_form_types(2016)$results), 
+ncol = 2, byrow = TRUE)[8])
 #' }
 }

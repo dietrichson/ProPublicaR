@@ -14,7 +14,9 @@
 #' @examples
 #' \dontrun{
 #' get_specific_subcommittee(115, 'house', 'HSAS', 'HSAS28')
-#' get_specific_subcommittee(115, 'house', lists_of_committees(115, "senate")$results[[1]]$committees[[2]]$id, lists_of_committees(115, "senate")$results[[1]]$committees[[2]]$subcommittees[[1]]$id)
+#' get_specific_subcommittee(115, 'house', 
+#' lists_of_committees(115, "senate")$results[[1]]$committees[[2]]$id,
+#' lists_of_committees(115, "senate")$results[[1]]$committees[[2]]$subcommittees[[1]]$id)
 #' }
 get_specific_subcommittee <- function(congress, chamber, committee_id, subcommittee_id, myAPI_Key){
   API = 'congress'

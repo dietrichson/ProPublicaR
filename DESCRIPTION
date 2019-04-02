@@ -1,12 +1,12 @@
 Package: ProPublicaR
 Type: Package
 Title: Access Functions for Propublica's API
-Version: 0.9.0
+Version: 0.9.2
 Authors@R: c(
-    person("Dietrichson", "Aleksander", email = "dietrichson@gmail.com", role=c("aut", "cre")),
-    person("Davit", "Joselina", email = "joselinadavyt@gmail.com", role = c("aut"))
+    person("Aleksander", "Dietrichson", email = "dietrichson@gmail.com", role=c("aut", "cre")),
+    person("Joselina", "Davit", email = "joselinadavyt@gmail.com", role = c("aut"))
     )
-Description: Provides wrapper functions to access the propublica API. For more information about these APIs go to: https://www.propublica.org/datastore/apis.
+Description: Provides wrapper functions to access the propublica API. For more information about these APIs go to: <https://www.propublica.org/datastore/apis>.
 License: file LICENSE
 BugReports: https://github.com/dietrichson/ProPublicaR/issues
 Depends: 
