@@ -11,8 +11,9 @@ get_recent_official_communications_by_date(year, month, day, myAPI_Key)
 
 \item{month}{mm format}
 
-\item{day}{dd format
-@param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{day}{dd format}
+
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 20 most recent results for the specified type: ec (Executive Communication), pm (Presidential Message) or pom (Petition or Memorial).

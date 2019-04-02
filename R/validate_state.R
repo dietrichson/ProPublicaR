@@ -1,10 +1,11 @@
 #' Validate that a abbreviaton is correct
 #'
-#' @param us_state
+#' @param us_state State abbreviation (e.g. NY)
 #'
 #' @return TRUE if correct FALSE otherwise
 #' @export
 #' @import stringr
+#' @import datasets
 #' @examples
 #' validate_state("MI")#TRUE
 #' validate_state("IM") #FALSE

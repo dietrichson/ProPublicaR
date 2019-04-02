@@ -5,7 +5,7 @@
 #' @param congress 102-115 for House, 80-115 for Senate
 #' @param chamber house or senate
 #' @param vote_type missed, party, loneno or perfect
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves a types of votes of each member of a specific chamber and congress.
 #' s

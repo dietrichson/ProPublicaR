@@ -4,7 +4,7 @@
 #' 
 #'
 #' @param cycle The election cycle: Four-digit even-numbered year between 2010 and 2018
-#' @param myAPI_Key  use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #' 
 #' @return List of returned JSON from endpoint that retrieves ithe 20 most recently added FEC candidates for a given campaign cycle from the campaign-finance API from ProPublica. 
 #' @export

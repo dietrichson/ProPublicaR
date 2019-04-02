@@ -7,7 +7,7 @@
 #' @param session_number 1 or 2, depending on year (1 is odd-numbered years, 2 is even-numbered years)
 #' passed (latest_major_action_date), enacted (enacted), vetoed (vetoed).
 #' @param roll_call_number integer
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves a specific roll-call vote
 #' s

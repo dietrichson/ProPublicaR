@@ -9,7 +9,7 @@
 #' @param query_keyword keyword or phrase to search the title and full text of legislation to get the 20 most recent bills
 #' @param sort _score or date (default is date)
 #' @param dir sort direction: asc or desc
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header
+#' @inheritParams get_new_members
 #'
 #' @return a list object with the return values about title and full text of legislation by keyword
 #' @export

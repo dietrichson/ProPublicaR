@@ -11,7 +11,7 @@ get_specific_bill(congress, bill_id, myAPI_Key)
 
 \item{bill_id}{a bill slug, for example hr4881 - these can be found in the recent bill response.}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves details about a particular bill, including actions taken and votes

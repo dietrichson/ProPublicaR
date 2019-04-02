@@ -9,7 +9,7 @@ get_upcoming_bills(chamber, myAPI_Key)
 \arguments{
 \item{chamber}{house or senate.}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves details on bills that may be considered by the House or Senate in the near future, based on scheduled published or announced by congressional leadership.

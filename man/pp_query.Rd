@@ -4,8 +4,8 @@
 \alias{pp_query}
 \title{Execute a query against the ProPublica API}
 \usage{
-pp_query(query, API = c("campaign-finance", "congress"), version = "v1",
-  myAPI_Key)
+pp_query(query, API = c("campaign-finance", "congress"),
+  version = "v1", myAPI_Key)
 }
 \arguments{
 \item{query}{The query to be executed}
@@ -14,7 +14,7 @@ pp_query(query, API = c("campaign-finance", "congress"), version = "v1",
 
 \item{version}{API version. Currently v1.}
 
-\item{myAPI_Key}{To use the Campaign Finance/congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 a list object with the return values.

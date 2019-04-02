@@ -11,7 +11,7 @@ recent_bills_by_member(member_id, type, myAPI_Key)
 
 \item{type}{introduced or updated}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 the 20 bills most recently introduced or updated by a particular member. Results can include more than one Congress.

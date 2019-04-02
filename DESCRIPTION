@@ -1,14 +1,127 @@
 Package: ProPublicaR
 Type: Package
 Title: Access Functions for Propublica's API
-Version: 0.1.0
-Author: Aleksander Dietrichson
-Maintainer: Aleksander Dietrichson <dietrichson@gmail.com>
-Description: Provides wrapper functions to access the propublica API
-License: What license is it under?
+Version: 0.9.0
+Authors@R: c(
+    person("Dietrichson", "Aleksander", email = "dietrichson@gmail.com", role=c("aut", "cre")),
+    person("Davit", "Joselina", email = "joselinadavyt@gmail.com", role = c("aut"))
+    )
+Description: Provides wrapper functions to access the propublica API. For more information about these APIs go to: https://www.propublica.org/datastore/apis.
+License: file LICENSE
+BugReports: https://github.com/dietrichson/ProPublicaR/issues
+Depends: 
+    R (>= 3.1)
+Imports:
+  dplyr,
+  stringr,
+  httr,
+  config,
+  lubridate
+Suggests: 
+  testthat, 
+  httptest,
+  knitr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
-Suggests: testthat, httptest, knitr, rmarkdown
-Imports:httr, config
+RoxygenNote: 6.1.1.9000
 VignetteBuilder: knitr
+Collate: 
+    'a_get_new_members.R'
+    'bills_legislation_by_keyword.R'
+    'compare_two_member_bill_sponsorships.R'
+    'compare_two_member_vote_positions.R'
+    'data.R'
+    'get_a_bill.R'
+    'get_amendments_bill.R'
+    'get_bills_cosponsored_member.R'
+    'get_candidate.R'
+    'get_candidate_by_name.R'
+    'get_candidates_in_race.R'
+    'get_committee.R'
+    'get_committee_by_name.R'
+    'get_committee_electioneering_communications.R'
+    'get_committee_filings.R'
+    'get_committee_leadership.R'
+    'get_congress_member.R'
+    'get_congressional_statement_by_bill.R'
+    'get_congressional_statement_by_member.R'
+    'get_congressional_statement_by_subjects.R'
+    'get_cosponsors_specific_bill.R'
+    'get_current_members_by_statedistrict.R'
+    'get_electioneering_communications_by_date.R'
+    'get_electioneering_communications_committee.R'
+    'get_electronic_filing_byDate.R'
+    'get_electronic_filing_by_committees.R'
+    'get_electronic_filing_by_types.R'
+    'get_electronic_filing_form_types.R'
+    'get_hearing_specific_committee.R'
+    'get_house_senate_floor_actions_by_date.R'
+    'get_independent_expenditure_by_committee.R'
+    'get_independent_expenditure_by_date.R'
+    'get_independent_expenditure_office_totals.R'
+    'get_independent_expenditure_race_totals_committee.R'
+    'get_independent_expenditure_support_candidate.R'
+    'get_independent_expenditure_support_presidential_candidate.R'
+    'get_lobbyist_bundlers.R'
+    'get_member_vote_position.R'
+    'get_members_leaving.R'
+    'get_nominees_by_state.R'
+    'get_quarter_office_expenses_by_category_house_member.R'
+    'get_quarter_office_expenses_house_member.R'
+    'get_races_for_state.R'
+    'get_recent_amendments.R'
+    'get_recent_committee_hearing.R'
+    'get_recent_congressional_statements.R'
+    'get_recent_congressional_statements_by_date.R'
+    'get_recent_congressional_statements_by_term.R'
+    'get_recent_electioneering_communications.R'
+    'get_recent_house_senate_floor_actions.R'
+    'get_recent_independent_expend.R'
+    'get_recent_late_contributions.R'
+    'get_recent_late_contributions_candidate.R'
+    'get_recent_late_contributions_committee.R'
+    'get_recent_late_contributions_date.R'
+    'get_recent_lobbying_representation_filings.R'
+    'get_recent_nominations_by_category.R'
+    'get_recent_official_communications.R'
+    'get_recent_official_communications_by_category.R'
+    'get_recent_official_communications_by_chamber.R'
+    'get_recent_official_communications_by_date.R'
+    'get_recent_personal_explanations.R'
+    'get_recent_personal_explanations_specific_member.R'
+    'get_recent_personal_explanations_votes.R'
+    'get_recent_personal_explanations_votes_by_category.R'
+    'get_recent_personal_explanations_votes_specific_member.R'
+    'get_recent_personal_explanations_votes_specific_member_by_category.R'
+    'get_recent_votes.R'
+    'get_recently_added_independent_expenditure_committees.R'
+    'get_recently_candidates.R'
+    'get_recently_committees.R'
+    'get_related_bills.R'
+    'get_senate_nomination_votes.R'
+    'get_specific_bill.R'
+    'get_specific_bill_subject.R'
+    'get_specific_committee.R'
+    'get_specific_lobbying_representation_filings.R'
+    'get_specific_nominations.R'
+    'get_specific_roll_call_vote.R'
+    'get_specific_subcommittee.R'
+    'get_state_party_counts.R'
+    'get_statement_subjects.R'
+    'get_subjects_for_bill.R'
+    'get_top20_candidate_of_FinancialCategory.R'
+    'get_upcoming_bills.R'
+    'get_votes_by_date.R'
+    'get_votes_by_date_range.R'
+    'get_votes_by_type.R'
+    'list_members_chamber_congress.R'
+    'lists_of_committees.R'
+    'pp_convert_to_data_frame.R'
+    'pp_query.R'
+    'recent_bills_by_member.R'
+    'recent_bills_by_subject.R'
+    'recent_bills_by_type.R'
+    'search_lobbying_representation_filings.R'
+    'validate_cycle.R'
+    'validate_district.R'
+    'validate_state.R'

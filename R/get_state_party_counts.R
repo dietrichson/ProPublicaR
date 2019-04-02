@@ -2,7 +2,7 @@
 #'
 #' To get party membership counts for all states (current Congress only), use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/states/members/party.json
 #'
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves 
 #' @export

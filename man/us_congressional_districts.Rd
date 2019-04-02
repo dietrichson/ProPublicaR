@@ -9,6 +9,7 @@
   \item{district}{The district name}
   \item{state_name}{The state the district is in}
   \item{state_abb}{Two letter state abbreviation}
+  \item{district_number}{District number. Except for at-large districts.}
   ...
 }}
 \usage{

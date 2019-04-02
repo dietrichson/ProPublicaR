@@ -3,7 +3,7 @@
 #' To get Senate votes on presidential nominations. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/nominations.json
 #'
 #' @param congress 		101-115
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves Senate votes on presidential nominations
 #' @export

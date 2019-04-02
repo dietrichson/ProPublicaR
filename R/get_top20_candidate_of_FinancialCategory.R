@@ -5,7 +5,7 @@
 #'
 #' @param category One of the values from the following categories:'candidate-loan', 'contribution-total', 'debts-owed', 'disbursements-total', 'end-cash', 'individual-total', 'pac-total', 'receipts-total' and 'refund-total'.
 #' @param cycle The election cycle
-#' @param myAPI_key use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves a specific FEC candidate for a given campaign cycle.
 #' @export

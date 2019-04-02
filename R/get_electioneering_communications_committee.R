@@ -4,7 +4,7 @@
 #'
 #' @param cycle The election cycle
 #' @param FEC_ID 	The FEC-assigned 9-character ID of a committee. To find a committee official FEC ID, use a candidate search request or the FEC web site.
-#' @param myAPI_Key To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves the most recent broadcast advertisements by a specific committee that identify one or more federal candidates (and have aired 30 days before a primary election and 60 days before the general election).
 #' 

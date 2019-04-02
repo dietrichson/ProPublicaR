@@ -12,7 +12,6 @@
 #' @param what Return value from one of the get_ functions.
 #' @param which_part Which part are we converting. Defaults to 'results', but 'summary' and 'meta' may be useful in some cases.
 #' @import dplyr
-#' @import data.table
 #' @return a data.frame
 #' @export
 #'
@@ -36,7 +35,7 @@ pp_convert_to_data_frame.pp_candidate_list <- function(what, which_part= c('resu
   if(which_part[1]=='results')
     tmp <- lapply(what[[which_part[1]]],function(x){
       as.data.frame(x[1])
-    }) %>% data.table::rbindlist() %>% as.data.frame
+    }) %>% bind_rows %>% as.data.frame
 
   if(which_part[1] == 'summary'){
     tmp <- lapply(what[['summary']], function(x)ifelse(is.null(x), NA, x))

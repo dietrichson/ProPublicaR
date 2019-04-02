@@ -4,16 +4,17 @@
 \alias{get_quarter_office_expenses_house_member}
 \title{Get Quarterly Office Expenses by a Specific House Member}
 \usage{
-get_quarter_office_expenses_house_member(member_id, year, quarter, myAPI_Key)
+get_quarter_office_expenses_house_member(member_id, year, quarter,
+  myAPI_Key)
 }
 \arguments{
+\item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.l}
+
 \item{year}{2009-2017}
 
 \item{quarter}{1,2,3,4}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
-
-\item{member-id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.l}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 the amount a given lawmaker spent during a specified year and quarter by category,

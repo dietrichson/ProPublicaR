@@ -4,7 +4,8 @@
 \alias{get_independent_expenditure_by_date}
 \title{Get Independent Expenditures by Date}
 \usage{
-get_independent_expenditure_by_date(cycle = 2018, year, month, day, myAPI_Key)
+get_independent_expenditure_by_date(cycle = 2018, year, month, day,
+  myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}
@@ -15,7 +16,7 @@ get_independent_expenditure_by_date(cycle = 2018, year, month, day, myAPI_Key)
 
 \item{day}{The two-digit day from 01-31}
 
-\item{myAPI_Key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves all independent expenditures on a specific date (the date of activity, not the date filed with the FEC).

@@ -5,7 +5,7 @@
 #' @param member_id	The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.
 #' @param congress 110-115
 #' @param category options: voted-incorrectly (	Voted yes or no by mistake),	official-business (Away on official congressional business),	ambiguous (No reason given),	travel-difficulties (	Travel delays and issues),	personal (Personal or family reason),	claims-voted (Vote made but not recorded),	medical (	Medical issue for lawmaker, not family),	weather,	memorial,	misunderstanding,	leave-of-absence,	prior-commitment,	election-related,	military-service,	other
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves the 20 most recent personal explanations by a specific member in the specified Congress, and supports paginated requests using multiples of 20. 
 #' @export
@@ -15,7 +15,7 @@
 #' get_recent_personal_explanations_votes_specific_member_by_category('S001193', 115, 'personal')
 #' }
 get_recent_personal_explanations_votes_specific_member_by_category <- function(member_id, congress, category, myAPI_Key){
-  API = 'congress'
+  API <- 'congress'
   if(!congress %in% 110:115){
     stop("Incorrect congress, should be 110-115")
   }

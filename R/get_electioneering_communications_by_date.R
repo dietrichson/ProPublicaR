@@ -6,7 +6,7 @@
 #' @param year The four-digit year from 2008-2016.
 #' @param month The two-digit month from 01-12
 #' @param day The two-digit day from 01-31
-#' @param myAPI_Key  use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves all broadcast advertisements that identify one or more federal candidates (and have aired 30 days before a primary election and 60 days before the general election) from a specific date.
 #'

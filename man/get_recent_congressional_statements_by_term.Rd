@@ -9,7 +9,7 @@ get_recent_congressional_statements_by_term(term, myAPI_Key)
 \arguments{
 \item{term}{search term}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 20 most recent results that contain the search term in the title or body of the statement and supports pagination using multiples of 20.

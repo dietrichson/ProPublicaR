@@ -13,7 +13,7 @@ get_current_members_by_statedistrict(state, chamber, district, myAPI_Key)
 
 \item{district}{House of Representatives district number (House requests only). For states with at-large districts (AK, DE, MT, ND, SD, VT, WY), territories (GU, AS, VI, MP), commonwealths (PR) and the District of Columbia, use a district value of 1.}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves biographical and Congressional role information for a particular member of Congress by State/District

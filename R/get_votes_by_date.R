@@ -5,7 +5,7 @@
 #' @param chamber house or senate
 #' @param year 	YYYY format
 #' @param month  MM format
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves all votes for one or both chambers in a particular month
 #' s

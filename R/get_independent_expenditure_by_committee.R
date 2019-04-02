@@ -4,7 +4,7 @@
 #' 
 #' @param cycle The election cycle
 #' @param FEC_ID The FEC-assigned 9-character ID of a committee. To find a committee official FEC ID, use a candidate search request or the FEC web site.
-#' @param myAPI_Key  use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves the 20 most recent independent expenditures by a given committee.
 #' @export
@@ -19,7 +19,7 @@ get_independent_expenditure_by_committee<- function(cycle=2018, FEC_ID, myAPI_Ke
     stop("Incorrect cycle")
   }
   if(cycle < 2009){
-    stop("Incorrect cycle: independent expenditures are from 2009–present")}
+    stop("Incorrect cycle: independent expenditures are from 2009-present")}
   if(is.character(FEC_ID)){
     query <- sprintf("%s/committees/%s/independent_expenditures.json", cycle, FEC_ID)
     pp_query(query, API, myAPI_Key = myAPI_Key)

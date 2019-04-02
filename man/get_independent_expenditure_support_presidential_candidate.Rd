@@ -11,7 +11,7 @@ get_independent_expenditure_support_presidential_candidate(cycle = 2018,
 \arguments{
 \item{cycle}{The election cycle}
 
-\item{myAPI_Key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 200 most recent independent expenditures in support of or opposition to any presidential candidate.

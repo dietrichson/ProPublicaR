@@ -1,10 +1,11 @@
 #' Validate that a district abbreviaton is correct
 #'
-#' @param us_district
+#' @param us_district An integer corresponding to the district.
 #'
 #' @return TRUE if correct FALSE otherwise
 #' @export
 #' @import stringr
+#' @include data.R
 #' @examples
 #' \dontrun{
 #' validate_district(1)#TRUE

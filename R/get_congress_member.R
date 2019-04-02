@@ -3,7 +3,7 @@
 #' To get biographical and Congressional role information for a particular member of Congress. HTTP Request: GET https://api.propublica.org/congress/v1/members/{member-id}.json
 #'
 #' @param member_id The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves biographical and Congressional role information for a particular member of Congress
 #' @export

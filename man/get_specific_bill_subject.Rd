@@ -4,12 +4,12 @@
 \alias{get_specific_bill_subject}
 \title{Get a Specific Bill Subject}
 \usage{
-get_specific_bill_subject(query, myAPI_Key)
+get_specific_bill_subject(subject, myAPI_Key)
 }
 \arguments{
-\item{query}{a word or phrase to search}
+\item{subject}{a word or phrase to search}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves bill subjects that contain a specified term.

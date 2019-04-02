@@ -7,7 +7,9 @@
 get_races_for_state(state, cycle = 2018)
 }
 \arguments{
-\item{cycle}{}
+\item{state}{The State (US) of the election}
+
+\item{cycle}{Which election cycle (e.g. 2018)}
 }
 \value{
 the result of the API call.

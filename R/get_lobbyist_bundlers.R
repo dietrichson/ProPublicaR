@@ -2,10 +2,10 @@
 #'
 #'Committees must report registered lobbyists who act as “bundlers”, collecting donations for the committee from multiple contributors. HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/lobbyist_bundlers
 #'
-#' @param cycle The election cycle
+#' 
+#' @inheritParams get_independent_expenditure_support_presidential_candidate
 #' @param FEC_ID The FEC-assigned 9-character ID of a committee. To find a committee’s official FEC ID, use a committee search request or the FEC web site.
-#' @param myAPI_Key  use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
-#'
+#' 
 #' @return List of returned JSON from endpoint that retrieves the most recent lobbyist bundlers reported by a specific committee.
 #' 
 #' @export

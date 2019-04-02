@@ -4,7 +4,7 @@
 #' 
 #' @param FEC_ID The FEC-assigned 9-character ID of a candidate.
 #' @param cycle The election cycle must be even-numbered year between 1996 and 2018
-#' @param myAPI_key use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return a list object with the return values about candidate basic information
 #' @export

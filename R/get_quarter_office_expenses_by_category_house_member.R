@@ -3,10 +3,8 @@
 #'The House of Representatives publishes quarterly reports detailing official office expenses by lawmakers. The Congress API has data beginning in the third quarter of 2009.  HTTP Request: GET https://api.propublica.org/congress/v1/members/{member-id}/office_expenses/{year}/{quarter}.json
 #'
 #' @param member_id The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.
-#' @param category travel or personnel or rent-utilities or other-services or supplies or franked-mail or printing or equipment or total
-#' @param year 2009-2017
-#' @param quarter 1,2,3,4
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @param category travel or personnel or rent-utilities or other-services or supplies or franked-mail or printing or equipment or total.
+#' @inheritParams get_new_members
 #'
 #' @return the amount a given lawmaker spent during a specified year and quarter in a specified category
 #' @export

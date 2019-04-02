@@ -3,7 +3,7 @@
 #' To get lists of statements published on congressional websites using a search term, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/statements/search.json?query={term}
 #'
 #' @param term search term
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves the 20 most recent results that contain the search term in the title or body of the statement and supports pagination using multiples of 20.
 #' @export

@@ -5,7 +5,7 @@
 #'
 #' @param member_id member-id	The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.
 #' @param type introduced or updated
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return the 20 bills most recently introduced or updated by a particular member. Results can include more than one Congress.
 #' @export

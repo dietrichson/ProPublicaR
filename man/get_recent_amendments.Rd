@@ -9,7 +9,7 @@ get_recent_amendments(cycle = 2018, myAPI_Key)
 \arguments{
 \item{cycle}{The election cycle}
 
-\item{myAPI_Key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the most recent filings that are amendments of earlier filings

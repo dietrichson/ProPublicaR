@@ -5,8 +5,8 @@
 \title{Get Recent Bills}
 \usage{
 recent_bills_by_type(congress, chamber = c("house", "senate"),
-  type = c("introduced", "updated", "active", "passed", "enacted", "vetoed"),
-  myAPI_Key)
+  type = c("introduced", "updated", "active", "passed", "enacted",
+  "vetoed"), myAPI_Key)
 }
 \arguments{
 \item{congress}{105-115}
@@ -15,6 +15,8 @@ recent_bills_by_type(congress, chamber = c("house", "senate"),
 
 \item{type}{introduced (introduced_date), updated (latest_major_action_date), active (latest_major_action_date)
 passed (latest_major_action_date), enacted (enacted), vetoed (vetoed).}
+
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 summaries of the 20 most recent bills by type. The order of the results depends on the value of type and all results are sorted in descending order.

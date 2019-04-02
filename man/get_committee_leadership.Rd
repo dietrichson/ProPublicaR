@@ -9,7 +9,7 @@ get_committee_leadership(cycle = 2018, myAPI_Key)
 \arguments{
 \item{cycle}{The election cycle: an even-numbered year between 1996 and 2016. The current cycle in 2018}
 
-\item{myAPI_Key}{To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves committees designated as “leadership PACs” by the FEC from the campaign-finance API from ProPublica.

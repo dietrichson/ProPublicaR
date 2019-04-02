@@ -6,7 +6,8 @@
 #' @param chamber house, senate or both
 #' @param type introduced (introduced_date), updated (latest_major_action_date), active (latest_major_action_date)
 #' passed (latest_major_action_date), enacted (enacted), vetoed (vetoed).
-#'
+#' @inheritParams get_new_members
+#' 
 #' @return summaries of the 20 most recent bills by type. The order of the results depends on the value of type and all results are sorted in descending order.
 #' @export
 #'

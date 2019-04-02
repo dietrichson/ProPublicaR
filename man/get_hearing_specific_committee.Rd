@@ -13,7 +13,7 @@ get_hearing_specific_committee(congress, chamber, committee_id, myAPI_Key)
 
 \item{committee_id}{Optional committee abbreviation, for example HSAG. Use the full committees response to find abbreviations.}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 20 most recent hearings and supports pagination.

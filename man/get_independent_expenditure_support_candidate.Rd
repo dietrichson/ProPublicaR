@@ -4,14 +4,15 @@
 \alias{get_independent_expenditure_support_candidate}
 \title{Get Independent Expenditures that Support or Oppose a Specific Candidate}
 \usage{
-get_independent_expenditure_support_candidate(cycle = 2018, FEC_ID, myAPI_Key)
+get_independent_expenditure_support_candidate(cycle = 2018, FEC_ID,
+  myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}
 
 \item{FEC_ID}{The FEC-assigned 9-character ID of a committee. To find a committee official FEC ID, use a candidate search request or the FEC web site.}
 
-\item{myAPI_Key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 200 most recent independent expenditures in support of or opposition to a given candidate.

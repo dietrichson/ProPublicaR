@@ -11,7 +11,7 @@ get_recent_house_senate_floor_actions(congress, chamber, myAPI_Key)
 
 \item{chamber}{house or senate}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 20 most recent results and supports pagination using multiples of 20. The date attribute represents the “legislative day” in which the action took place (actions that occur after midnight often are part of the previous day’s activity).

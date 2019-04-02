@@ -4,14 +4,15 @@
 \alias{get_electioneering_communications_committee}
 \title{Get Electioneering Communications by Specific Committee}
 \usage{
-get_electioneering_communications_committee(cycle = 2018, FEC_ID, myAPI_Key)
+get_electioneering_communications_committee(cycle = 2018, FEC_ID,
+  myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}
 
 \item{FEC_ID}{The FEC-assigned 9-character ID of a committee. To find a committee official FEC ID, use a candidate search request or the FEC web site.}
 
-\item{myAPI_Key}{To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the most recent broadcast advertisements by a specific committee that identify one or more federal candidates (and have aired 30 days before a primary election and 60 days before the general election).

@@ -1,6 +1,6 @@
 #' Validate that year cycle is correct
 #'
-#' @param cycle
+#' @param cycle An election cycle (e.g. 2018)
 #'
 #' @return TRUE if correct FALSE otherwise
 #' @export

@@ -7,7 +7,7 @@
 validate_cycle(cycle)
 }
 \arguments{
-\item{cycle}{}
+\item{cycle}{An election cycle (e.g. 2018)}
 }
 \value{
 TRUE if correct FALSE otherwise

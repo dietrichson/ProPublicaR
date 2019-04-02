@@ -4,7 +4,8 @@
 \alias{get_house_senate_floor_actions_by_date}
 \title{Get House and Senate Floor Actions by Date}
 \usage{
-get_house_senate_floor_actions_by_date(chamber, year, month, day, myAPI_Key)
+get_house_senate_floor_actions_by_date(chamber, year, month, day,
+  myAPI_Key)
 }
 \arguments{
 \item{chamber}{house or senate}
@@ -15,7 +16,7 @@ get_house_senate_floor_actions_by_date(chamber, year, month, day, myAPI_Key)
 
 \item{day}{DD format}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 20 most recent results for that date and supports pagination using multiples of 20.

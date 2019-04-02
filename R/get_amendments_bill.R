@@ -3,8 +3,8 @@
 #' HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}/amendments.json. Use this request type to get Library of Congress-assigned subjects about a particular bill. 
 #'
 #' @param bill_id a bill slug, for example hr4881 - these can be found in the recent bill response.
-#' @param congress 105-115@param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @param congress 105-115
+#' @inheritParams get_new_members
 #'
 #' @return  List of returned JSON from endpoint that retrieves the 20 most recent results and supports paginated requests.
 #' 

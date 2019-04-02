@@ -9,7 +9,7 @@ get_recent_votes(chamber, myAPI_Key)
 \arguments{
 \item{chamber}{house, senate or both.}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves  the 20 most recent votes from the House, Senate or both chambers

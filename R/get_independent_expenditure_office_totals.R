@@ -4,7 +4,7 @@
 #' 
 #' @param cycle The election cycle
 #' @param office one of house, senate or president
-#' @param myAPI_Key  use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves he amount of money spent in independent expenditures for a given office (either House, Senate or President).
 #' 
@@ -22,7 +22,7 @@ get_independent_expenditure_office_totals<- function(cycle=2018, office = c('hou
     stop("Incorrect cycle")
   }
   if(cycle < 2009){
-    stop("Incorrect cycle: independent expenditures are from 2009–present")}
+    stop("Incorrect cycle: independent expenditures are from 2009-present")}
   if(!office%in%c('house','senate', 'president'))
     stop("Incorrect office. Should be \'house\', \'president\' or \'senate\', lowercase.")
   query <- sprintf("%s/independent_expenditures/race_totals/%s.json", cycle, office)

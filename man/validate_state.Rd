@@ -7,7 +7,7 @@
 validate_state(us_state)
 }
 \arguments{
-\item{us_state}{}
+\item{us_state}{State abbreviation (e.g. NY)}
 }
 \value{
 TRUE if correct FALSE otherwise

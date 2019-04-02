@@ -6,7 +6,7 @@
 #' @param year The four-digit year from 2010-2018, match cycle
 #' @param month The two-digit month from 01-12
 #' @param day The two-digit day from 01-31
-#' @param myAPI_Key  use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves late contributions from a specific dates for a given campaign cycle from the campaign-finance API from ProPublica. 
 #' @export

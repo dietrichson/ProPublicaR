@@ -13,7 +13,7 @@ get_recent_late_contributions_candidate(cycle = 2018, FEC_ID, myAPI_Key)
 
 \item{FEC_ID}{The FEC-assigned 9-character ID of a candidate.}
 
-\item{myAPI_Key}{To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the most recent late contributions to candidates from the campaign-finance API from ProPublica.

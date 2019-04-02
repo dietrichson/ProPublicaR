@@ -4,7 +4,7 @@
 #'
 #' @param NAME The name of the committee.
 #' @param cycle The election cycle
-#' @param myAPI_Key To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves ca specific committee by name for a given campaign cycle from the campaign-finance API from ProPublica. 
 #' @export

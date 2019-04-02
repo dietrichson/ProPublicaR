@@ -4,15 +4,15 @@
 \alias{get_independent_expenditure_office_totals}
 \title{Get Independent Expenditure Office Totals}
 \usage{
-get_independent_expenditure_office_totals(cycle = 2018, office = c("house",
-  "senate", "president"), myAPI_Key)
+get_independent_expenditure_office_totals(cycle = 2018,
+  office = c("house", "senate", "president"), myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}
 
 \item{office}{one of house, senate or president}
 
-\item{myAPI_Key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves he amount of money spent in independent expenditures for a given office (either House, Senate or President).

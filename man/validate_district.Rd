@@ -7,7 +7,7 @@
 validate_district(us_district)
 }
 \arguments{
-\item{us_district}{}
+\item{us_district}{An integer corresponding to the district.}
 }
 \value{
 TRUE if correct FALSE otherwise

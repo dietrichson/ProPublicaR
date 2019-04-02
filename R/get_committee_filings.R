@@ -4,7 +4,7 @@
 #'
 #' @param FEC_ID The FEC-assigned 9-character ID of a committee.
 #' @param cycle The election cycle
-#' @param myAPI_Key To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves the 20 most recent FEC filings from the specified committee. Electronic filings are available back to 2001. Paper filings by Senate candidate committees and senatorial party committees go back to 1999.
 #' @export

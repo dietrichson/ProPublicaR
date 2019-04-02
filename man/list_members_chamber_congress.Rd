@@ -11,7 +11,7 @@ list_members_chamber_congress(congress, chamber, myAPI_Key)
 
 \item{chamber}{house or senate}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 list of members of a particular chamber in a particular Congress

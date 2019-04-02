@@ -4,7 +4,7 @@
 #'
 #' @param cycle The election cycle
 #' @param FEC_ID The FEC-assigned 9-character ID of a candidate.
-#' @param myAPI_Key To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves the most recent late contributions to candidates from the campaign-finance API from ProPublica. 
 #' @export

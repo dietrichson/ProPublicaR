@@ -4,7 +4,7 @@
 #'
 #' @param bill_id a bill slug, for example hr4881 - these can be found in the recent bill response.
 #' @param congress 105-115
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves details about a particular bill, including actions taken and votes
 #' @export

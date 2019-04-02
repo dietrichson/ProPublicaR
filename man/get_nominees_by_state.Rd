@@ -11,7 +11,7 @@ get_nominees_by_state(congress, state, myAPI_Key)
 
 \item{state}{Two-letter state abbreviation}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves

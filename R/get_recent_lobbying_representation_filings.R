@@ -2,7 +2,7 @@
 #'
 #' To get the 20 most recent lobbying representation filings, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/lobbying/latest.json
 #'
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves the 20 most recent lobbying representation filings. 
 #' @export

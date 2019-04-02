@@ -11,7 +11,7 @@ get_electronic_filing_by_types(cycle = 2018, form_type_id, myAPI_Key)
 
 \item{form_type_id}{F + integer. To get form type IDs, use an electronic filing form types request.}
 
-\item{myAPI_Key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves a list of available form types for FEC electronic filings.

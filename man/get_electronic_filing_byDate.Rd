@@ -15,7 +15,7 @@ get_electronic_filing_byDate(cycle = 2018, year, month, day, myAPI_Key)
 
 \item{day}{The two-digit day from 01-31}
 
-\item{myAPI_Key}{use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves information about FEC reports filed electronically on a specific date.

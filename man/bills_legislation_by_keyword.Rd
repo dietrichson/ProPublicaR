@@ -14,7 +14,7 @@ bills_legislation_by_keyword(query_keyword, sort = c("date", "_score"),
 
 \item{dir}{sort direction: asc or desc}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 a list object with the return values about title and full text of legislation by keyword

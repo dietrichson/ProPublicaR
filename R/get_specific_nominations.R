@@ -4,7 +4,7 @@
 #'
 #' @param congress 107-115
 #' @param nominee_id alphanumeric ID beginning with PN - for example, PN675
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves 
 #' @export

@@ -5,7 +5,8 @@
 \alias{get_recent_personal_explanations_votes_specific_member_by_category}
 \title{Get Recent Personal Explanation Votes by a Specific Member by Category}
 \usage{
-get_recent_personal_explanations_votes_specific_member_by_category(member_id,
+
+  get_recent_personal_explanations_votes_specific_member_by_category(member_id,
   congress, category, myAPI_Key)
 }
 \arguments{
@@ -15,7 +16,7 @@ get_recent_personal_explanations_votes_specific_member_by_category(member_id,
 
 \item{category}{options: voted-incorrectly (    Voted yes or no by mistake),    official-business (Away on official congressional business),    ambiguous (No reason given),    travel-difficulties (    Travel delays and issues),    personal (Personal or family reason),    claims-voted (Vote made but not recorded),    medical (    Medical issue for lawmaker, not family),    weather,    memorial,    misunderstanding,    leave-of-absence,    prior-commitment,    election-related,    military-service,    other}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 20 most recent personal explanations by a specific member in the specified Congress, and supports paginated requests using multiples of 20.

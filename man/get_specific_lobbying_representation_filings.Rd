@@ -9,7 +9,7 @@ get_specific_lobbying_representation_filings(id, myAPI_Key)
 \arguments{
 \item{id}{numeric id attribute from search or latest responses}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves

@@ -6,7 +6,7 @@
 #' @param second_member_id The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.
 #' @param congress 102-115 for House, 101-115 for Senate
 #' @param chamber house o senate
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves bill sponsorship comparation between two members who served in the same Congress and chamber
 #' @export

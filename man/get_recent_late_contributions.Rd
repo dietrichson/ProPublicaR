@@ -11,7 +11,7 @@ get_recent_late_contributions(cycle = 2018, myAPI_Key)
 \arguments{
 \item{cycle}{The election cycle. Cycle must be even-numbered year between 2010 and 2018}
 
-\item{myAPI_Key}{To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the most recent late contributions to candidates from the campaign-finance API from ProPublica.

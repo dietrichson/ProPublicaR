@@ -6,7 +6,7 @@
 #' @param state Two-letter state abbreviation
 #' @param chamber house or senate
 #' @param district House of Representatives district number (House requests only). For states with at-large districts (AK, DE, MT, ND, SD, VT, WY), territories (GU, AS, VI, MP), commonwealths (PR) and the District of Columbia, use a district value of 1.
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @inheritParams get_new_members
 #'
 #' @return  List of returned JSON from endpoint that retrieves biographical and Congressional role information for a particular member of Congress by State/District
 #' @export

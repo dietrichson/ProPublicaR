@@ -1,8 +1,9 @@
 #' Get New Members
 #' 
-#' To get a list of the most recent new members of the current Congress. #HTTP Request: GET https://api.propublica.org/congress/v1/members/new.json
+#' To get a list of the most recent new members of the current Congress. 
+#' HTTP Request: GET https://api.propublica.org/congress/v1/members/new.json
 #'
-#' @param  myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @param myAPI_Key API key from Propublica To use the congress API, you must sign up for an API key.
 #'
 #' @return List of returned JSON from endpoint that retrieves a list of the most recent new members of the current Congress
 #' @export

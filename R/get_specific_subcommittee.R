@@ -5,7 +5,8 @@
 #' @param congress 114-115
 #' @param chamber house or senate or joint
 #' @param committee_id Optional committee abbreviation, for example HSAG. Use the full committees response to find abbreviations.
-#' @param myAPI_Key  use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.
+#' @param subcommittee_id Optional sub-committee abbreviation, for example HSAG. Use the full committees response to find abbreviations.
+#' @inheritParams get_new_members
 #'
 #' @return List of returned JSON from endpoint that retrieves the 20 most recent hearings and supports pagination.
 #' @export

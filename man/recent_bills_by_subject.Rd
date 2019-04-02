@@ -9,7 +9,7 @@ recent_bills_by_subject(subject, myAPI_Key)
 \arguments{
 \item{subject}{A slug version of a legislative subject, displayed as url_name in subject responses.}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 20 most recently updated bills for a specific legislative subject.

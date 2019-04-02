@@ -18,7 +18,7 @@ get_candidates_in_race(state, chamber, district, cycle = 2018,
 
 \item{return_value}{should results be retrieved, or query string returned.}
 
-\item{myAPI_Key}{To use the Campaign Finance API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 The result of the API call (list), unless \code{return_value=query} (mostly for debugging), in which case the query string is returned.

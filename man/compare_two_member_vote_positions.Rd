@@ -4,8 +4,8 @@
 \alias{compare_two_member_vote_positions}
 \title{Compare Two Members Vote Positions}
 \usage{
-compare_two_member_vote_positions(first_member_id, second_member_id, congress,
-  chamber, myAPI_Key)
+compare_two_member_vote_positions(first_member_id, second_member_id,
+  congress, chamber, myAPI_Key)
 }
 \arguments{
 \item{first_member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
@@ -16,7 +16,7 @@ compare_two_member_vote_positions(first_member_id, second_member_id, congress,
 
 \item{chamber}{house o senate}
 
-\item{myAPI_Key}{use the congress API, you must sign up for an API key. The API key must be included in all API requests to the server, set as a header.}
+\item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 List of returned JSON from endpoint that retrieves four calculated values: common_votes, disagree_votes, agree_percent and disagree_percent to compare two members’ vote positions, in a particular Congress and chamber
