@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_nominees_by_state(115, 'VA')
 #' }
 get_nominees_by_state <- function(congress, state, myAPI_Key){

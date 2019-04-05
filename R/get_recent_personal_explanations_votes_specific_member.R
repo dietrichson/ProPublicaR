@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_personal_explanations_votes_specific_member('S001193', 115)
 #' }
 get_recent_personal_explanations_votes_specific_member <- function(member_id, congress, myAPI_Key){

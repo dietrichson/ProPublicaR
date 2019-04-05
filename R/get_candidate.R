@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_candidate('P60005915', 2016)}
 #' 
 get_candidate <- function(FEC_ID, cycle=2018, myAPI_Key){

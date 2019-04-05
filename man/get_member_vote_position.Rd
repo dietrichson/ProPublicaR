@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves the most recent vote position
 To get the most recent vote positions for a specific member of the House of Representatives or Senate. HTTP Request: GET https://api.propublica.org/congress/v1/members/{member-id}/votes.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_member_vote_position('K000388')
 }
 }

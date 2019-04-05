@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' recent_bills_by_member('L000287', 'introduced')
 #' }
 recent_bills_by_member <- function(member_id, type, myAPI_Key){

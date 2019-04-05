@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' compare_two_member_bill_sponsorships('G000575', 'D000624', '114', 'house')
 #' }
 compare_two_member_bill_sponsorships <- function(first_member_id, second_member_id, congress, chamber, myAPI_Key){

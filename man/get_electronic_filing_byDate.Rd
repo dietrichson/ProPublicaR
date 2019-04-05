@@ -24,7 +24,7 @@ List of returned JSON from endpoint that retrieves information about FEC reports
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/filings/{year}/{month}/{day}
 }
 \examples{
-\dontrun{
+\donttest{
 get_electronic_filing_byDate(2016, 2016, '01', '10')
 }
 }

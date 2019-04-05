@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' search_lobbying_representation_filings('Facebook')
 #' }
 search_lobbying_representation_filings <- function(query, myAPI_Key){

@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_electronic_filing_by_committees(NAME = "UNITED EGG", 2016)
 #' }
 get_electronic_filing_by_committees <- function(NAME, cycle=2018, myAPI_Key){

@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_statement_subjects()
 #' }
 get_statement_subjects <- function(myAPI_Key){

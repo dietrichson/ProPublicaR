@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recently_candidates(2016)
 #' }
 get_recently_candidates <- function(cycle=2018, myAPI_Key){

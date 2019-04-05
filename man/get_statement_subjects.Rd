@@ -16,7 +16,7 @@ List of returned JSON from endpoint that retrieves all of the subjects that have
 To get lists of subjects used to categorize congressional statements, use the following function. hese subjects are not automatically assigned but are manually curated by ProPublica, although they are based on legislative subjects produced by the Library of Congress. HTTP Request: GET https://api.propublica.org/congress/v1/statements/subjects.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_statement_subjects()
 }
 }

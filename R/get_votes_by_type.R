@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_votes_by_type(114, 'house', 'missed')
 #' }
 get_votes_by_type <- function(congress, chamber = c('house', 'senate'), vote_type, myAPI_Key){

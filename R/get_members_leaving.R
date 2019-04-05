@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_members_leaving(115, 'house')
 #' }
 get_members_leaving <- function(congress, chamber, myAPI_Key){

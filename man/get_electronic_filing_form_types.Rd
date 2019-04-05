@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves a list of available form type
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/filings/types
 }
 \examples{
-\dontrun{
+\donttest{
 get_electronic_filing_form_types(2016)
 }
 }

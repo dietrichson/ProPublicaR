@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_upcoming_bills('senate')
 #' }
 get_upcoming_bills <- function(chamber, myAPI_Key){

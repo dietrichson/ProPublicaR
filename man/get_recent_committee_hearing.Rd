@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 To get a list of 20 upcoming Senate or House committee meetings, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/committees/hearings.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_recent_committee_hearing(115)
 }
 }

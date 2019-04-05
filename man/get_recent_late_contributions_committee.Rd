@@ -24,7 +24,7 @@ https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/48hour
 }
 \examples{
-\dontrun{
+\donttest{
 get_recent_late_contributions_committee(2016, 'C00575050')
 }
 }

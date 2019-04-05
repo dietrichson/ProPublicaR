@@ -27,7 +27,7 @@ s
 To get a specific roll-call vote, including a complete list of member positions. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/sessions/{session-number}/votes/{roll-call-number}.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_specific_roll_call_vote(115, 'senate', 1, 17L)
 }
 }

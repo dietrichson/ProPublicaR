@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_candidate_by_name('Wilson', 2016)
 #' }
 #' 

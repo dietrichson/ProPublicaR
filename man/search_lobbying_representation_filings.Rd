@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves
 To get the 20 most recent lobbying representation filings for a given search term, use the following function. HTTP Request: GEThttps://api.propublica.org/congress/v1/lobbying/search.json?query={query}
 }
 \examples{
-\dontrun{
+\donttest{
 search_lobbying_representation_filings('Facebook')
 }
 }

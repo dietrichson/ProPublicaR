@@ -22,7 +22,7 @@ Get Top 20 Candidates in Specific Financial Category
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/new (https://www.propublica.org/datastore/apis)
 }
 \examples{
-\dontrun{
+\donttest{
 get_recently_candidates(2016)
 }
 }

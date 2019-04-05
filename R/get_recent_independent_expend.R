@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_independent_expend(2016)
 #' }
 get_recent_independent_expend <- function(cycle=2018, myAPI_Key){

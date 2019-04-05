@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves
 To get details about a particular presidential civilian nomination,, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/nominees/{nominee-id}.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_specific_nominations(115, 'PN40')
 }
 }

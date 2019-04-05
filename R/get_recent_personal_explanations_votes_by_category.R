@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_personal_explanations_votes_by_category(115, 'voted-incorrectly')
 #' }
 get_recent_personal_explanations_votes_by_category <- function(congress, category, myAPI_Key){

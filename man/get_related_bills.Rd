@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 HTTP Request: GET hhttps://api.propublica.org/congress/v1/{congress}/bills/{bill-id}/related.json. Use this request type to get Library of Congress-identified related bills for a particular bill.
 }
 \examples{
-\dontrun{
+\donttest{
 get_related_bills(115, 'hr3219')
 }
 }

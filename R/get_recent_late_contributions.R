@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_late_contributions(2016)
 #' }
 get_recent_late_contributions <- function(cycle=2018, myAPI_Key){

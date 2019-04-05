@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' lists_of_committees(115, "senate")
 #' }
 lists_of_committees <- function(congress, chamber, myAPI_Key){

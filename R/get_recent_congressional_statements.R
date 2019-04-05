@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_congressional_statements()
 #' }
 get_recent_congressional_statements <- function(myAPI_Key){

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_independent_expenditure_support_presidential_candidate(2016)
 #' }
 get_independent_expenditure_support_presidential_candidate<- function(cycle=2018 , myAPI_Key){

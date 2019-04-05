@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_independent_expenditure_support_candidate(2016, FEC_ID ='P00003392')
 #' }
 get_independent_expenditure_support_candidate<- function(cycle=2018, FEC_ID, myAPI_Key){

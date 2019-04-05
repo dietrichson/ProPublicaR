@@ -18,7 +18,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_a_bill(115, 'hr21')
 #' }
 get_a_bill <- function(congress, bill_id, myAPI_Key){

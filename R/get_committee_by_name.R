@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_committee_by_name('Americans FOR A BETTER TOMORROW TODAY', 2016)
 #' }
 get_committee_by_name <- function(NAME, cycle=2018, myAPI_Key){

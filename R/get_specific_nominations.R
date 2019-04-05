@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_specific_nominations(115, 'PN40')
 #' }
 get_specific_nominations <- function(congress, nominee_id, myAPI_Key){

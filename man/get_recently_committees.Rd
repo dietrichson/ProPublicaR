@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves the 20 most recently added FE
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/new
 }
 \examples{
-\dontrun{
+\donttest{
 get_recently_committees(2016)
 }
 }

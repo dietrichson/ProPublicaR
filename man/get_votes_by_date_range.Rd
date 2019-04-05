@@ -24,7 +24,7 @@ s
 HTTP Requests: GET https://api.propublica.org/congress/v1/{chamber}/votes/{start-date}/{end-date}.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_votes_by_date_range('house', '2017-01-03', '2017-01-31')
 }
 }

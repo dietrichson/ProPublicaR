@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 To get lists of statements published on a specific member’s congressional website during a particular congress, use the following function. HTTP Request: GEThttps://api.propublica.org/congress/v1/members/{member-id}/statements/{congress}.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_congressional_statement_by_member("C001084", 115)
 }
 }

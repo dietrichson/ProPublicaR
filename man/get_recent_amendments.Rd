@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves the most recent filings that 
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/filings/amendments
 }
 \examples{
-\dontrun{
+\donttest{
 get_recent_amendments(2016)
 }
 }

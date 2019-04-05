@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_votes('senate')
 #' }
 get_recent_votes <- function(chamber, myAPI_Key){

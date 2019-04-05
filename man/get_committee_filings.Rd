@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent FEC filing
 HTTP Request GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/filings
 }
 \examples{
-\dontrun{
+\donttest{
 get_committee_filings('C00553560', 2016)
 }
 }

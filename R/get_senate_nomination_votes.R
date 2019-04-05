@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_senate_nomination_votes(114)
 #' }
 get_senate_nomination_votes <- function(congress, myAPI_Key){

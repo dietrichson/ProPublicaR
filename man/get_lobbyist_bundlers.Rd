@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves the most recent lobbyist bund
 Committees must report registered lobbyists who act as “bundlers”, collecting donations for the committee from multiple contributors. HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/lobbyist_bundlers
 }
 \examples{
-\dontrun{
+\donttest{
 get_lobbyist_bundlers(2016, 'C00579458')
 }
 }

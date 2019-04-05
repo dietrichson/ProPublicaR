@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves
 To get a list of presidential civilian nominations of individuals from a specific state, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/nominees/state/{state}.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_nominees_by_state(115, 'VA')
 }
 }

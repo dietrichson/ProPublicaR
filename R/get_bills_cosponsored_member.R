@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_bills_cosponsored_member('B001260', 'cosponsored')
 #' }
 get_bills_cosponsored_member <- function(member_id, type = c('cosponsored', 'withdrawn'), myAPI_Key){

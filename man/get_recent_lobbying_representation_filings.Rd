@@ -16,7 +16,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent lobbying r
 To get the 20 most recent lobbying representation filings, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/lobbying/latest.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_recent_lobbying_representation_filings()
 }
 }

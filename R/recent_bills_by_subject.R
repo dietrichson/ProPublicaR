@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' recent_bills_by_subject('meat')
 #' }
 recent_bills_by_subject <- function(subject, myAPI_Key){

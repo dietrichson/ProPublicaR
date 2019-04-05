@@ -21,7 +21,7 @@ ist of returned JSON from endpoint that retrieves the total amounts of money tha
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/independent_expenditures/races
 }
 \examples{
-\dontrun{
+\donttest{
 get_independent_expenditure_race_totals_committee(2016, 'C00490375')
 }
 }

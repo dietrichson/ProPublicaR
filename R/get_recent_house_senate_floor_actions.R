@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_house_senate_floor_actions(115, 'house')
 #' }
 get_recent_house_senate_floor_actions <- function(congress, chamber, myAPI_Key){

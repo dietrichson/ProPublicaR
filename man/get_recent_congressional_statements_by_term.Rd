@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results th
 To get lists of statements published on congressional websites using a search term, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/statements/search.json?query={term}
 }
 \examples{
-\dontrun{
+\donttest{
 get_recent_congressional_statements_by_term('AHCA')
 }
 }

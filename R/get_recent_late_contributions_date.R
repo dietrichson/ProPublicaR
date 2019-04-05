@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_late_contributions_date(2016, year = 2016, month = '09', day = '07')
 #' }
 get_recent_late_contributions_date <- function(cycle=2018, year, month, day, myAPI_Key){

@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_cosponsors_specific_bill(114, 'hr4249')
 #' }
 get_cosponsors_specific_bill <- function(congress, bill_id, myAPI_Key){

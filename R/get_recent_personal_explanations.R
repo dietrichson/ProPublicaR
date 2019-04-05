@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_personal_explanations(114)
 #' }
 get_recent_personal_explanations <- function(congress, myAPI_Key){

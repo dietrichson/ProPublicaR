@@ -17,7 +17,7 @@ To get a list of the most recent new members of the current Congress.
 HTTP Request: GET https://api.propublica.org/congress/v1/members/new.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_new_members()
 }
 }

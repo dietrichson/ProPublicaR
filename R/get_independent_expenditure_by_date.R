@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_independent_expenditure_by_date(2016, year = 2018, month ='01', day = '01')
 #' }
 get_independent_expenditure_by_date<- function(cycle=2018, year, month, day, myAPI_Key){

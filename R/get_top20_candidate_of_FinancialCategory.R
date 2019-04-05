@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_top20_candidate_of_FinancialCategory('pac-total', 2016)
 #' }
 get_top20_candidate_of_FinancialCategory <- function(category, cycle=2018, myAPI_Key){

@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves
 To get a specific lobbying representation filing, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/lobbying/{id}.json
 }
 \examples{
-\dontrun{
+\donttest{
 get_specific_lobbying_representation_filings('300986302')
 }
 }

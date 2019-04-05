@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_recent_nominations_by_category(115, 'confirmed')
 #' }
 get_recent_nominations_by_category <- function(congress, type, myAPI_Key){

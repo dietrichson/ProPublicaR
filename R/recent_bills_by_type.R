@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' recent_bills_by_type(115, 'house', 'introduced')
 #' }
 recent_bills_by_type <- function(congress, chamber = c('house', 'senate'), type = c('introduced', 'updated', 'active', 'passed', 'enacted', 'vetoed'), myAPI_Key){

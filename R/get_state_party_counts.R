@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_state_party_counts()
 #' }
 get_state_party_counts <- function(myAPI_Key){
