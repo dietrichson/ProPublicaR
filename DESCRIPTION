@@ -1,7 +1,7 @@
 Package: ProPublicaR
 Type: Package
 Title: Access Functions for ProPublica's APIs
-Version: 0.9.2
+Version: 1.0
 Authors@R: c(
     person("Aleksander", "Dietrichson", email = "dietrichson@gmail.com", role=c("aut", "cre")),
     person("Joselina", "Davit", email = "joselinadavyt@gmail.com", role = c("aut"))
