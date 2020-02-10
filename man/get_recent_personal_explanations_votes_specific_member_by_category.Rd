@@ -5,14 +5,17 @@
 \alias{get_recent_personal_explanations_votes_specific_member_by_category}
 \title{Get Recent Personal Explanation Votes by a Specific Member by Category}
 \usage{
-
-  get_recent_personal_explanations_votes_specific_member_by_category(member_id,
-  congress, category, myAPI_Key)
+get_recent_personal_explanations_votes_specific_member_by_category(
+  member_id,
+  congress,
+  category,
+  myAPI_Key
+)
 }
 \arguments{
 \item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
-\item{congress}{110-115}
+\item{congress}{110-116}
 
 \item{category}{options: voted-incorrectly (    Voted yes or no by mistake),    official-business (Away on official congressional business),    ambiguous (No reason given),    travel-difficulties (    Travel delays and issues),    personal (Personal or family reason),    claims-voted (Vote made but not recorded),    medical (    Medical issue for lawmaker, not family),    weather,    memorial,    misunderstanding,    leave-of-absence,    prior-commitment,    election-related,    military-service,    other}
 

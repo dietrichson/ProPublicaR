@@ -4,8 +4,7 @@
 \alias{get_independent_expenditure_by_date}
 \title{Get Independent Expenditures by Date}
 \usage{
-get_independent_expenditure_by_date(cycle = 2018, year, month, day,
-  myAPI_Key)
+get_independent_expenditure_by_date(cycle = 2018, year, month, day, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}

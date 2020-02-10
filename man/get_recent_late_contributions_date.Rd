@@ -4,8 +4,7 @@
 \alias{get_recent_late_contributions_date}
 \title{Get Recent Late Contributions by Date}
 \usage{
-get_recent_late_contributions_date(cycle = 2018, year, month, day,
-  myAPI_Key)
+get_recent_late_contributions_date(cycle = 2018, year, month, day, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}

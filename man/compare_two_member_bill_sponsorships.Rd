@@ -4,8 +4,13 @@
 \alias{compare_two_member_bill_sponsorships}
 \title{Compare Two Members’ Bill Sponsorships}
 \usage{
-compare_two_member_bill_sponsorships(first_member_id, second_member_id,
-  congress, chamber, myAPI_Key)
+compare_two_member_bill_sponsorships(
+  first_member_id,
+  second_member_id,
+  congress,
+  chamber,
+  myAPI_Key
+)
 }
 \arguments{
 \item{first_member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}

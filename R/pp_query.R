@@ -39,6 +39,7 @@ pp_query <- function(query, API=c('campaign-finance', 'congress'), version='v1',
     )
   if(is.null(myURL)) stop('API not supported.')
   myURL <- paste0(myURL,version,'/',query)
+
   #print( paste0("pp_query called with URL: ", myURL) )
   #print( paste0("API-key: ", myAPI_Key) )
   GET(myURL, add_headers('X-API-KEY'= myAPI_Key),content_type_json() ) -> tmp

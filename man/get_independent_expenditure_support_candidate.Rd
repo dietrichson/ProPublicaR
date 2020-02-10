@@ -4,8 +4,7 @@
 \alias{get_independent_expenditure_support_candidate}
 \title{Get Independent Expenditures that Support or Oppose a Specific Candidate}
 \usage{
-get_independent_expenditure_support_candidate(cycle = 2018, FEC_ID,
-  myAPI_Key)
+get_independent_expenditure_support_candidate(cycle = 2018, FEC_ID, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}

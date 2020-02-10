@@ -5,8 +5,7 @@
 \alias{get_recent_official_communications_by_category}
 \title{Get Recent Official Communications by Category}
 \usage{
-get_recent_official_communications_by_category(congress, category,
-  myAPI_Key)
+get_recent_official_communications_by_category(congress, category, myAPI_Key)
 }
 \arguments{
 \item{congress}{114-115 for House, 96-115 for Senate}

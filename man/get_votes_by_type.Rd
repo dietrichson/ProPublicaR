@@ -4,8 +4,12 @@
 \alias{get_votes_by_type}
 \title{Get Votes by Type}
 \usage{
-get_votes_by_type(congress, chamber = c("house", "senate"), vote_type,
-  myAPI_Key)
+get_votes_by_type(
+  congress,
+  chamber = c("house", "senate"),
+  vote_type,
+  myAPI_Key
+)
 }
 \arguments{
 \item{congress}{102-115 for House, 80-115 for Senate}

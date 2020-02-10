@@ -4,8 +4,12 @@
 \alias{pp_query}
 \title{Execute a query against the ProPublica API}
 \usage{
-pp_query(query, API = c("campaign-finance", "congress"),
-  version = "v1", myAPI_Key)
+pp_query(
+  query,
+  API = c("campaign-finance", "congress"),
+  version = "v1",
+  myAPI_Key
+)
 }
 \arguments{
 \item{query}{The query to be executed}

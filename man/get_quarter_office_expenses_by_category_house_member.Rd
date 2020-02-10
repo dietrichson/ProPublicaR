@@ -5,8 +5,11 @@
 \alias{get_quarter_office_expenses_by_category_house_member}
 \title{Get Quarterly Office Expenses by Category for a Specific House Member}
 \usage{
-get_quarter_office_expenses_by_category_house_member(member_id, category,
-  myAPI_Key)
+get_quarter_office_expenses_by_category_house_member(
+  member_id,
+  category,
+  myAPI_Key
+)
 }
 \arguments{
 \item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}

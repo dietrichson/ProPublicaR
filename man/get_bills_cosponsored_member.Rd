@@ -4,8 +4,11 @@
 \alias{get_bills_cosponsored_member}
 \title{Get Bills Cosponsored by a Specific Member}
 \usage{
-get_bills_cosponsored_member(member_id, type = c("cosponsored",
-  "withdrawn"), myAPI_Key)
+get_bills_cosponsored_member(
+  member_id,
+  type = c("cosponsored", "withdrawn"),
+  myAPI_Key
+)
 }
 \arguments{
 \item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}

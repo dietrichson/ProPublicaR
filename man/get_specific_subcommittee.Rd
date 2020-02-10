@@ -4,8 +4,13 @@
 \alias{get_specific_subcommittee}
 \title{Get a Specific Subcommittee}
 \usage{
-get_specific_subcommittee(congress, chamber, committee_id, subcommittee_id,
-  myAPI_Key)
+get_specific_subcommittee(
+  congress,
+  chamber,
+  committee_id,
+  subcommittee_id,
+  myAPI_Key
+)
 }
 \arguments{
 \item{congress}{114-115}

@@ -4,8 +4,7 @@
 \alias{pp_convert_to_data_frame}
 \title{Convert a ProPublica API result a Data Frame}
 \usage{
-pp_convert_to_data_frame(what, which_part = c("result", "summary",
-  "meta"))
+pp_convert_to_data_frame(what, which_part = c("result", "summary", "meta"))
 }
 \arguments{
 \item{what}{Return value from one of the get_ functions.}

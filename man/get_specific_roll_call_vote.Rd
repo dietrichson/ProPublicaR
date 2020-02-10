@@ -4,8 +4,13 @@
 \alias{get_specific_roll_call_vote}
 \title{Get a Specific Roll Call Vote}
 \usage{
-get_specific_roll_call_vote(congress, chamber = c("house", "senate"),
-  session_number, roll_call_number, myAPI_Key)
+get_specific_roll_call_vote(
+  congress,
+  chamber = c("house", "senate"),
+  session_number,
+  roll_call_number,
+  myAPI_Key
+)
 }
 \arguments{
 \item{congress}{102-115 for House, 80-115 for Senate}

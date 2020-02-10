@@ -4,14 +4,21 @@
 \alias{get_congressional_statement_by_member}
 \title{Get Congressional Statements by Member}
 \usage{
-get_congressional_statement_by_member(member_id, congress, myAPI_Key)
+get_congressional_statement_by_member(
+  member_id,
+  congress,
+  myAPI_Key,
+  offset = 0
+)
 }
 \arguments{
 \item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
-\item{congress}{113-115}
+\item{congress}{113-116}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
+
+\item{offset}{where to start fetching (0 by default). The API fetches stuff in batches of 20.}
 }
 \value{
 List of returned JSON from endpoint that retrieves the 20 most recent results and supports pagination using multiples of 20.

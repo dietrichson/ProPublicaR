@@ -4,8 +4,12 @@
 \alias{bills_legislation_by_keyword}
 \title{Search Bills: to search the title and full text of legislation by keyword to get the 20 most recent bills}
 \usage{
-bills_legislation_by_keyword(query_keyword, sort = c("date", "_score"),
-  dir = c("desc", "asc"), myAPI_Key)
+bills_legislation_by_keyword(
+  query_keyword,
+  sort = c("date", "_score"),
+  dir = c("desc", "asc"),
+  myAPI_Key
+)
 }
 \arguments{
 \item{query_keyword}{keyword or phrase to search the title and full text of legislation to get the 20 most recent bills}

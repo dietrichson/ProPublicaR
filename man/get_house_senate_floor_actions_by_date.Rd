@@ -4,8 +4,7 @@
 \alias{get_house_senate_floor_actions_by_date}
 \title{Get House and Senate Floor Actions by Date}
 \usage{
-get_house_senate_floor_actions_by_date(chamber, year, month, day,
-  myAPI_Key)
+get_house_senate_floor_actions_by_date(chamber, year, month, day, myAPI_Key)
 }
 \arguments{
 \item{chamber}{house or senate}

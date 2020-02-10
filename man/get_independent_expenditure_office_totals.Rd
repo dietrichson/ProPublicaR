@@ -4,8 +4,11 @@
 \alias{get_independent_expenditure_office_totals}
 \title{Get Independent Expenditure Office Totals}
 \usage{
-get_independent_expenditure_office_totals(cycle = 2018,
-  office = c("house", "senate", "president"), myAPI_Key)
+get_independent_expenditure_office_totals(
+  cycle = 2018,
+  office = c("house", "senate", "president"),
+  myAPI_Key
+)
 }
 \arguments{
 \item{cycle}{The election cycle}

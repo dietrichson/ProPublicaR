@@ -5,8 +5,11 @@
 \alias{get_recent_personal_explanations_votes_by_category}
 \title{Get Recent Personal Explanation Votes by Category}
 \usage{
-get_recent_personal_explanations_votes_by_category(congress, category,
-  myAPI_Key)
+get_recent_personal_explanations_votes_by_category(
+  congress,
+  category,
+  myAPI_Key
+)
 }
 \arguments{
 \item{congress}{101-115}

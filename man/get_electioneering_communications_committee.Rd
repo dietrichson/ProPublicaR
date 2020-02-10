@@ -4,8 +4,7 @@
 \alias{get_electioneering_communications_committee}
 \title{Get Electioneering Communications by Specific Committee}
 \usage{
-get_electioneering_communications_committee(cycle = 2018, FEC_ID,
-  myAPI_Key)
+get_electioneering_communications_committee(cycle = 2018, FEC_ID, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}

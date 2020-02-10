@@ -4,9 +4,12 @@
 \alias{recent_bills_by_type}
 \title{Get Recent Bills}
 \usage{
-recent_bills_by_type(congress, chamber = c("house", "senate"),
-  type = c("introduced", "updated", "active", "passed", "enacted",
-  "vetoed"), myAPI_Key)
+recent_bills_by_type(
+  congress,
+  chamber = c("house", "senate"),
+  type = c("introduced", "updated", "active", "passed", "enacted", "vetoed"),
+  myAPI_Key
+)
 }
 \arguments{
 \item{congress}{105-115}

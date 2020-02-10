@@ -4,8 +4,13 @@
 \alias{get_electioneering_communications_by_date}
 \title{Get Electioneering Communications by Date}
 \usage{
-get_electioneering_communications_by_date(cycle = 2018, year, month, day,
-  myAPI_Key)
+get_electioneering_communications_by_date(
+  cycle = 2018,
+  year,
+  month,
+  day,
+  myAPI_Key
+)
 }
 \arguments{
 \item{cycle}{The election cycle}

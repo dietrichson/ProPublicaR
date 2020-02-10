@@ -4,8 +4,14 @@
 \alias{get_candidates_in_race}
 \title{Get Candidates in Race}
 \usage{
-get_candidates_in_race(state, chamber, district, cycle = 2018,
-  return_value = c("results", "query"), myAPI_Key)
+get_candidates_in_race(
+  state,
+  chamber,
+  district,
+  cycle = 2018,
+  return_value = c("results", "query"),
+  myAPI_Key
+)
 }
 \arguments{
 \item{state}{State abbreviation}

@@ -5,8 +5,7 @@
 \alias{get_recently_added_independent_expenditure_committees}
 \title{Get Recently Added Independent Expenditure-Only Committees.}
 \usage{
-get_recently_added_independent_expenditure_committees(cycle = 2018,
-  myAPI_Key)
+get_recently_added_independent_expenditure_committees(cycle = 2018, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}

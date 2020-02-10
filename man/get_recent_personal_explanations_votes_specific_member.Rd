@@ -5,8 +5,11 @@
 \alias{get_recent_personal_explanations_votes_specific_member}
 \title{Get Recent Personal Explanation Votes by a Specific Member}
 \usage{
-get_recent_personal_explanations_votes_specific_member(member_id, congress,
-  myAPI_Key)
+get_recent_personal_explanations_votes_specific_member(
+  member_id,
+  congress,
+  myAPI_Key
+)
 }
 \arguments{
 \item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
