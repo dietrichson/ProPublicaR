@@ -14,8 +14,8 @@
 #' }
 get_recent_official_communications <- function(congress, myAPI_Key){
   API = 'congress'
-  if(!congress %in% 96:115){
-    stop("Incorrect congress, should be 110-115 for House or 96-115 for Senate")
+  if(!congress %in% 96:116){
+    stop("Incorrect congress, should be 110-116 for House or 96-116 for Senate")
   }
   query <- sprintf("%s/communications.json", congress)
   pp_query(query, API, myAPI_Key = myAPI_Key)

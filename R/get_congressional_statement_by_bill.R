@@ -15,8 +15,8 @@
 #' }
 get_congressional_statement_by_bill <- function(congress, bill_id, myAPI_Key){
   API = 'congress'
-  if(!congress %in% 113:115){
-    stop("Incorrect congress, should be 113 until 115")
+  if(!congress %in% 113:116){
+    stop("Incorrect congress, should be 113 through 116")
   }
   if(!is.character(bill_id)){
     stop("bill_id has to be character")

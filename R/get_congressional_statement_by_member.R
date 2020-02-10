@@ -13,14 +13,15 @@
 #' \donttest{
 #' get_congressional_statement_by_member("C001084", 115)
 #' }
-get_congressional_statement_by_member <- function(member_id, congress, myAPI_Key){
+get_congressional_statement_by_member <- function(member_id, congress, myAPI_Key, offset=0){
   API = 'congress'
-  if(!congress %in% 113:115){
-    stop("Incorrect congress, should be 113 until 115")
+  if(!congress %in% 113:116){
+    stop("Incorrect congress, should be between 113 and 116")
   }
   if(!is.character(member_id)){
     stop("member_id has to be character")
   } else {
-    query <- sprintf("members/%s/statements/%s.json", member_id, congress)
+    query <- sprintf("members/%s/statements/%s.json?offset=%s", member_id, congress, offset)
+    
     pp_query(query, API, myAPI_Key = myAPI_Key)}
 }
