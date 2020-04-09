@@ -15,11 +15,10 @@
 #' \donttest{
 #' recent_bills_by_type(115, 'house', 'introduced')
 #' }
-recent_bills_by_type <- function(congress, chamber = c('house', 'senate'), type = c('introduced', 'updated', 'active', 'passed', 'enacted', 'vetoed'), myAPI_Key){
+recent_bills_by_type <- function(congress, chamber = c('house', 'senate', 'both'), type = c('introduced', 'updated', 'active', 'passed', 'enacted', 'vetoed'), myAPI_Key){
   API = 'congress'
-  
-  if(!chamber%in%c('house','senate'))
-    stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
+  if(!chamber%in%c('house','senate','both'))
+    stop("Incorrect Chamber. Should be \'house\', \'senate\', or \'both\', lowercase.")
   if(!type%in%c('introduced', 'updated', 'active', 'passed', 'enacted', 'vetoed'))
     stop("Incorrect Chamber. Should be \'introduced\', \'updated\', \'active\', \'passed\', \'enacted\', \'vetoed\', lowercase.")
   if(!congress%in% 105:cMaxCongress)
