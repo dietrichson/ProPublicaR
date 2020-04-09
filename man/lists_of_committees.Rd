@@ -7,7 +7,7 @@
 lists_of_committees(congress, chamber, myAPI_Key)
 }
 \arguments{
-\item{congress}{110-115}
+\item{congress}{110-116}
 
 \item{chamber}{house, senate or joint}
 

@@ -19,7 +19,7 @@ get_independent_expenditure_race_totals_committee <- function(cycle, FEC_ID, myA
     stop("Incorrect cycle")
   }
   if(cycle < 2009){
-    stop("Incorrect cycle: independent expenditures are from 2009-present")}
+    stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   if(is.character(FEC_ID)){
   query <- sprintf("%s/committees/%s/independent_expenditures/races.json", cycle, FEC_ID)
   pp_query(query, API, myAPI_Key = myAPI_Key)

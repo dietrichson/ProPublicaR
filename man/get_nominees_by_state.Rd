@@ -7,7 +7,7 @@
 get_nominees_by_state(congress, state, myAPI_Key)
 }
 \arguments{
-\item{congress}{107-115}
+\item{congress}{107-116}
 
 \item{state}{Two-letter state abbreviation}
 

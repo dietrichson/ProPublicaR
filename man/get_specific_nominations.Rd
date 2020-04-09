@@ -7,7 +7,7 @@
 get_specific_nominations(congress, nominee_id, myAPI_Key)
 }
 \arguments{
-\item{congress}{107-115}
+\item{congress}{107-116}
 
 \item{nominee_id}{alphanumeric ID beginning with PN - for example, PN675}
 

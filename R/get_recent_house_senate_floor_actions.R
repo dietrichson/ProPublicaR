@@ -2,7 +2,7 @@
 #'
 #' To get the latest actions from the House or Senate floor, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/floor_updates.json
 #'
-#' @param congress 	114-115 for House, 96-115 for Senate
+#' @param congress 	114-116 for House, 96-116 for Senate
 #' @param chamber house or senate 
 #' @inheritParams get_new_members
 #'

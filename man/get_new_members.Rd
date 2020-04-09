@@ -13,7 +13,7 @@ get_new_members(myAPI_Key)
 List of returned JSON from endpoint that retrieves a list of the most recent new members of the current Congress
 }
 \description{
-To get a list of the most recent new members of the current Congress. 
+To get a list of the most recent new members of the current Congress.
 HTTP Request: GET https://api.propublica.org/congress/v1/members/new.json
 }
 \examples{

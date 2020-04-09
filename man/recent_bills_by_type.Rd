@@ -12,7 +12,7 @@ recent_bills_by_type(
 )
 }
 \arguments{
-\item{congress}{105-115}
+\item{congress}{105-116}
 
 \item{chamber}{house, senate or both}
 

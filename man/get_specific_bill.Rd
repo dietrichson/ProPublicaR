@@ -7,7 +7,7 @@
 get_specific_bill(congress, bill_id, myAPI_Key)
 }
 \arguments{
-\item{congress}{105-115}
+\item{congress}{105-116}
 
 \item{bill_id}{a bill slug, for example hr4881 - these can be found in the recent bill response.}
 

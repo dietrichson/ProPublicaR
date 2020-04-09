@@ -13,7 +13,7 @@ get_specific_roll_call_vote(
 )
 }
 \arguments{
-\item{congress}{102-115 for House, 80-115 for Senate}
+\item{congress}{102-116 for House, 80-116 for Senate}
 
 \item{chamber}{house or senate}
 

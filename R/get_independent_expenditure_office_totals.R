@@ -22,7 +22,7 @@ get_independent_expenditure_office_totals<- function(cycle=2018, office = c('hou
     stop("Incorrect cycle")
   }
   if(cycle < 2009){
-    stop("Incorrect cycle: independent expenditures are from 2009-present")}
+    stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   if(!office%in%c('house','senate', 'president'))
     stop("Incorrect office. Should be \'house\', \'president\' or \'senate\', lowercase.")
   query <- sprintf("%s/independent_expenditures/race_totals/%s.json", cycle, office)

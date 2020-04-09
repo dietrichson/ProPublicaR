@@ -7,7 +7,7 @@
 get_congressional_statement_by_bill(congress, bill_id, myAPI_Key)
 }
 \arguments{
-\item{congress}{113-115}
+\item{congress}{113-116}
 
 \item{bill_id}{a bill slug, for example s19 - these can be found in bill responses.}
 

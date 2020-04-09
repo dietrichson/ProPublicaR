@@ -5,7 +5,8 @@ test_that("get error if incorrect cycle", {
   expect_warning(expect_error(get_recently_added_independent_expenditure_committees(cycle[1]), "Incorrect cycle"), "Cycle should be four-digit year larger than 1996")
   expect_warning(expect_error(get_recently_added_independent_expenditure_committees(cycle[3]), "Incorrect cycle"), "Cycle should be even-numbered year larger than 1996")
   expect_warning(expect_error(get_recently_added_independent_expenditure_committees(16), "Incorrect cycle"), "Cycle should be four-digit year")
-  expect_error(get_recently_added_independent_expenditure_committees(1998), "Incorrect cycle: independent expenditures are from 2009–present")
+  expect_error(get_recently_added_independent_expenditure_committees(1998), 
+               "Incorrect cycle: independent expenditures are from 2009 to present")
 })
 
 test_that("error with API key ", {
