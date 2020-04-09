@@ -7,7 +7,7 @@
 get_recent_nominations_by_category(congress, type, myAPI_Key)
 }
 \arguments{
-\item{congress}{107-115}
+\item{congress}{107-116}
 
 \item{type}{received, updated, confirmed, withdrawn}
 

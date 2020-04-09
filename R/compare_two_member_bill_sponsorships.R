@@ -4,7 +4,7 @@
 #'
 #' @param first_member_id The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.
 #' @param second_member_id The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.
-#' @param congress 102-115 for House, 101-115 for Senate
+#' @param congress 102-116 for House, 101-116 for Senate
 #' @param chamber house o senate
 #' @inheritParams get_new_members
 #'
@@ -19,11 +19,11 @@ compare_two_member_bill_sponsorships <- function(first_member_id, second_member_
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
-  if(chamber=="house" & !congress %in% 102:115){
-    stop("Congress is 102-115 for house")
+  if(chamber=="house" & !congress %in% 102:cMaxCongress){
+    stop("Congress should be between 102 and ",cMaxCongress," for house")
   }
-  if(chamber=="senate" & !congress %in% 80:115){
-    stop("Congress is 102-115 for senate")
+  if(chamber=="senate" & !congress %in% 80:cMaxCongress){
+    stop("Congress should be between 102 and ",cMaxCongress," for senate")
   }
   if(!is.character(first_member_id) | !is.character(second_member_id)){
     stop("first_member_id and second_member_id have to be character")

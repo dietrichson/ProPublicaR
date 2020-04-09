@@ -7,7 +7,7 @@
 get_members_leaving(congress, chamber, myAPI_Key)
 }
 \arguments{
-\item{congress}{111-115}
+\item{congress}{111-116}
 
 \item{chamber}{house or senate}
 

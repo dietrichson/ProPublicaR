@@ -7,7 +7,7 @@
 get_recent_house_senate_floor_actions(congress, chamber, myAPI_Key)
 }
 \arguments{
-\item{congress}{114-115 for House, 96-115 for Senate}
+\item{congress}{114-116 for House, 96-116 for Senate}
 
 \item{chamber}{house or senate}
 

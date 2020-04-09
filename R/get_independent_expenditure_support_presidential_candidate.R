@@ -18,7 +18,7 @@ get_independent_expenditure_support_presidential_candidate<- function(cycle=2018
     stop("Incorrect cycle")
   }
   if(cycle < 2009){
-    stop("Incorrect cycle: independent expenditures are from 2009-present")}
+    stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   query <- sprintf("%s/president/independent_expenditures.json", cycle)
   pp_query(query, API, myAPI_Key = myAPI_Key)
 }

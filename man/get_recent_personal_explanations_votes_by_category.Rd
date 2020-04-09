@@ -12,7 +12,7 @@ get_recent_personal_explanations_votes_by_category(
 )
 }
 \arguments{
-\item{congress}{101-115}
+\item{congress}{101-116}
 
 \item{category}{options: voted-incorrectly (    Voted yes or no by mistake),    official-business (Away on official congressional business),    ambiguous (No reason given),    travel-difficulties (    Travel delays and issues),    personal (Personal or family reason),    claims-voted (Vote made but not recorded),    medical (    Medical issue for lawmaker, not family),    weather,    memorial,    misunderstanding,    leave-of-absence,    prior-commitment,    election-related,    military-service,    other}
 

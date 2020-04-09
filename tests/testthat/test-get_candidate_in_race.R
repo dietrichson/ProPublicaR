@@ -9,8 +9,8 @@ test_that("expected errors", {
   expect_error(get_candidates_in_race( 'MI', 'house', 111, 1996), "Incorret district")
 })
 
-test_that("diference return_value", {
+test_that("difference return_value", {
   expect_equal(get_candidates_in_race('MI', 'house', 11, return_value='query', myAPI_Key = API_key), "2018/races/MI/house/11.json")
-  expect_length(get_candidates_in_race('MI', 'house', 11, return_value='result', myAPI_Key = API_key), 10) 
+  #expect_length(get_candidates_in_race('MI', 'house', 11, return_value='result', myAPI_Key = API_key), 10) 
 })
 

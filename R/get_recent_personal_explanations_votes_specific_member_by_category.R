@@ -16,11 +16,11 @@
 #' }
 get_recent_personal_explanations_votes_specific_member_by_category <- function(member_id, congress, category, myAPI_Key){
   API <- 'congress'
-  if(!congress %in% 110:116){
-    stop("Incorrect congress, should be 110-116")
+  if(!congress %in% 110:cMaxCongress){
+    stop("Incorrect congress, should be between 110 and ",cMaxCongress)
   }
   if(!category %in% c('voted-incorrectly',	'official-business',	'ambiguous',	'travel-difficulties',	"personal",	"claims-voted",	'medical',	'weather',	'memorial',	'misunderstanding',	'leave-of-absence',	'prior-commitment',	'election-related',	'military-service',	'other')){
-    stop("Incorrect category, should be 101-115 \'voted-incorrectly\', \'official-business\', \'ambiguous\', \'travel-difficulties\', \'personal\', \'claims-voted\', \'medical\', \'weather\', \'memorial\', \'misunderstanding\', \'leave-of-absence\', \'prior-commitment\', \'election-related\', \'military-service\' or \'other\'")
+    stop("Incorrect category, should be one of: \'voted-incorrectly\', \'official-business\', \'ambiguous\', \'travel-difficulties\', \'personal\', \'claims-voted\', \'medical\', \'weather\', \'memorial\', \'misunderstanding\', \'leave-of-absence\', \'prior-commitment\', \'election-related\', \'military-service\' or \'other\'")
   }
   if(!is.character(member_id)){
     stop("member_id has to be character")

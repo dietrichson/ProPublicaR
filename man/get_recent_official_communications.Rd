@@ -7,7 +7,7 @@
 get_recent_official_communications(congress, myAPI_Key)
 }
 \arguments{
-\item{congress}{114-115 for House, 96-115 for Senate}
+\item{congress}{114-116 for House, 96-116 for Senate}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

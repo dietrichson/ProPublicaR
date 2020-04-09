@@ -14,7 +14,7 @@ get_recent_personal_explanations_votes_specific_member(
 \arguments{
 \item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
-\item{congress}{110-115}
+\item{congress}{110-116}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

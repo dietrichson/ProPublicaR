@@ -17,9 +17,9 @@ compare_two_member_vote_positions(
 
 \item{second_member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
-\item{congress}{102-115 for House, 101-115 for Senate}
+\item{congress}{102-116 for House, 101-116 for Senate}
 
-\item{chamber}{house o senate}
+\item{chamber}{house or senate}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

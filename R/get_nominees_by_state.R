@@ -2,7 +2,7 @@
 #'
 #' To get a list of presidential civilian nominations of individuals from a specific state, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/nominees/state/{state}.json
 #'
-#' @param congress 107-115
+#' @param congress 107-116
 #' @param state Two-letter state abbreviation
 #' @inheritParams get_new_members
 #'
@@ -15,9 +15,9 @@
 #' }
 get_nominees_by_state <- function(congress, state, myAPI_Key){
   API = 'congress'
-  control <- 107:115
-  if(!congress %in% 107:115){
-    stop("Incorrect congress, posible options are: ", control[1], ", ", control[2], ", ", control[3], " until ", control[9] )
+  control <- 107:cMaxCongress
+  if(!congress %in% 107:cMaxCongress){
+    stop("Incorrect congress, posible options are: ", control[1], ", ", control[2], ", ", control[3], " through ", control[9] )
   }
   if(!validate_state(state))
     stop("Incorrect state")

@@ -13,7 +13,7 @@ get_specific_subcommittee(
 )
 }
 \arguments{
-\item{congress}{114-115}
+\item{congress}{114-116}
 
 \item{chamber}{house or senate or joint}
 

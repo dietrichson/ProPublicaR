@@ -17,7 +17,7 @@ get_recently_added_independent_expenditure_committees <- function(cycle=2018, my
   if(!validate_cycle(cycle))
     stop("Incorrect cycle")
   if(cycle < 2009){
-    stop("Incorrect cycle: independent expenditures are from 2009-present")}
+    stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   query <- sprintf("%s/committees/superpacs.json", cycle)
   pp_query(query, API, myAPI_Key = myAPI_Key)
 }

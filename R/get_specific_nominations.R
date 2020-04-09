@@ -2,7 +2,7 @@
 #'
 #' To get details about a particular presidential civilian nomination,, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/nominees/{nominee-id}.json
 #'
-#' @param congress 107-115
+#' @param congress 107-116
 #' @param nominee_id alphanumeric ID beginning with PN - for example, PN675
 #' @inheritParams get_new_members
 #'
@@ -15,8 +15,8 @@
 #' }
 get_specific_nominations <- function(congress, nominee_id, myAPI_Key){
   API = 'congress'
-  control <- 107:115
-  if(!congress %in% 107:115){
+  control <- 107:cMaxCongress
+  if(!congress %in% 107:cMaxCongress){
     stop("Incorrect congress, posible options are: ", control[1], ", ", control[2], ", ", control[3], " until ", control[9] )
   }
   query <- sprintf("%s/nominees/%s.json", congress, nominee_id)

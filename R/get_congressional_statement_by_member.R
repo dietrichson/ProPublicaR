@@ -16,8 +16,8 @@
 #' }
 get_congressional_statement_by_member <- function(member_id, congress, myAPI_Key, offset=0){
   API = 'congress'
-  if(!congress %in% 113:116){
-    stop("Incorrect congress, should be between 113 and 116")
+  if(!congress %in% 113:cMaxCongress){
+    stop("Incorrect congress, should be between 113 and ",cMaxCongress)
   }
   if(!is.character(member_id)){
     stop("member_id has to be character")

@@ -2,7 +2,7 @@
 #'
 #' To get lists of statements published on a specific member’s congressional website during a particular congress, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}/statements.json
 #'
-#' @param congress 113-115
+#' @param congress 113-116
 #' @param bill_id a bill slug, for example s19 - these can be found in bill responses.
 #' @inheritParams get_new_members
 #'
@@ -15,7 +15,7 @@
 #' }
 get_congressional_statement_by_bill <- function(congress, bill_id, myAPI_Key){
   API = 'congress'
-  if(!congress %in% 113:116){
+  if(!congress %in% 113:cMaxCongress){
     stop("Incorrect congress, should be 113 through 116")
   }
   if(!is.character(bill_id)){

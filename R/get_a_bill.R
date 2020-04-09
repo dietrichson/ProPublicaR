@@ -11,7 +11,7 @@
 #' may be considered at any time.
 #'
 #' @param bill_id a bill slug, for example hr4881 - these can be found in the recent bill response.
-#' @param congress 105-115
+#' @param congress 105-116
 #' @inheritParams get_new_members
 #' 
 #' @return List with the result of the query

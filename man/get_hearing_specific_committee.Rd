@@ -7,7 +7,7 @@
 get_hearing_specific_committee(congress, chamber, committee_id, myAPI_Key)
 }
 \arguments{
-\item{congress}{114-115}
+\item{congress}{114-116}
 
 \item{chamber}{house or senate}
 

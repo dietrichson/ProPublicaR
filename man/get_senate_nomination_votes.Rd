@@ -7,7 +7,7 @@
 get_senate_nomination_votes(congress, myAPI_Key)
 }
 \arguments{
-\item{congress}{101-115}
+\item{congress}{101-116}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
