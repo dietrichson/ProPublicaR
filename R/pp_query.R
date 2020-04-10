@@ -19,16 +19,8 @@
 #' }
 pp_query <- function(query, API=c('campaign-finance', 'congress'), version='v1', page = 1, myAPI_Key){
   # First check that API-key is available
-  errorMessage <-"API key not found or is missing. \nHint: This should be in config.yml in your working directory or higher."
-  if( missing(myAPI_Key) && is.null(config::get('ProPublica')[[API]])){
-    stop(errorMessage)
-  }
-  if(missing(myAPI_Key) && !is.null(config::get('ProPublica')[[API]])){
-    myAPI_Key <- config::get('ProPublica')[[API]]  
-  }
-  
-  if(is.null(myAPI_Key))
-    stop(errorMessage)
+  if(missing(myAPI_Key))
+    myAPI_Key <- retrieve_key(API)
   
   # Construct URL
   myURL <-
