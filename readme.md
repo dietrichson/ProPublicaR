@@ -8,7 +8,7 @@ ProPublicaR
 [![CRAN
 status](https://www.r-pkg.org/badges/version/ProPublicaR)](https://cran.r-project.org/package=ProPublicaR)
 [![Build
-Status](https://travis-ci.org/chi2labs/ProPublicaR.svg?branch=master)](https://travis-ci.org/chi2labs/ProPublicaR)
+Status](https://travis-ci.org/dietrichson/ProPublicaR.svg?branch=master)](https://travis-ci.org/dietrichson/ProPublicaR)
 <!-- badges: end -->
 
 ## Purpose
