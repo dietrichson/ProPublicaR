@@ -1,17 +1,17 @@
-#' Execute a query against the ProPublica API
+#' Retrieve the relevant ProPublica API key for congress API or campaign finance API
 #'
-#' This function is primarily meant to be used by other functions in the package, but is made available in case a
-#' "raw query" is required.
+#' This function is primarily meant to be used by pp_query to determine the API keys if not passed explicitly.
 #'
 #' @param API Which API are you accessing
 #'
-#' @return the key from global environment
+#' @return the key from config.yml or global environment variables key_congress/key_campaign_finance
 #' @import httr config
 #' @export
 #'
 #' @examples
 #' \donttest{
-#' pp_query('115/bills/hr21.json', API = 'congress', version='v1')
+#' retrieve_key('congress')
+#' retrieve_key('campaign-finance')
 #' }
 
 retrieve_key <- function(API = c('congress', 'campaign-finance')){
