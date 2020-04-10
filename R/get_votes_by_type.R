@@ -15,7 +15,7 @@
 #' \donttest{
 #' get_votes_by_type(114, 'house', 'missed')
 #' }
-get_votes_by_type <- function(congress, chamber = c('house', 'senate'), vote_type, page = 1, myAPI_Key){
+get_votes_by_type <- function(congress, chamber = c('house', 'senate'), vote_type, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
@@ -28,5 +28,5 @@ get_votes_by_type <- function(congress, chamber = c('house', 'senate'), vote_typ
   if(!vote_type %in% c('missed', 'party', 'loneno', 'perfect'))
     stop("Incorrect session_number, has to be	1 or 2, depending on year (1 is odd-numbered years, 2 is even-numbered years)")
   query <- sprintf("%s/%s/votes/%s.json", congress, chamber,vote_type)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

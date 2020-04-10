@@ -12,11 +12,11 @@
 #' \donttest{
 #' get_recent_personal_explanations(114)
 #' }
-get_recent_personal_explanations <- function(congress, page = 1, myAPI_Key){
+get_recent_personal_explanations <- function(congress, myAPI_Key){
   API = 'congress'
   if(!congress %in% 101:cMaxCongress){
     stop("Incorrect congress, should be between 101 and ",cMaxCongress)
   }
   query <- sprintf("%s/explanations.json", congress)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

@@ -14,7 +14,7 @@
 #' \donttest{
 #' get_recent_official_communications_by_date(2018, '03', '21')
 #' }
-get_recent_official_communications_by_date <- function(year, month, day, page = 1, myAPI_Key){
+get_recent_official_communications_by_date <- function(year, month, day, myAPI_Key){
   API = 'congress'
   if(nchar(year)!=4){
     stop("Incorrect year. Year should be four-digit year")  
@@ -22,5 +22,5 @@ get_recent_official_communications_by_date <- function(year, month, day, page = 
   sep <- "-"
   date <- paste0(year, sep, month, sep, day)
   query <- sprintf("communications/date/%s.json", date)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

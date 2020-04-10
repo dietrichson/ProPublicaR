@@ -13,13 +13,13 @@
 #' \donttest{
 #' get_electronic_filing_by_committees(NAME = "UNITED EGG", 2016)
 #' }
-get_electronic_filing_by_committees <- function(NAME, cycle=2018, page = 1, myAPI_Key){
+get_electronic_filing_by_committees <- function(NAME, cycle=2018, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle))
     stop("Incorrect cycle")
   if(is.character(NAME)){
     NAME <- gsub(' ', '%20', NAME)
     query <- sprintf("%s/filings/search.json?query=%s", cycle, NAME)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)  
+    pp_query(query, API, myAPI_Key = myAPI_Key)  
   } else {stop("The committee name has to be character")}
 }

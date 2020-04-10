@@ -12,11 +12,11 @@
 #' \donttest{
 #' get_recent_votes('senate')
 #' }
-get_recent_votes <- function(chamber, page = 1, myAPI_Key){
+get_recent_votes <- function(chamber, myAPI_Key){
   API = 'congress'
   if(!chamber %in% c('house', 'senate', 'both')){
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
   }
   query <- sprintf("%s/votes/recent.json", chamber)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

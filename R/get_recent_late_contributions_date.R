@@ -15,7 +15,7 @@
 #' \donttest{
 #' get_recent_late_contributions_date(2016, year = 2016, month = '09', day = '07')
 #' }
-get_recent_late_contributions_date <- function(cycle=2018, year, month, day, page = 1, myAPI_Key){
+get_recent_late_contributions_date <- function(cycle=2018, year, month, day, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle))
     stop("Incorrect cycle")
@@ -23,6 +23,6 @@ get_recent_late_contributions_date <- function(cycle=2018, year, month, day, pag
     stop("Specified year does not match cycle")
   if(cycle >= 2010 & cycle %% 2 == 0){
     query <- sprintf("%s/contributions/48hour/%s/%s/%s.json", cycle, year, month, day)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
     } else {stop("Cycle must be even-numbered year between 2010 and 2018")}
 }

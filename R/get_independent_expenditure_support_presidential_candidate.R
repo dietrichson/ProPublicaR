@@ -12,7 +12,7 @@
 #' \donttest{
 #' get_independent_expenditure_support_presidential_candidate(2016)
 #' }
-get_independent_expenditure_support_presidential_candidate<- function(cycle=2018 , page = 1, myAPI_Key){
+get_independent_expenditure_support_presidential_candidate<- function(cycle=2018 , myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop("Incorrect cycle")
@@ -20,5 +20,5 @@ get_independent_expenditure_support_presidential_candidate<- function(cycle=2018
   if(cycle < 2009){
     stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   query <- sprintf("%s/president/independent_expenditures.json", cycle)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

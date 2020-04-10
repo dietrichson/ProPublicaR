@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_candidate('P60005915', 2016)}
 #' 
-get_candidate <- function(FEC_ID, cycle=2018, page = 1, myAPI_Key){
+get_candidate <- function(FEC_ID, cycle=2018, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop('Incorrect cycle')
@@ -21,6 +21,6 @@ get_candidate <- function(FEC_ID, cycle=2018, page = 1, myAPI_Key){
   if(!is.character(FEC_ID)){
     stop('FEC_ID has to be character')} else {
     query <- sprintf("%s/candidates/%s.json", cycle, FEC_ID)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)}  
+    pp_query(query, API, myAPI_Key = myAPI_Key)}  
 }
 

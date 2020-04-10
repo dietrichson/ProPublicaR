@@ -15,7 +15,7 @@
 #' \donttest{
 #' recent_bills_by_type(115, 'house', 'introduced')
 #' }
-recent_bills_by_type <- function(congress, chamber = c('house', 'senate', 'both'), type = c('introduced', 'updated', 'active', 'passed', 'enacted', 'vetoed'), page = 1, myAPI_Key){
+recent_bills_by_type <- function(congress, chamber = c('house', 'senate', 'both'), type = c('introduced', 'updated', 'active', 'passed', 'enacted', 'vetoed'), myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate','both'))
     stop("Incorrect Chamber. Should be \'house\', \'senate\', or \'both\', lowercase.")
@@ -25,5 +25,5 @@ recent_bills_by_type <- function(congress, chamber = c('house', 'senate', 'both'
     stop("Congress should be between 80 and ",cMaxCongress)
   
   query <- sprintf("%s/%s/bills/%s.json", congress, chamber, type)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

@@ -14,12 +14,12 @@
 #' \donttest{
 #' recent_bills_by_member('L000287', 'introduced')
 #' }
-recent_bills_by_member <- function(member_id, type, page = 1, myAPI_Key){
+recent_bills_by_member <- function(member_id, type, myAPI_Key){
   API = 'congress'
   if(!type%in%c('introduced', 'updated'))
     stop("Incorrect Chamber. Should be \'introduced\' or \'updated\', lowercase.")
   if(is.character(member_id)){
   query <- sprintf("members/%s/bills/%s.json", member_id, type)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
   } else {stop("member_id has to be character")}
 }

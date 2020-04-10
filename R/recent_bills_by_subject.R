@@ -12,10 +12,10 @@
 #' \donttest{
 #' recent_bills_by_subject('meat')
 #' }
-recent_bills_by_subject <- function(subject, page = 1, myAPI_Key){
+recent_bills_by_subject <- function(subject, myAPI_Key){
   API = 'congress'
   if(is.character(subject)){
   query <- sprintf("bills/subjects/%s.json", subject)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
   } else {stop("subject has to be character")}
 }

@@ -14,13 +14,13 @@
 #' \donttest{
 #' get_related_bills(115, 'hr3219')
 #' }
-get_related_bills <- function(congress, bill_id, page = 1, myAPI_Key){
+get_related_bills <- function(congress, bill_id, myAPI_Key){
   API = 'congress'
   if(!congress %in% 105:cMaxCongress){
     stop("Congress should be between 80 and ",cMaxCongress)
   }
   if(is.character(bill_id)){
     query <- sprintf("%s/bills/%s/related.json", congress, bill_id)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   } else {stop("bill_id has to be character")}
 }
