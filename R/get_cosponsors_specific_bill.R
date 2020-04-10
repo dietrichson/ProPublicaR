@@ -14,13 +14,13 @@
 #' \donttest{
 #' get_cosponsors_specific_bill(114, 'hr4249')
 #' }
-get_cosponsors_specific_bill <- function(congress, bill_id, myAPI_Key){
+get_cosponsors_specific_bill <- function(congress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 105:cMaxCongress){
     stop("Congress has to be between 105 and ", maxCongress)
   }
   if(is.character(bill_id)){
     query <- sprintf("%s/bills/%s/cosponsors.json", congress, bill_id)
-    pp_query(query, API, myAPI_Key = myAPI_Key)
+    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
   } else {stop("bill_id has to be character")}
 }

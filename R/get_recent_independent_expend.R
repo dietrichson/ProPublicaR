@@ -11,7 +11,7 @@
 #' \donttest{
 #' get_recent_independent_expend(2016)
 #' }
-get_recent_independent_expend <- function(cycle=2018, myAPI_Key){
+get_recent_independent_expend <- function(cycle=2018, page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop("Incorrect cycle")
@@ -19,5 +19,5 @@ get_recent_independent_expend <- function(cycle=2018, myAPI_Key){
   if(cycle < 2009){
     stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   query <- sprintf("%s/independent_expenditures.json", cycle)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

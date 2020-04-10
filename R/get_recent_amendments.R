@@ -11,7 +11,7 @@
 #' \donttest{
 #' get_recent_amendments(2016)
 #' }
-get_recent_amendments <- function(cycle=2018, myAPI_Key){
+get_recent_amendments <- function(cycle=2018, page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop("Incorrect cycle")
@@ -19,5 +19,5 @@ get_recent_amendments <- function(cycle=2018, myAPI_Key){
   if(cycle < 2001){
     stop("Incorrect cycle: the electronic filings are 2001-forward")}
   query <- sprintf("%s/filings/amendments.json", cycle)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

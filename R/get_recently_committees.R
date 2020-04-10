@@ -12,10 +12,10 @@
 #' \donttest{
 #' get_recently_committees(2016)
 #' }
-get_recently_committees <- function(cycle=2018, myAPI_Key){
+get_recently_committees <- function(cycle=2018, page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle))
     stop("Incorrect cycle")
   query <- sprintf("%s/committees/new.json", cycle)
-  pp_query(query, API, myAPI_Key = myAPI_Key) 
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key) 
 }
