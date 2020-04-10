@@ -19,13 +19,6 @@
 #' bills_legislation_by_keyword(query_keyword = 'megahertz')}
 bills_legislation_by_keyword <- function(query_keyword, sort = c('date', '_score'), dir = c('desc', 'asc'), myAPI_Key){
   API = 'congress'
-  #HTTP Request
-  #GET https://api.propublica.org/congress/v1/bills/search.json?query={query}
-  if (missing(myAPI_Key)) {
-    myAPI_Key <- config::get('ProPublica')[[API]] #config::get('ProPublica')[[1]]
-  }
-  if(is.null(myAPI_Key))
-    stop("API key not found. \nHint: This should be in config.yml in your working directory or higher.")
   query <- sprintf("bills/search.json?query=%s", query_keyword)
-  pp_query(query, API)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }
