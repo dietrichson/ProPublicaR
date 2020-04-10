@@ -6,9 +6,9 @@ ProPublicaR
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/cognitoR)](https://cran.r-project.org/package=cognitoR)
+status](https://www.r-pkg.org/badges/version/ProPublicaR)](https://cran.r-project.org/package=ProPublicaR)
 [![Build
-Status](https://travis-ci.org/chi2labs/cognitoR.svg?branch=master)](https://travis-ci.org/chi2labs/cognitoR)
+Status](https://travis-ci.org/chi2labs/ProPublicaR.svg?branch=master)](https://travis-ci.org/chi2labs/ProPublicaR)
 <!-- badges: end -->
 
 ## Purpose
