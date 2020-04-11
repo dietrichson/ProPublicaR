@@ -13,12 +13,12 @@
 #' \donttest{
 #' get_members_leaving(115, 'house')
 #' }
-get_members_leaving <- function(congress, chamber, myAPI_Key){
+get_members_leaving <- function(congress, chamber, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop('Incorrect Chamber. (Should be \'house\' or \'senate\', lowercase.')
   if(!congress%in% 111:cMaxCongress)
     stop('Incorrect congress. Should be between 111 and ', cMaxCongress)
   query <- sprintf("%s/%s/members/leaving.json", congress, chamber)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

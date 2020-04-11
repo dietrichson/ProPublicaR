@@ -14,7 +14,7 @@
 #' \donttest{
 #' get_candidates_in_race('MI', 'house', 11)
 #' }
-get_candidates_in_race <- function(state, chamber, district, cycle=2018, return_value=c('results','query'), myAPI_Key){
+get_candidates_in_race <- function(state, chamber, district, cycle=2018, return_value=c('results','query'), page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_state(state))
     stop("Incorrect state")
@@ -35,7 +35,7 @@ get_candidates_in_race <- function(state, chamber, district, cycle=2018, return_
   }
   if(return_value[1]=='query')
     return(candidatesURL)
-  tmp <- pp_query(candidatesURL, API, myAPI_Key = myAPI_Key)
+  tmp <- pp_query(candidatesURL, API, page = page, myAPI_Key = myAPI_Key)
   class(tmp) <- c(class(tmp),'pp_candidate_list')
   tmp
 }

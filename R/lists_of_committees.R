@@ -13,7 +13,7 @@
 #' \donttest{
 #' lists_of_committees(115, "senate")
 #' }
-lists_of_committees <- function(congress, chamber, myAPI_Key){
+lists_of_committees <- function(congress, chamber, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 110:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ", cMaxCongress)
@@ -22,5 +22,5 @@ lists_of_committees <- function(congress, chamber, myAPI_Key){
     stop("Incorrect chamber. Should be \'senate\', \'house'\ or \'both\', lowercase")
   }
   query <- sprintf("%s/%s/committees.json", congress, chamber)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

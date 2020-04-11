@@ -16,7 +16,7 @@
 #' \donttest{
 #' get_electioneering_communications_by_date(2016, 2012, '10', '01')
 #' }
-get_electioneering_communications_by_date <- function(cycle=2018, year, month, day, myAPI_Key){
+get_electioneering_communications_by_date <- function(cycle=2018, year, month, day, page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle))
     stop("Incorrect cycle")
@@ -27,5 +27,5 @@ get_electioneering_communications_by_date <- function(cycle=2018, year, month, d
     stop("Year should be four-digit year larger than 2008")
   }
   query <- sprintf("%s/electioneering_communications/%s/%s/%s.json", cycle, year, month, day)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }
