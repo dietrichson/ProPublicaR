@@ -16,7 +16,7 @@ test_that("get error if incorrect year", {
 
 test_that("error with API key ", {
   if(file.exists("config.yml") & is.null(config::get('ProPublica')[['campaign-finance']])){expect_error(get_electronic_filing_byDate(2016, 16, '01', '10'),"API key not found or is missing. \nHint: This should be in config.yml in your working directory or higher.")}
-  expect_warning(get_electronic_filing_byDate(2016, 2016, '01', '10', '31'),  "Status code was: 500")
+  expect_warning(get_electronic_filing_byDate(2016, 2016, '01', '10', myAPI_Key = '31'),  "Status code was: 500")
   if(!file.exists("config.yml") & !exists("myAPI_Key")){expect_error(get_electronic_filing_byDate(2016, 2016, '01', '10'), "API key not found or is missing. \nHint: This should be in config.yml in your working directory or higher.")}
 })
    
