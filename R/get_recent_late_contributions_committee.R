@@ -13,12 +13,12 @@
 #' \donttest{
 #' get_recent_late_contributions_committee(2016, 'C00575050')
 #' }
-get_recent_late_contributions_committee <- function(cycle=2018, FEC_ID, myAPI_Key){
+get_recent_late_contributions_committee <- function(cycle=2018, FEC_ID, page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle))
     stop("Incorrect cycle")
   if(is.character(FEC_ID)){
     query <- sprintf("%s/committees/%s/48hour.json", cycle, FEC_ID)
-    pp_query(query, API, myAPI_Key = myAPI_Key)
+    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
   } else {stop("FEC_ID has to be character")}
 }

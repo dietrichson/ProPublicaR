@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_nominees_by_state(115, 'VA')
 #' }
-get_nominees_by_state <- function(congress, state, myAPI_Key){
+get_nominees_by_state <- function(congress, state, page = 1, myAPI_Key){
   API = 'congress'
   control <- 107:cMaxCongress
   if(!congress %in% 107:cMaxCongress){
@@ -22,5 +22,5 @@ get_nominees_by_state <- function(congress, state, myAPI_Key){
   if(!validate_state(state))
     stop("Incorrect state")
   query <- sprintf("%s/nominees/state/%s.json", congress, state)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

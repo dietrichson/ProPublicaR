@@ -15,7 +15,7 @@
 #' \donttest{
 #' get_votes_by_date('house', 2018, '09')
 #' }
-get_votes_by_date <- function(chamber = c('house', 'senate'), year, month, myAPI_Key){
+get_votes_by_date <- function(chamber = c('house', 'senate'), year, month, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
@@ -23,5 +23,5 @@ get_votes_by_date <- function(chamber = c('house', 'senate'), year, month, myAPI
     stop("Year should be four-digit year")  
   }
   query <- sprintf("%s/votes/%s/%s.json", chamber, year, month)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }
