@@ -13,12 +13,12 @@
 #' \donttest{
 #' get_specific_nominations(115, 'PN40')
 #' }
-get_specific_nominations <- function(congress, nominee_id, myAPI_Key){
+get_specific_nominations <- function(congress, nominee_id, page = 1, myAPI_Key){
   API = 'congress'
   control <- 107:cMaxCongress
   if(!congress %in% 107:cMaxCongress){
     stop("Incorrect congress, posible options are: ", control[1], ", ", control[2], ", ", control[3], " until ", control[9] )
   }
   query <- sprintf("%s/nominees/%s.json", congress, nominee_id)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_recent_personal_explanations_votes_by_category(115, 'voted-incorrectly')
 #' }
-get_recent_personal_explanations_votes_by_category <- function(congress, category, myAPI_Key){
+get_recent_personal_explanations_votes_by_category <- function(congress, category, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 101:cMaxCongress){
     stop("Incorrect congress, should be between 101 and ",cMaxCongress)
@@ -22,5 +22,5 @@ get_recent_personal_explanations_votes_by_category <- function(congress, categor
     stop("Incorrect category, should be: \'voted-incorrectly\', \'official-business\', \'ambiguous\', \'travel-difficulties\', \'personal\', \'claims-voted\', \'medical\', \'weather\', \'memorial\', \'misunderstanding\', \'leave-of-absence\', \'prior-commitment\', \'election-related\', \'military-service\' or \'other\'")
   }
   query <- sprintf("%s/explanations/votes/%s.json", congress, category)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

@@ -15,13 +15,13 @@
 #' get_candidate_by_name('Wilson', 2016)
 #' }
 #' 
-get_candidate_by_name <- function(NAME, cycle=2018, myAPI_Key){
+get_candidate_by_name <- function(NAME, cycle=2018, page = 1, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle))
     stop("Incorrect cycle")
   if(is.character(NAME)){
     query <- sprintf("%s/candidates/search.json?query=%s", cycle, NAME)
-    pp_query(query, API, myAPI_Key = myAPI_Key)
+    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
   } else {stop("NAME has to be character. The first or last name of the candidate.")}
 }
 

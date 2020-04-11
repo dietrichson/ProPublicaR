@@ -16,7 +16,7 @@
 #' get_hearing_specific_committee(115, 'house', 
 #' lists_of_committees(115, "senate")$results[[1]]$committees[[1]]$id)
 #' }
-get_hearing_specific_committee <- function(congress, chamber, committee_id, myAPI_Key){
+get_hearing_specific_committee <- function(congress, chamber, committee_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 114:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ",cMaxCongress)
@@ -28,6 +28,6 @@ get_hearing_specific_committee <- function(congress, chamber, committee_id, myAP
     stop("committee_id has to be character")
   } else {
     query <- sprintf("%s/%s/committees/%s/hearings.json", congress, chamber, committee_id)
-    pp_query(query, API, myAPI_Key = myAPI_Key)
+    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
     }
 }

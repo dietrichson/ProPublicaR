@@ -21,7 +21,7 @@
 #' \donttest{
 #' get_a_bill(115, 'hr21')
 #' }
-get_a_bill <- function(congress, bill_id, myAPI_Key){
+get_a_bill <- function(congress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
   #HTTP Request
   #GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}.json
@@ -31,5 +31,5 @@ get_a_bill <- function(congress, bill_id, myAPI_Key){
   if(is.null(myAPI_Key))
     stop("API key not found. \nHint: This should be in config.yml in your working directory or higher.")
   query <- sprintf("%s/bills/%s.json", congress, bill_id)
-  pp_query(query, API)
+  pp_query(query, page = page, API)
 }

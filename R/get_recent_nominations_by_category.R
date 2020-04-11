@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_recent_nominations_by_category(115, 'confirmed')
 #' }
-get_recent_nominations_by_category <- function(congress, type, myAPI_Key){
+get_recent_nominations_by_category <- function(congress, type, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 107:cMaxCongress){
     stop("Incorrect congress, should be between 107 and ",cMaxCongress)
@@ -22,5 +22,5 @@ get_recent_nominations_by_category <- function(congress, type, myAPI_Key){
     stop("Incorrect category. Should be \'received\', \'updated\', \'confirmed\' or \'withdrawn\', lowercase")
   }
   query <- sprintf("%s/nominees/%s.json", congress, type)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

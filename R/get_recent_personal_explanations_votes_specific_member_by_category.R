@@ -14,7 +14,7 @@
 #' \donttest{
 #' get_recent_personal_explanations_votes_specific_member_by_category('S001193', 115, 'personal')
 #' }
-get_recent_personal_explanations_votes_specific_member_by_category <- function(member_id, congress, category, myAPI_Key){
+get_recent_personal_explanations_votes_specific_member_by_category <- function(member_id, congress, category, page = 1, myAPI_Key){
   API <- 'congress'
   if(!congress %in% 110:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ",cMaxCongress)
@@ -26,5 +26,5 @@ get_recent_personal_explanations_votes_specific_member_by_category <- function(m
     stop("member_id has to be character")
   } else {
     query <- sprintf("members/%s/explanations/%s/votes/%s.json", member_id, congress, category)
-    pp_query(query, API, myAPI_Key = myAPI_Key)}
+    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)}
 }
