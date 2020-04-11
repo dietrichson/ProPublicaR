@@ -15,7 +15,7 @@
 #' \donttest{
 #' get_house_senate_floor_actions_by_date('senate', 2017, '05', '02')
 #' }
-get_house_senate_floor_actions_by_date <- function(chamber, year, month, day, myAPI_Key){
+get_house_senate_floor_actions_by_date <- function(chamber, year, month, day, page = 1, myAPI_Key){
   API = 'congress'
   if(!chamber %in% c('house', 'senate')){
     stop("Incorrect chamber. Should be \'senate\' or \'house'\ , lowercase")
@@ -24,5 +24,5 @@ get_house_senate_floor_actions_by_date <- function(chamber, year, month, day, my
     stop("Incorrect year. Year should be four-digit year")  
   }
   query <- sprintf("%s/floor_updates/%s/%s/%s.json", chamber, year, month, day)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

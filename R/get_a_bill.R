@@ -21,8 +21,8 @@
 #' \donttest{
 #' get_a_bill(115, 'hr21')
 #' }
-get_a_bill <- function(congress, bill_id, myAPI_Key){
+get_a_bill <- function(congress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
   query <- sprintf("%s/bills/%s.json", congress, bill_id)
-  pp_query(query, API)
+  pp_query(query, page = page, API)
 }

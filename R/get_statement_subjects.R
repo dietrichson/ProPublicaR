@@ -11,8 +11,8 @@
 #' \donttest{
 #' get_statement_subjects()
 #' }
-get_statement_subjects <- function(myAPI_Key){
+get_statement_subjects <- function(page = 1, myAPI_Key){
   API = 'congress'
   query <- "statements/subjects.json"
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }

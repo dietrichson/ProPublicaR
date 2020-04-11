@@ -12,8 +12,8 @@
 #' \donttest{
 #' get_specific_lobbying_representation_filings('300986302')
 #' }
-get_specific_lobbying_representation_filings <- function(id, myAPI_Key){
+get_specific_lobbying_representation_filings <- function(id, page = 1, myAPI_Key){
   API = 'congress'
   query <- sprintf("lobbying/%s.json", id)
-  pp_query(query, API, myAPI_Key = myAPI_Key)
+  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }
