@@ -1,7 +1,7 @@
 Package: ProPublicaR
 Type: Package
 Title: Access Functions for ProPublica's APIs
-Version: 1.1
+Version: 1.1.1
 Roxygen: list(markdown = TRUE)
 Authors@R: c(
     person("Aleksander", "Dietrichson", email = "dietrichson@gmail.com", role=c("aut", "cre")),
