@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_independent_expenditure_by_committee(2016, FEC_ID ='C00575423')
 #' }
-get_independent_expenditure_by_committee<- function(cycle=2018, FEC_ID, page = 1, myAPI_Key){
+get_independent_expenditure_by_committee<- function(cycle=2018, FEC_ID, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop("Incorrect cycle")
@@ -22,6 +22,6 @@ get_independent_expenditure_by_committee<- function(cycle=2018, FEC_ID, page = 1
     stop("Incorrect cycle: independent expenditures are from 2009 to present")}
   if(is.character(FEC_ID)){
     query <- sprintf("%s/committees/%s/independent_expenditures.json", cycle, FEC_ID)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   } else {stop("FEC_ID has to be character")}
 }

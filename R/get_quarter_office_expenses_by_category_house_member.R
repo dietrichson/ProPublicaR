@@ -13,7 +13,7 @@
 #' \donttest{
 #' get_quarter_office_expenses_by_category_house_member('A000374', 'travel')
 #' }
-get_quarter_office_expenses_by_category_house_member <- function(member_id, category, page = 1, myAPI_Key){
+get_quarter_office_expenses_by_category_house_member <- function(member_id, category, myAPI_Key){
   API = 'congress'
   if(!category %in% c('travel', 'personnel', 'rent-utilities', 'other-services','supplies', 'franked-mail', 'printing', 'equipment', 'total')){
     stop("Incorrect category. Should be travel or personnel or rent-utilities or other-services or supplies or franked-mail or printing or equipment or total, lowercase.")
@@ -22,6 +22,6 @@ get_quarter_office_expenses_by_category_house_member <- function(member_id, cate
     stop("member_id has to be character")
   } else {
     query <- sprintf("members/%s/office_expenses/category/%s.json", member_id, category)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   }
 }

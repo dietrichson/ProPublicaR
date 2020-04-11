@@ -16,7 +16,7 @@
 #' matrix(unlist(get_electronic_filing_form_types(2016)$results), 
 #' ncol = 2, byrow = TRUE)[8])
 #'#' }
-get_electronic_filing_by_types <- function(cycle=2018, form_type_id, page = 1, myAPI_Key){
+get_electronic_filing_by_types <- function(cycle=2018, form_type_id, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop("Incorrect cycle")
@@ -27,5 +27,5 @@ get_electronic_filing_by_types <- function(cycle=2018, form_type_id, page = 1, m
     stop("form_type_id has to be character")
   }
   query <- sprintf("%s/filings/types/%s.json", cycle, form_type_id)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

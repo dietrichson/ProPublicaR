@@ -12,10 +12,10 @@
 #' \donttest{
 #' get_congress_member('K000388')
 #' }
-get_congress_member <- function(member_id, page = 1, myAPI_Key){
+get_congress_member <- function(member_id, myAPI_Key){
   API = 'congress'
   if(is.character(member_id)){
    query <- sprintf("members/%s.json", member_id)
-   pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+   pp_query(query, API, myAPI_Key = myAPI_Key)
   }else{stop("The member_id has to be character")}
 }

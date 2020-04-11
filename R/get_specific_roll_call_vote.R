@@ -17,7 +17,7 @@
 #' \donttest{
 #' get_specific_roll_call_vote(115, 'senate', 1, 17L)
 #' }
-get_specific_roll_call_vote <- function(congress, chamber = c('house', 'senate'), session_number, roll_call_number, page = 1, myAPI_Key){
+get_specific_roll_call_vote <- function(congress, chamber = c('house', 'senate'), session_number, roll_call_number, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
@@ -33,7 +33,7 @@ get_specific_roll_call_vote <- function(congress, chamber = c('house', 'senate')
     stop("roll_call_number has to be integer")
   } else {
     query <- sprintf("%s/%s/sessions/%s/votes/%s.json", congress, chamber, session_number, roll_call_number)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   }
 
 }

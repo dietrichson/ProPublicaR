@@ -12,8 +12,8 @@
 #' \donttest{
 #' get_recent_congressional_statements_by_term('AHCA')
 #' }
-get_recent_congressional_statements_by_term <- function(term, page = 1, myAPI_Key){
+get_recent_congressional_statements_by_term <- function(term, myAPI_Key){
   API = 'congress'
   query <- sprintf("statements/search.json?query=%s", term)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

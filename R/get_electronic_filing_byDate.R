@@ -15,7 +15,7 @@
 #' \donttest{
 #' get_electronic_filing_byDate(2016, 2016, '01', '10')
 #' }
-get_electronic_filing_byDate <- function(cycle=2018, year, month, day, page = 1, myAPI_Key){
+get_electronic_filing_byDate <- function(cycle=2018, year, month, day, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle)){
     stop("Incorrect cycle")
@@ -30,5 +30,5 @@ get_electronic_filing_byDate <- function(cycle=2018, year, month, day, page = 1,
     stop("Year should be four-digit year larger than 2001")
   }
   query <- sprintf("%s/filings/%s/%s/%s.json", cycle, year, month, day)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

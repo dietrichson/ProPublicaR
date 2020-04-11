@@ -13,11 +13,11 @@
 #' \donttest{
 #' get_recent_house_senate_floor_actions(115, 'house')
 #' }
-get_recent_house_senate_floor_actions <- function(congress, chamber, page = 1, myAPI_Key){
+get_recent_house_senate_floor_actions <- function(congress, chamber, myAPI_Key){
   API = 'congress'
   if(!chamber %in% c('house', 'senate')){
     stop("Incorrect chamber. Should be \'senate\' or \'house'\ , lowercase")
   }
   query <- sprintf("%s/%s/floor_updates.json", congress, chamber)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

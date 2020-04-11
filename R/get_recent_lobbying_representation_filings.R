@@ -11,8 +11,8 @@
 #' \donttest{
 #' get_recent_lobbying_representation_filings()
 #' }
-get_recent_lobbying_representation_filings <- function(page = 1, myAPI_Key){
+get_recent_lobbying_representation_filings <- function(myAPI_Key){
   API = 'congress'
   query <- "lobbying/latest.json"
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

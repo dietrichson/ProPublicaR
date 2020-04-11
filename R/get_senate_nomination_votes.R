@@ -12,11 +12,11 @@
 #' \donttest{
 #' get_senate_nomination_votes(114)
 #' }
-get_senate_nomination_votes <- function(congress, page = 1, myAPI_Key){
+get_senate_nomination_votes <- function(congress, myAPI_Key){
   API = 'congress'
   if(!congress %in% 101:cMaxCongress){
     stop("Incorrect congress, should be between 101 and", cMaxCongress)
   }
   query <- sprintf("%s/nominations.json", congress)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

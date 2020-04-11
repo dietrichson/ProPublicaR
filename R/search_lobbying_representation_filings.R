@@ -12,8 +12,8 @@
 #' \donttest{
 #' search_lobbying_representation_filings('Facebook')
 #' }
-search_lobbying_representation_filings <- function(query, page = 1, myAPI_Key){
+search_lobbying_representation_filings <- function(query, myAPI_Key){
   API = 'congress'
   query <- sprintf("lobbying/search.json?query=%s", query)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

@@ -12,12 +12,12 @@
 #' \donttest{
 #' get_recent_official_communications(115)
 #' }
-get_recent_official_communications <- function(congress, page = 1, myAPI_Key){
+get_recent_official_communications <- function(congress, myAPI_Key){
   API = 'congress'
   if(!congress %in% 96:cMaxCongress){
     stop("Incorrect congress, should be 110 to ",cMaxCongress,
          " for House or 96 to ",cMaxCongress, "mfor Senate")
   }
   query <- sprintf("%s/communications.json", congress)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

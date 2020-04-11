@@ -17,7 +17,7 @@
 #' 
 #' get_specific_committee(115, "senate", "SSAF")
 #' }
-get_specific_committee <- function(congress, chamber, committee_id, page = 1, myAPI_Key){
+get_specific_committee <- function(congress, chamber, committee_id, myAPI_Key){
   API = 'congress'
   if(!congress %in% 110:cMaxCongress){
     stop("Incorrect congress, should be between 110 and ",cMaxCongress)
@@ -26,5 +26,5 @@ get_specific_committee <- function(congress, chamber, committee_id, page = 1, my
     stop("Incorrect chamber. Should be \'senate\', \'house'\ or \'both\', lowercase")
   }
   query <- sprintf("%s/%s/committees/%s.json", congress, chamber, committee_id)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

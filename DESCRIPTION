@@ -127,6 +127,7 @@ Collate:
     'recent_bills_by_member.R'
     'recent_bills_by_subject.R'
     'recent_bills_by_type.R'
+    'retrieve_key.R'
     'search_lobbying_representation_filings.R'
     'validate_cycle.R'
     'validate_district.R'

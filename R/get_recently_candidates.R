@@ -13,12 +13,12 @@
 #' \donttest{
 #' get_recently_candidates(2016)
 #' }
-get_recently_candidates <- function(cycle=2018, page = 1, myAPI_Key){
+get_recently_candidates <- function(cycle=2018, myAPI_Key){
   API = 'campaign-finance'
   if(!validate_cycle(cycle))
     stop("Incorrect cycle")
   if(cycle >= 2010 & cycle %% 2 == 0){
     query <- sprintf("%s/candidates/new.json", cycle)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   } else {stop("Cycle should be four-digit even-numbered year between 2010 and 2018")}
 }

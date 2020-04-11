@@ -13,12 +13,12 @@
 #' \donttest{
 #' get_bills_cosponsored_member('B001260', 'cosponsored')
 #' }
-get_bills_cosponsored_member <- function(member_id, type = c('cosponsored', 'withdrawn'), page = 1, myAPI_Key){
+get_bills_cosponsored_member <- function(member_id, type = c('cosponsored', 'withdrawn'), myAPI_Key){
   API = 'congress'
   if(!type%in%c('cosponsored','withdrawn'))
     stop("Incorrect cosponsorship type. Should be \'cosponsored\' or \'withdrawn\', lowercase.")
   if(is.character(member_id)){
     query <- sprintf("members/%s/bills/%s.json", member_id, type)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   }else{stop("The member_id has to be character")}
 }

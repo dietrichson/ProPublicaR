@@ -16,7 +16,7 @@
 #' get_votes_by_date_range('house', '2017-01-03', '2017-01-31')
 #' }
 get_votes_by_date_range <- function(chamber = c('house', 'senate'), 
-                                    start_date, end_date, page = 1, myAPI_Key){
+                                    start_date, end_date, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
@@ -31,7 +31,7 @@ get_votes_by_date_range <- function(chamber = c('house', 'senate'),
   
   if(difftime(start_date, end_date) > 30){
     query <- sprintf("%s/votes/%s/%s.json", chamber, start_date, end_date)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   } else {stop("Range of two dates cannot exceed 30 days.")}
   
 }

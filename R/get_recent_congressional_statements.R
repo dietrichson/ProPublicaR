@@ -11,8 +11,8 @@
 #' \donttest{
 #' get_recent_congressional_statements()
 #' }
-get_recent_congressional_statements <- function(page = 1, myAPI_Key){
+get_recent_congressional_statements <- function(myAPI_Key){
   API = 'congress'
   query <- "statements/latest.json"
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }

@@ -15,7 +15,7 @@
 #' \donttest{
 #' compare_two_member_vote_positions('G000575', 'D000624', '114', 'house')
 #' }
-compare_two_member_vote_positions <- function(first_member_id, second_member_id, congress, chamber, page = 1, myAPI_Key){
+compare_two_member_vote_positions <- function(first_member_id, second_member_id, congress, chamber, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate'))
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
@@ -29,6 +29,6 @@ compare_two_member_vote_positions <- function(first_member_id, second_member_id,
     stop("first_member_id and second_member_id have to be character")
   }else{
     query <- sprintf("members/%s/votes/%s/%s/%s.json", first_member_id, second_member_id, congress, chamber)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
   }
 }

@@ -13,12 +13,12 @@
 #' \donttest{
 #' get_upcoming_bills('senate')
 #' }
-get_upcoming_bills <- function(chamber, page = 1, myAPI_Key){
+get_upcoming_bills <- function(chamber, myAPI_Key){
   API = 'congress'
   if(!chamber%in%c('house','senate')){
     stop("Incorrect Chamber. Should be \'house\' or \'senate\', lowercase.")
   } else {
     query <- sprintf("bills/upcoming/%s.json", chamber)
-    pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+    pp_query(query, API, myAPI_Key = myAPI_Key)
     }
 }

@@ -14,8 +14,8 @@
 #' get_congressional_statement_by_subjects(get_statement_subjects()$results[[11]][3])
 #' get_congressional_statement_by_subjects("Central Intelligence Agency")
 #' }
-get_congressional_statement_by_subjects <- function(subject, page = 1, myAPI_Key){
+get_congressional_statement_by_subjects <- function(subject, myAPI_Key){
   API = 'congress'
   query <- sprintf("statements/subject/%s.json", subject)
-  pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
+  pp_query(query, API, myAPI_Key = myAPI_Key)
 }
