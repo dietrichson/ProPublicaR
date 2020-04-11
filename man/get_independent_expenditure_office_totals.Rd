@@ -7,6 +7,7 @@
 get_independent_expenditure_office_totals(
   cycle = 2018,
   office = c("house", "senate", "president"),
+  page = 1,
   myAPI_Key
 )
 }
@@ -14,6 +15,8 @@ get_independent_expenditure_office_totals(
 \item{cycle}{The election cycle}
 
 \item{office}{one of house, senate or president}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

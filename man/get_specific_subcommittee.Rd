@@ -9,6 +9,7 @@ get_specific_subcommittee(
   chamber,
   committee_id,
   subcommittee_id,
+  page = 1,
   myAPI_Key
 )
 }
@@ -20,6 +21,8 @@ get_specific_subcommittee(
 \item{committee_id}{Optional committee abbreviation, for example HSAG. Use the full committees response to find abbreviations.}
 
 \item{subcommittee_id}{Optional sub-committee abbreviation, for example HSAG. Use the full committees response to find abbreviations.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

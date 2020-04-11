@@ -4,12 +4,14 @@
 \alias{get_recent_nominations_by_category}
 \title{Get Recent Nominations by Category}
 \usage{
-get_recent_nominations_by_category(congress, type, myAPI_Key)
+get_recent_nominations_by_category(congress, type, page = 1, myAPI_Key)
 }
 \arguments{
 \item{congress}{107-116}
 
 \item{type}{received, updated, confirmed, withdrawn}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

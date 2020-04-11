@@ -9,6 +9,7 @@ get_specific_roll_call_vote(
   chamber = c("house", "senate"),
   session_number,
   roll_call_number,
+  page = 1,
   myAPI_Key
 )
 }
@@ -21,6 +22,8 @@ get_specific_roll_call_vote(
 passed (latest_major_action_date), enacted (enacted), vetoed (vetoed).}
 
 \item{roll_call_number}{integer}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

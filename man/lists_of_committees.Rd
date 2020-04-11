@@ -4,12 +4,14 @@
 \alias{lists_of_committees}
 \title{Lists of Committees}
 \usage{
-lists_of_committees(congress, chamber, myAPI_Key)
+lists_of_committees(congress, chamber, page = 1, myAPI_Key)
 }
 \arguments{
 \item{congress}{110-116}
 
 \item{chamber}{house, senate or joint}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

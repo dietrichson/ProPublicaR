@@ -4,9 +4,11 @@
 \alias{get_state_party_counts}
 \title{Get State Party Counts}
 \usage{
-get_state_party_counts(myAPI_Key)
+get_state_party_counts(page = 1, myAPI_Key)
 }
 \arguments{
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
+
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{

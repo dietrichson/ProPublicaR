@@ -4,10 +4,12 @@
 \alias{get_congressional_statement_by_subjects}
 \title{Get Congressional Statements by Subject}
 \usage{
-get_congressional_statement_by_subjects(subject, myAPI_Key)
+get_congressional_statement_by_subjects(subject, page = 1, myAPI_Key)
 }
 \arguments{
 \item{subject}{Slug version of subject}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

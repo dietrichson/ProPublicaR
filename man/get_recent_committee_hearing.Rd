@@ -4,10 +4,12 @@
 \alias{get_recent_committee_hearing}
 \title{Get Recent Committee Hearings}
 \usage{
-get_recent_committee_hearing(congress, myAPI_Key)
+get_recent_committee_hearing(congress, page = 1, myAPI_Key)
 }
 \arguments{
 \item{congress}{114-116}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

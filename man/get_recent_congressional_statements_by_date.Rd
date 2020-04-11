@@ -4,7 +4,13 @@
 \alias{get_recent_congressional_statements_by_date}
 \title{Get Congressional Statements by Date}
 \usage{
-get_recent_congressional_statements_by_date(year, month, day, myAPI_Key)
+get_recent_congressional_statements_by_date(
+  year,
+  month,
+  day,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{year}{YYYY format}
@@ -12,6 +18,8 @@ get_recent_congressional_statements_by_date(year, month, day, myAPI_Key)
 \item{month}{MM format}
 
 \item{day}{DD format}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

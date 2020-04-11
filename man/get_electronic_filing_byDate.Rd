@@ -4,7 +4,14 @@
 \alias{get_electronic_filing_byDate}
 \title{Get Electronic Filings by Date}
 \usage{
-get_electronic_filing_byDate(cycle = 2018, year, month, day, myAPI_Key)
+get_electronic_filing_byDate(
+  cycle = 2018,
+  year,
+  month,
+  day,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{cycle}{The election cycle}
@@ -14,6 +21,8 @@ get_electronic_filing_byDate(cycle = 2018, year, month, day, myAPI_Key)
 \item{month}{The two-digit month from 01-12}
 
 \item{day}{The two-digit day from 01-31}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

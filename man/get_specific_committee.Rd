@@ -4,7 +4,7 @@
 \alias{get_specific_committee}
 \title{Get a Specific Committee}
 \usage{
-get_specific_committee(congress, chamber, committee_id, myAPI_Key)
+get_specific_committee(congress, chamber, committee_id, page = 1, myAPI_Key)
 }
 \arguments{
 \item{congress}{110-116}
@@ -12,6 +12,8 @@ get_specific_committee(congress, chamber, committee_id, myAPI_Key)
 \item{chamber}{house, senate or joint}
 
 \item{committee_id}{Committee abbreviation, for example HSAG. Use the full committees response to find abbreviations.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

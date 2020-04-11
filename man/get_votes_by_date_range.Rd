@@ -8,6 +8,7 @@ get_votes_by_date_range(
   chamber = c("house", "senate"),
   start_date,
   end_date,
+  page = 1,
   myAPI_Key
 )
 }
@@ -17,6 +18,8 @@ get_votes_by_date_range(
 \item{start_date}{YYYY-MM-DD format}
 
 \item{end_date}{YYYY-MM-DD format}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

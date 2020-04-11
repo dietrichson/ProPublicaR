@@ -4,9 +4,11 @@
 \alias{get_recent_lobbying_representation_filings}
 \title{Get Recent Lobbying Representation filings}
 \usage{
-get_recent_lobbying_representation_filings(myAPI_Key)
+get_recent_lobbying_representation_filings(page = 1, myAPI_Key)
 }
 \arguments{
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
+
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{

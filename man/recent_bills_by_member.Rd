@@ -4,12 +4,14 @@
 \alias{recent_bills_by_member}
 \title{Get Recent Bills by a Specific Member}
 \usage{
-recent_bills_by_member(member_id, type, myAPI_Key)
+recent_bills_by_member(member_id, type, page = 1, myAPI_Key)
 }
 \arguments{
 \item{member_id}{member-id    The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
 \item{type}{introduced or updated}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

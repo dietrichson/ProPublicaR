@@ -8,6 +8,7 @@
 get_recent_personal_explanations_votes_by_category(
   congress,
   category,
+  page = 1,
   myAPI_Key
 )
 }
@@ -15,6 +16,8 @@ get_recent_personal_explanations_votes_by_category(
 \item{congress}{101-116}
 
 \item{category}{options: voted-incorrectly (    Voted yes or no by mistake),    official-business (Away on official congressional business),    ambiguous (No reason given),    travel-difficulties (    Travel delays and issues),    personal (Personal or family reason),    claims-voted (Vote made but not recorded),    medical (    Medical issue for lawmaker, not family),    weather,    memorial,    misunderstanding,    leave-of-absence,    prior-commitment,    election-related,    military-service,    other}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

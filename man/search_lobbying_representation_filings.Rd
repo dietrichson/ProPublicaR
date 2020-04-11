@@ -4,10 +4,12 @@
 \alias{search_lobbying_representation_filings}
 \title{Search Lobbying Representation filings}
 \usage{
-search_lobbying_representation_filings(query, myAPI_Key)
+search_lobbying_representation_filings(query, page = 1, myAPI_Key)
 }
 \arguments{
 \item{query}{keyword or phrase}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

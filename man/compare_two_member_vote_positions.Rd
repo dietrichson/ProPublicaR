@@ -9,6 +9,7 @@ compare_two_member_vote_positions(
   second_member_id,
   congress,
   chamber,
+  page = 1,
   myAPI_Key
 )
 }
@@ -20,6 +21,8 @@ compare_two_member_vote_positions(
 \item{congress}{102-116 for House, 101-116 for Senate}
 
 \item{chamber}{house or senate}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

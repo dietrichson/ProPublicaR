@@ -4,7 +4,13 @@
 \alias{get_current_members_by_statedistrict}
 \title{Get Current Members by State/District}
 \usage{
-get_current_members_by_statedistrict(state, chamber, district, myAPI_Key)
+get_current_members_by_statedistrict(
+  state,
+  chamber,
+  district,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{state}{Two-letter state abbreviation}
@@ -12,6 +18,8 @@ get_current_members_by_statedistrict(state, chamber, district, myAPI_Key)
 \item{chamber}{house or senate}
 
 \item{district}{House of Representatives district number (House requests only). For states with at-large districts (AK, DE, MT, ND, SD, VT, WY), territories (GU, AS, VI, MP), commonwealths (PR) and the District of Columbia, use a district value of 1.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

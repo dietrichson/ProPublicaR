@@ -4,12 +4,14 @@
 \alias{get_electronic_filing_by_types}
 \title{Get Electronic Filings By Type}
 \usage{
-get_electronic_filing_by_types(cycle = 2018, form_type_id, myAPI_Key)
+get_electronic_filing_by_types(cycle = 2018, form_type_id, page = 1, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}
 
 \item{form_type_id}{F + integer. To get form type IDs, use an electronic filing form types request.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

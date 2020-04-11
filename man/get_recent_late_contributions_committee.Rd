@@ -6,12 +6,19 @@
 https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/48hour}
 \usage{
-get_recent_late_contributions_committee(cycle = 2018, FEC_ID, myAPI_Key)
+get_recent_late_contributions_committee(
+  cycle = 2018,
+  FEC_ID,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{cycle}{The election cycle}
 
 \item{FEC_ID}{The FEC-assigned 9-character ID of a committee.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

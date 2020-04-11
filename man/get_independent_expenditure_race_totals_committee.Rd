@@ -5,12 +5,19 @@
 \alias{get_independent_expenditure_race_totals_committee}
 \title{Get Independent Expenditure Office Totals}
 \usage{
-get_independent_expenditure_race_totals_committee(cycle, FEC_ID, myAPI_Key)
+get_independent_expenditure_race_totals_committee(
+  cycle,
+  FEC_ID,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{cycle}{The election cycle}
 
 \item{FEC_ID}{The FEC-assigned 9-character ID of a committee}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

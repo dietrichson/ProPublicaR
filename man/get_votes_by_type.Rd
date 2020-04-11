@@ -8,6 +8,7 @@ get_votes_by_type(
   congress,
   chamber = c("house", "senate"),
   vote_type,
+  page = 1,
   myAPI_Key
 )
 }
@@ -17,6 +18,8 @@ get_votes_by_type(
 \item{chamber}{house or senate}
 
 \item{vote_type}{missed, party, loneno or perfect}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

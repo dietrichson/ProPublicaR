@@ -4,12 +4,14 @@
 \alias{get_candidate_by_name}
 \title{Get Candidate Info}
 \usage{
-get_candidate_by_name(NAME, cycle = 2018, myAPI_Key)
+get_candidate_by_name(NAME, cycle = 2018, page = 1, myAPI_Key)
 }
 \arguments{
 \item{NAME}{The first or last name of the candidate.}
 
 \item{cycle}{The election cycle}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

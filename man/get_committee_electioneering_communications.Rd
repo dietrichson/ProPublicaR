@@ -4,12 +4,19 @@
 \alias{get_committee_electioneering_communications}
 \title{Get Electioneering Communications by Specific Committee}
 \usage{
-get_committee_electioneering_communications(cycle = 2018, FEC_ID, myAPI_Key)
+get_committee_electioneering_communications(
+  cycle = 2018,
+  FEC_ID,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{cycle}{The election cycle}
 
 \item{FEC_ID}{The FEC-assigned 9-character ID of a committee.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

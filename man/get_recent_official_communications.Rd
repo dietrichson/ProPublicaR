@@ -4,10 +4,12 @@
 \alias{get_recent_official_communications}
 \title{Get Recent Official Communications}
 \usage{
-get_recent_official_communications(congress, myAPI_Key)
+get_recent_official_communications(congress, page = 1, myAPI_Key)
 }
 \arguments{
 \item{congress}{114-116 for House, 96-116 for Senate}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

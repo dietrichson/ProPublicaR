@@ -17,7 +17,7 @@
 get_cosponsors_specific_bill <- function(congress, bill_id, page = 1, myAPI_Key){
   API = 'congress'
   if(!congress %in% 105:cMaxCongress){
-    stop("Congress has to be between 105 and ", maxCongress)
+    stop("Congress has to be between 105 and ", cMaxCongress)
   }
   if(is.character(bill_id)){
     query <- sprintf("%s/bills/%s/cosponsors.json", congress, bill_id)

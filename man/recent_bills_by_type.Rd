@@ -6,8 +6,9 @@
 \usage{
 recent_bills_by_type(
   congress,
-  chamber = c("house", "senate"),
+  chamber = c("house", "senate", "both"),
   type = c("introduced", "updated", "active", "passed", "enacted", "vetoed"),
+  page = 1,
   myAPI_Key
 )
 }
@@ -19,13 +20,23 @@ recent_bills_by_type(
 \item{type}{introduced (introduced_date), updated (latest_major_action_date), active (latest_major_action_date)
 passed (latest_major_action_date), enacted (enacted), vetoed (vetoed).}
 
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
+
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
 summaries of the 20 most recent bills by type. The order of the results depends on the value of type and all results are sorted in descending order.
 }
 \description{
-For the current Congress, “recent bills” can be one of four types (see the descriptions below). For previous Congresses, “recent bills” means the last 20 bills of that Congress. In the responses, an active value of true means that the bill has seen action beyond introduction and committee referral. Requests include a chamber value; to get recent bills from the House and Senate, use both as the value. You can paginate through bills using the offset querystring parameter that accepts multiples of 20. Bills before the 113th Congress (prior to 2013) have fewer attribute values than those from the 113th Congress onward, because the more recent bill data comes from the bulk data provided by the Government Publishing Office. The order of the results depends on the value of type and all results are sorted in descending order. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/bills/{type}.json
+For the current Congress, “recent bills” can be one of four types (see the descriptions below).
+For previous Congresses, “recent bills” means the last 20 bills of that Congress. In the responses,
+an active value of true means that the bill has seen action beyond introduction and committee referral.
+Requests include a chamber value; to get recent bills from the House and Senate, use both as the value.
+You can paginate through bills using the page-parameter that accepts multiples of 20.
+Bills before the 113th Congress (prior to 2013) have fewer attribute values than those from the 113th
+Congress onward, because the more recent bill data comes from the bulk data provided by the Government
+Publishing Office. The order of the results depends on the value of type and all results are sorted in
+descending order.
 }
 \examples{
 \donttest{

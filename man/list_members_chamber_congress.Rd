@@ -4,12 +4,14 @@
 \alias{list_members_chamber_congress}
 \title{To get a list of members of a particular chamber in a particular Congress}
 \usage{
-list_members_chamber_congress(congress, chamber, myAPI_Key)
+list_members_chamber_congress(congress, chamber, page = 1, myAPI_Key)
 }
 \arguments{
 \item{congress}{102-116 for House, 80-116 for Senate}
 
 \item{chamber}{house or senate}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

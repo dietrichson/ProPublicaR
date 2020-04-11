@@ -4,12 +4,14 @@
 \alias{get_recent_independent_expend}
 \title{Get Recent Independent Expenditures}
 \usage{
-get_recent_independent_expend(cycle = 2018, myAPI_Key)
+get_recent_independent_expend(cycle = 2018, page = 1, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle
 
 @return  List of returned JSON from endpoint that retrieves  the 200 most recent independent expenditures and optionally can be offset by multiples of 20.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

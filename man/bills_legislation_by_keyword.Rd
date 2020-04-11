@@ -8,6 +8,7 @@ bills_legislation_by_keyword(
   query_keyword,
   sort = c("date", "_score"),
   dir = c("desc", "asc"),
+  page = 1,
   myAPI_Key
 )
 }
@@ -17,6 +18,8 @@ bills_legislation_by_keyword(
 \item{sort}{_score or date (default is date)}
 
 \item{dir}{sort direction: asc or desc}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

@@ -4,10 +4,12 @@
 \alias{get_recent_electioneering_communications}
 \title{Get Recent Electioneering Communications}
 \usage{
-get_recent_electioneering_communications(cycle = 2018, myAPI_Key)
+get_recent_electioneering_communications(cycle = 2018, page = 1, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

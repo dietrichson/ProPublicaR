@@ -4,10 +4,12 @@
 \alias{get_committee_leadership}
 \title{Get Leadership Committees}
 \usage{
-get_committee_leadership(cycle = 2018, myAPI_Key)
+get_committee_leadership(cycle = 2018, page = 1, myAPI_Key)
 }
 \arguments{
 \item{cycle}{The election cycle: an even-numbered year between 1996 and 2016. The current cycle in 2018}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

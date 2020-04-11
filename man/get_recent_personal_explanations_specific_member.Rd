@@ -8,6 +8,7 @@
 get_recent_personal_explanations_specific_member(
   member_id,
   congress,
+  page = 1,
   myAPI_Key
 )
 }
@@ -15,6 +16,8 @@ get_recent_personal_explanations_specific_member(
 \item{member_id}{The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.}
 
 \item{congress}{110-116}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

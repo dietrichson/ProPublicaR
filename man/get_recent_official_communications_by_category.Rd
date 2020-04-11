@@ -5,12 +5,19 @@
 \alias{get_recent_official_communications_by_category}
 \title{Get Recent Official Communications by Category}
 \usage{
-get_recent_official_communications_by_category(congress, category, myAPI_Key)
+get_recent_official_communications_by_category(
+  congress,
+  category,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{congress}{114-116 for House, 96-116 for Senate}
 
 \item{category}{ec, pm, pom}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

@@ -4,7 +4,13 @@
 \alias{get_votes_by_date}
 \title{Get Votes by Date}
 \usage{
-get_votes_by_date(chamber = c("house", "senate"), year, month, myAPI_Key)
+get_votes_by_date(
+  chamber = c("house", "senate"),
+  year,
+  month,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{chamber}{house or senate}
@@ -12,6 +18,8 @@ get_votes_by_date(chamber = c("house", "senate"), year, month, myAPI_Key)
 \item{year}{YYYY format}
 
 \item{month}{MM format}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

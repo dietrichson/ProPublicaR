@@ -1,6 +1,14 @@
 #' Get Recent Bills
 #'
-#' For the current Congress, “recent bills” can be one of four types (see the descriptions below). For previous Congresses, “recent bills” means the last 20 bills of that Congress. In the responses, an active value of true means that the bill has seen action beyond introduction and committee referral. Requests include a chamber value; to get recent bills from the House and Senate, use both as the value. You can paginate through bills using the offset querystring parameter that accepts multiples of 20. Bills before the 113th Congress (prior to 2013) have fewer attribute values than those from the 113th Congress onward, because the more recent bill data comes from the bulk data provided by the Government Publishing Office. The order of the results depends on the value of type and all results are sorted in descending order. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/bills/{type}.json
+#' For the current Congress, “recent bills” can be one of four types (see the descriptions below). 
+#' For previous Congresses, “recent bills” means the last 20 bills of that Congress. In the responses, 
+#' an active value of true means that the bill has seen action beyond introduction and committee referral.
+#' Requests include a chamber value; to get recent bills from the House and Senate, use both as the value. 
+#' You can paginate through bills using the page-parameter that accepts multiples of 20. 
+#' Bills before the 113th Congress (prior to 2013) have fewer attribute values than those from the 113th 
+#' Congress onward, because the more recent bill data comes from the bulk data provided by the Government 
+#' Publishing Office. The order of the results depends on the value of type and all results are sorted in 
+#' descending order. 
 #'
 #' @param congress 105-116
 #' @param chamber house, senate or both

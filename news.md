@@ -3,6 +3,7 @@
 April 11 2020
 
 Updates:
+Added documentation of parameter "page"
 Some bug-fixes
 Unified approach to pagination
 

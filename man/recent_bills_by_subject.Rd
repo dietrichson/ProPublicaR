@@ -4,10 +4,12 @@
 \alias{recent_bills_by_subject}
 \title{Get Recent Bills by a Specific Subject}
 \usage{
-recent_bills_by_subject(subject, myAPI_Key)
+recent_bills_by_subject(subject, page = 1, myAPI_Key)
 }
 \arguments{
 \item{subject}{A slug version of a legislative subject, displayed as url_name in subject responses.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

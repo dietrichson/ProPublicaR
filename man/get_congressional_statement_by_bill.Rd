@@ -4,12 +4,14 @@
 \alias{get_congressional_statement_by_bill}
 \title{Get Congressional Statements by Bill}
 \usage{
-get_congressional_statement_by_bill(congress, bill_id, myAPI_Key)
+get_congressional_statement_by_bill(congress, bill_id, page = 1, myAPI_Key)
 }
 \arguments{
 \item{congress}{113-116}
 
 \item{bill_id}{a bill slug, for example s19 - these can be found in bill responses.}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }

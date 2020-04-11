@@ -4,12 +4,19 @@
 \alias{get_top20_candidate_of_FinancialCategory}
 \title{Get Top 20 Candidates in Specific Financial Category}
 \usage{
-get_top20_candidate_of_FinancialCategory(category, cycle = 2018, myAPI_Key)
+get_top20_candidate_of_FinancialCategory(
+  category,
+  cycle = 2018,
+  page = 1,
+  myAPI_Key
+)
 }
 \arguments{
 \item{category}{One of the values from the following categories:'candidate-loan', 'contribution-total', 'debts-owed', 'disbursements-total', 'end-cash', 'individual-total', 'pac-total', 'receipts-total' and 'refund-total'.}
 
 \item{cycle}{The election cycle}
+
+\item{page}{Results come in batches of 20. The page parameter specifies which one to retrieve.}
 
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
