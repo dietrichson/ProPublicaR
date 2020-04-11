@@ -16,7 +16,7 @@
 #' get_current_members_by_statedistrict( 'MI', 'house', 11)
 #' get_current_members_by_statedistrict( 'RI', 'senate')
 #' }
-get_current_members_by_statedistrict<- function(state, chamber, district, myAPI_Key){
+get_current_members_by_statedistrict<- function(state, chamber, district, page = 1, myAPI_Key){
   API = 'congress'
   if(!validate_state(state))
     stop("Incorrect state")
@@ -31,5 +31,5 @@ get_current_members_by_statedistrict<- function(state, chamber, district, myAPI_
       stop("Incorrect district")
     }else{candidatesURL <- sprintf('members/%s/%s/%s/current.json', chamber,state,district)}
   }
-  pp_query(candidatesURL, API, myAPI_Key = myAPI_Key)
+  pp_query(candidatesURL, API, page = page, myAPI_Key = myAPI_Key)
 }

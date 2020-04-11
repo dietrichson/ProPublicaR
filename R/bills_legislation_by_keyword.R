@@ -17,8 +17,8 @@
 #' @examples
 #' \donttest{
 #' bills_legislation_by_keyword(query_keyword = 'megahertz')}
-bills_legislation_by_keyword <- function(query_keyword, sort = c('date', '_score'), dir = c('desc', 'asc'), myAPI_Key){
+bills_legislation_by_keyword <- function(query_keyword, sort = c('date', '_score'), dir = c('desc', 'asc'), page = 1, myAPI_Key){
   API = 'congress'
   query <- sprintf("bills/search.json?query=%s", query_keyword)
-  pp_query(query, API)
+  pp_query(query, page = page, API)
 }
