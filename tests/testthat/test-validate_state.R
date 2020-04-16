@@ -15,4 +15,3 @@ test_that("warnings", {
 test_that("get 50 TRUE if use data state_abb", {
   expect_equal(dim(array(sapply(unlist(unique(us_congressional_districts$state_abb)), validate_state))), 50)
 })
-
