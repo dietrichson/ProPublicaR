@@ -1,4 +1,4 @@
-#' Get a Specific Bil
+#' Get a Specific Bill
 #' 
 #' Use this request type to get details on bills that may be considered by the House or Senate in the near future,
 #' based on scheduled published or announced by congressional leadership.

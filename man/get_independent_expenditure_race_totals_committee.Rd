@@ -22,7 +22,7 @@ get_independent_expenditure_race_totals_committee(
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
-ist of returned JSON from endpoint that retrieves the total amounts of money that a given committee has spent on individual races (consisting of a state, office and district) during a cycle.
+list of returned JSON from endpoint that retrieves the total amounts of money that a given committee has spent on individual races (consisting of a state, office and district) during a cycle.
 }
 \description{
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/independent_expenditures/races

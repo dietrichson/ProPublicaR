@@ -16,7 +16,7 @@ get_recently_candidates(cycle = 2018, page = 1, myAPI_Key)
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
-List of returned JSON from endpoint that retrieves ithe 20 most recently added FEC candidates for a given campaign cycle from the campaign-finance API from ProPublica.
+List of the most recently added FEC candidates for a given campaign cycle from the campaign-finance API from ProPublica.
 }
 \description{
 Get Top 20 Candidates in Specific Financial Category

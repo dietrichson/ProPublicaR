@@ -25,7 +25,7 @@ get_recent_official_communications_by_category(
 List of returned JSON from endpoint that retrieves the 20 most recent results for the specified type: ec (Executive Communication), pm (Presidential Message) or pom (Petition or Memorial).
 }
 \description{
-To get lists of official communications to Congress from the president, executive branch agencies and state legislatures to congressional committees, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/communications/category/{category}.json
+Get lists of official communications to Congress from the president, executive branch agencies and state legislatures to congressional committees.
 }
 \examples{
 \donttest{

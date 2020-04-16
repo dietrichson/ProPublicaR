@@ -15,10 +15,10 @@ validate_cycle <- function(cycle) {
   if (nchar(cycle) != 4) {
     warning("Cycle should be four-digit year")
     }
-  if (nchar(cycle) == 4 & cycle < 1996){
+  if (nchar(cycle) == 4 & cycle < 1996) {
     warning("Cycle should be four-digit year larger than 1996")
   }
   if (cycle > 1996 & cycle %% 2 != 0)
     warning("Cycle should be even-numbered year larger than 1996")
-  cycle >= 1996 & cycle %% 2 ==0
+  cycle >= 1996 & cycle %% 2 == 0
 }

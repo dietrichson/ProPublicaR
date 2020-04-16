@@ -1,4 +1,4 @@
-#' Validate that a abbreviaton is correct
+#' Validate that a abbreviation is correct
 #'
 #' @param us_state State abbreviation (e.g. NY)
 #'

@@ -2,7 +2,7 @@
 % Please edit documentation in R/validate_district.R
 \name{validate_district}
 \alias{validate_district}
-\title{Validate that a district abbreviaton is correct}
+\title{Validate that a district abbreviation is correct}
 \usage{
 validate_district(us_district)
 }
@@ -13,7 +13,7 @@ validate_district(us_district)
 TRUE if correct FALSE otherwise
 }
 \description{
-Validate that a district abbreviaton is correct
+Validate that a district abbreviation is correct
 }
 \examples{
 \donttest{

@@ -1,4 +1,4 @@
-#' Validate that a district abbreviaton is correct
+#' Validate that a district abbreviation is correct
 #'
 #' @param us_district An integer corresponding to the district.
 #'

@@ -1,7 +1,7 @@
 #' Get Candidates in Race
 #'
 #' @param state State abbreviation
-#' @param chamber hourse or senate
+#' @param chamber house or senate
 #' @param district house district
 #' @param cycle The election cycle in question, e.g. 2018
 #' @param return_value should results be retrieved, or query string returned.

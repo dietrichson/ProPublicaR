@@ -27,7 +27,7 @@ compare_two_member_bill_sponsorships(
 \item{myAPI_Key}{API key from Propublica To use the congress API, you must sign up for an API key.}
 }
 \value{
-List of returned JSON from endpoint that retrieves bill sponsorship comparation between two members who served in the same Congress and chamber
+List of bill sponsorship comparison between two members who served in the same Congress and chamber
 }
 \description{
 To compare bill sponsorship between two members who served in the same Congress and chamber. HTTP Request: GET https://api.propublica.org/congress/v1/members/{first-member-id}/bills/{second-member-id}/{congress}/{chamber}.json

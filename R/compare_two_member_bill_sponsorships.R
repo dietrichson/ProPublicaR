@@ -8,7 +8,7 @@
 #' @param chamber house o senate
 #' @inheritParams get_new_members
 #'
-#' @return List of returned JSON from endpoint that retrieves bill sponsorship comparation between two members who served in the same Congress and chamber
+#' @return List of bill sponsorship comparison between two members who served in the same Congress and chamber
 #' @export
 #'
 #' @examples

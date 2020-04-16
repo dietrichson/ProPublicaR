@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_a_bill.R
 \name{get_a_bill}
 \alias{get_a_bill}
-\title{Get a Specific Bil}
+\title{Get a Specific Bill}
 \usage{
 get_a_bill(congress, bill_id, page = 1, myAPI_Key)
 }

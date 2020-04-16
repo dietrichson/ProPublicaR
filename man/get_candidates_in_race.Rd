@@ -17,7 +17,7 @@ get_candidates_in_race(
 \arguments{
 \item{state}{State abbreviation}
 
-\item{chamber}{hourse or senate}
+\item{chamber}{house or senate}
 
 \item{district}{house district}
 

@@ -1,6 +1,6 @@
 #' Get Congressional Statements by Member
 #'
-#' To get lists of statements published on a specific member’s congressional website during a particular congress, use the following function. HTTP Request: GEThttps://api.propublica.org/congress/v1/members/{member-id}/statements/{congress}.json
+#' Get lists of statements published on a specific member’s congressional website during a particular congress, use the following function. 
 #'
 #' @param member_id The ID of the member to retrieve; it is assigned by the Biographical Directory of the United States Congress or can be retrieved from a member list request.
 #' @param congress 113-116

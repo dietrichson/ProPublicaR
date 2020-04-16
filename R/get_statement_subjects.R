@@ -1,6 +1,8 @@
 #' Get Statement Subjects
 #'
-#'To get lists of subjects used to categorize congressional statements, use the following function. hese subjects are not automatically assigned but are manually curated by ProPublica, although they are based on legislative subjects produced by the Library of Congress. HTTP Request: GET https://api.propublica.org/congress/v1/statements/subjects.json
+#'Get lists of subjects used to categorize congressional statements, use the following function. 
+#'These subjects are not automatically assigned but are manually curated by ProPublica, although 
+#'they are based on legislative subjects produced by the Library of Congress. 
 #'
 #' @inheritParams get_new_members
 #'

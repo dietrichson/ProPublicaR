@@ -1,6 +1,6 @@
 #' Get Recent Official Communications by Category
 #'
-#' To get lists of official communications to Congress from the president, executive branch agencies and state legislatures to congressional committees, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/communications/category/{category}.json
+#' Get lists of official communications to Congress from the president, executive branch agencies and state legislatures to congressional committees.
 #'
 #' @param congress 114-116 for House, 96-116 for Senate
 #' @param category ec, pm, pom

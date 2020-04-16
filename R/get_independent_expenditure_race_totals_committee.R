@@ -6,7 +6,7 @@
 #' @param FEC_ID The FEC-assigned 9-character ID of a committee
 #' @inheritParams get_new_members
 #'
-#' @return ist of returned JSON from endpoint that retrieves the total amounts of money that a given committee has spent on individual races (consisting of a state, office and district) during a cycle.
+#' @return list of returned JSON from endpoint that retrieves the total amounts of money that a given committee has spent on individual races (consisting of a state, office and district) during a cycle.
 #' @export
 #'
 #' @examples
