@@ -1,10 +1,10 @@
-#' Search Lobbying Representation filings
+#' Search Lobbying Representation Filings
 #'
-#' To get the 20 most recent lobbying representation filings for a given search term, use the following function. HTTP Request: GEThttps://api.propublica.org/congress/v1/lobbying/search.json?query={query}
+#' Returns recent lobbying representation filings for a given search term, 
+#' in batches of twenty.
 #'
 #' @param query keyword or phrase
 #' @inheritParams get_new_members
-#'
 #' @return List of returned JSON from endpoint that retrieves 
 #' @export
 #'
@@ -13,7 +13,7 @@
 #' search_lobbying_representation_filings('Facebook')
 #' }
 search_lobbying_representation_filings <- function(query, page = 1, myAPI_Key){
-  API = 'congress'
+  API <- "congress"
   query <- sprintf("lobbying/search.json?query=%s", query)
   pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
 }
