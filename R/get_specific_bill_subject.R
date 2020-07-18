@@ -15,8 +15,8 @@
 #' }
 get_specific_bill_subject <- function(subject, page = 1, myAPI_Key){
   API = 'congress'
-  if(is.character(query)){
-    query <- sprintf("bills/subjects/%s.json", subject)
+  if(is.character(subject)){
+    query <- sprintf("bills/subjects/search.json?query=%s", subject)
     pp_query(query, API, page = page, myAPI_Key = myAPI_Key)
-  } else {stop("query has to be character, 	a word or phrase to search")}
+  } else {stop("Subject has to be character, a word or phrase to search")}
 }
