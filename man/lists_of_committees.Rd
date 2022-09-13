@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 To get a list of Senate, House or joint committees, including their subcommittees, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/committees.json
 }
 \examples{
-\donttest{
+\dontrun{
 lists_of_committees(115, "senate")
 }
 }

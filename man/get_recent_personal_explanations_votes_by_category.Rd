@@ -28,7 +28,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent personal e
 Lawmakers, mostly in the House but also in the Senate, can make personal explanations for missed or mistaken votes in the Congressional Record. Unlike the “Recent Personal Explanations” response, this response contains explanations parsed to individual votes and have an additional category attribute describing the general reason for the absence or incorrect vote. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/explanations/votes/{category}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_personal_explanations_votes_by_category(115, 'voted-incorrectly')
 }
 }

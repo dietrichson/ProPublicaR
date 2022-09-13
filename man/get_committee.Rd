@@ -24,7 +24,7 @@ Get Committee Info
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}
 }
 \examples{
-\donttest{
+\dontrun{
 get_committee('C00553560', 2016)
 }
 }

@@ -27,7 +27,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent official c
 To get lists of official communications to Congress for a specific chamber, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/committees/{committee-id}/subcommittees/{subcommittee-id}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_official_communications_by_chamber(115, 'house')
 }
 }

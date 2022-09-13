@@ -21,7 +21,7 @@ Returns recent lobbying representation filings for a given search term,
 in batches of twenty.
 }
 \examples{
-\donttest{
+\dontrun{
 search_lobbying_representation_filings('Facebook')
 }
 }

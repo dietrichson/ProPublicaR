@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_congressional_statement_by_member("C001084", 115)
 #' }
 get_congressional_statement_by_member <- function(member_id, congress, page = 1, myAPI_Key){

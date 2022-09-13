@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_current_members_by_statedistrict( 'MI', 'house', 11)
 #' get_current_members_by_statedistrict( 'RI', 'senate')
 #' }

@@ -22,7 +22,7 @@ list of members of a particular chamber in a particular Congress
 The results include all members who have served in that congress and chamber, including members who are no longer in office. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/members.json
 }
 \examples{
-\donttest{
+\dontrun{
 list_members_chamber_congress(115, 'senate')
 }
 }

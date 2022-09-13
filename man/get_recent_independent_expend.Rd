@@ -19,7 +19,7 @@ get_recent_independent_expend(cycle = 2018, page = 1, myAPI_Key)
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/independent_expenditures
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_independent_expend(2016)
 }
 }

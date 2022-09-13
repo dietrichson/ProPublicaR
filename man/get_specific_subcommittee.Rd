@@ -33,7 +33,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent hearings a
 To get information about a single Senate or House subcommittee, including the members of that subcommittee, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/committees/{committee-id}/subcommittees/{subcommittee-id}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_specific_subcommittee(115, 'house', 'HSAS', 'HSAS28')
 get_specific_subcommittee(115, 'house', 
 lists_of_committees(115, "senate")$results[[1]]$committees[[2]]$id,

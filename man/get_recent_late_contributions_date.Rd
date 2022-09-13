@@ -33,7 +33,7 @@ List of returned JSON from endpoint that retrieves late contributions from a spe
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/contributions/48hour/{year}/{month}/{day}
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_late_contributions_date(2016, year = 2016, month = '09', day = '07')
 }
 }

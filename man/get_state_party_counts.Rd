@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves
 To get party membership counts for all states (current Congress only), use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/states/members/party.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_state_party_counts()
 }
 }

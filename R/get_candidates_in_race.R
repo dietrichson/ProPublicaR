@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_candidates_in_race('MI', 'house', 11)
 #' }
 get_candidates_in_race <- function(state, chamber, district, cycle=2018, return_value=c('results','query'), page = 1, myAPI_Key){

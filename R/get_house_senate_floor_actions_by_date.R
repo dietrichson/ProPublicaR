@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_house_senate_floor_actions_by_date('senate', 2017, '05', '02')
 #' }
 get_house_senate_floor_actions_by_date <- function(chamber, year, month, day, page = 1, myAPI_Key){

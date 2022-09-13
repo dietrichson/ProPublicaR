@@ -31,7 +31,7 @@ This function is primarily meant to be used by other functions in the package, b
 "raw query" is required.
 }
 \examples{
-\donttest{
+\dontrun{
 pp_query('115/bills/hr21.json', API = 'congress', version='v1')
 pp_query('2018/races/MI/house/11.json', API='campaign-finance',version='v1')
 }

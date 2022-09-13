@@ -33,7 +33,7 @@ List of returned JSON from endpoint that retrieves all independent expenditures 
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/independent_expenditures/{year}/{month}/{day}
 }
 \examples{
-\donttest{
+\dontrun{
 get_independent_expenditure_by_date(2016, year = 2018, month ='01', day = '01')
 }
 }

@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_recent_late_contributions_committee(2016, 'C00575050')
 #' }
 get_recent_late_contributions_committee <- function(cycle=2018, FEC_ID, page = 1, myAPI_Key){

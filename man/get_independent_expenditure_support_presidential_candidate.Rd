@@ -25,7 +25,7 @@ List of returned JSON from endpoint that retrieves the 200 most recent independe
 #HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/president/independent_expenditures
 }
 \examples{
-\donttest{
+\dontrun{
 get_independent_expenditure_support_presidential_candidate(2016)
 }
 }

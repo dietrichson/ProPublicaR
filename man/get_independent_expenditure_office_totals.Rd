@@ -27,7 +27,7 @@ List of returned JSON from endpoint that retrieves he amount of money spent in i
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/independent_expenditures/race_totals/{office}
 }
 \examples{
-\donttest{
+\dontrun{
 get_independent_expenditure_office_totals(2016, 'president')
 get_independent_expenditure_office_totals(2016, 'house')
 get_independent_expenditure_office_totals(2016, 'senate')

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_member_vote_position('K000388')
 #' }
 get_member_vote_position <- function(member_id, page = 1, myAPI_Key){

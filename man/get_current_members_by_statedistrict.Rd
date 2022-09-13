@@ -31,7 +31,7 @@ Senate Request: GET https://api.propublica.org/congress/v1/members/{chamber}/{st
 House Request: GET https://api.propublica.org/congress/v1/members/{chamber}/{state}/{district}/current.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_current_members_by_statedistrict( 'MI', 'house', 11)
 get_current_members_by_statedistrict( 'RI', 'senate')
 }

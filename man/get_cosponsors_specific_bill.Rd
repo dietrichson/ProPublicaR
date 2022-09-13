@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves information about the cospons
 HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}/cosponsors.json. Use this request type to get Library of Congress-assigned subjects about a particular bill.
 }
 \examples{
-\donttest{
+\dontrun{
 get_cosponsors_specific_bill(114, 'hr4249')
 }
 }

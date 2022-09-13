@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_electronic_filing_by_types(2016, 'F24')
 #' get_electronic_filing_by_types(2016, 
 #' matrix(unlist(get_electronic_filing_form_types(2016)$results), 

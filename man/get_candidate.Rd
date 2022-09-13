@@ -26,7 +26,7 @@ https://www.propublica.org/datastore/apis
 GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}
 }
 \examples{
-\donttest{
+\dontrun{
 get_candidate('P60005915', 2016)}
 
 }

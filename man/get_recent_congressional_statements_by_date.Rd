@@ -30,7 +30,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 To get lists of statements published on congressional websites on a particular date, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/statements/date/{date}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_congressional_statements_by_date(2017, '05', '08')
 }
 }

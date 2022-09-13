@@ -16,7 +16,7 @@ the key from config.yml or global environment variables key_congress/key_campaig
 This function is primarily meant to be used by pp_query to determine the API keys if not passed explicitly.
 }
 \examples{
-\donttest{
+\dontrun{
 retrieve_key('congress')
 retrieve_key('campaign-finance')
 }

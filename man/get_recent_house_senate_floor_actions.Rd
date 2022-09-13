@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 To get the latest actions from the House or Senate floor, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/floor_updates.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_house_senate_floor_actions(115, 'house')
 }
 }

@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves biographical and Congressiona
 To get biographical and Congressional role information for a particular member of Congress. HTTP Request: GET https://api.propublica.org/congress/v1/members/{member-id}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_congress_member('K000388')
 }
 }

@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_recent_congressional_statements_by_date(2017, '05', '08')
 #' }
 get_recent_congressional_statements_by_date <- function(year, month, day, page = 1, myAPI_Key){

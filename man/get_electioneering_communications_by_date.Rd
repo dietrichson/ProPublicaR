@@ -33,7 +33,7 @@ List of returned JSON from endpoint that retrieves all broadcast advertisements 
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/electioneering_communications/{year}/{month}/{day}
 }
 \examples{
-\donttest{
+\dontrun{
 get_electioneering_communications_by_date(2016, 2012, '10', '01')
 }
 }

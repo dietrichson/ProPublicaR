@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_electronic_filing_form_types(2016)
 #' }
 get_electronic_filing_form_types <- function(cycle=2018, page = 1, myAPI_Key){

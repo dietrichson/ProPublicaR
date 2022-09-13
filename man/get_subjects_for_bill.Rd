@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/bills/{bill-id}/subjects.json. Use this request type to get Library of Congress-assigned subjects about a particular bill.
 }
 \examples{
-\donttest{
+\dontrun{
 get_subjects_for_bill(115, 'hr1628')
 }
 }

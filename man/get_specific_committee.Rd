@@ -24,7 +24,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 To get information about a single Senate or House committee, including the members of that committee, use the following function. The committee ids can be found in the committee list responses. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/committees/{committee-id}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_specific_committee(115, "senate",
 lists_of_committees(115, "senate")$results[[1]]$committees[[1]]$id)
 

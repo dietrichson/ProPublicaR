@@ -23,7 +23,7 @@ Use this request type to get the 20 bills most recently introduced or updated by
 Results can include more than one Congress. HTTP Request: GET https://api.propublica.org/congress/v1/members/{member-id}/bills/{type}.json
 }
 \examples{
-\donttest{
+\dontrun{
 recent_bills_by_member('L000287', 'introduced')
 }
 }

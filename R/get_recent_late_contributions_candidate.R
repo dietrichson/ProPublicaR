@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_recent_late_contributions_candidate(2016, 'H4NY11138')
 #' }
 get_recent_late_contributions_candidate <- function(cycle=2018, FEC_ID, page = 1, myAPI_Key){

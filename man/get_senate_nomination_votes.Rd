@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves Senate votes on presidential 
 To get Senate votes on presidential nominations. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/nominations.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_senate_nomination_votes(114)
 }
 }

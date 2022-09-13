@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_specific_lobbying_representation_filings('300986302')
 #' }
 get_specific_lobbying_representation_filings <- function(id, page = 1, myAPI_Key){

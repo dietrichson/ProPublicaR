@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_electioneering_communications_committee(2016, 'C30002034')
 #'
 #' }

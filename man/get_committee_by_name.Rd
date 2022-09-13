@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves ca specific committee by name
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/search
 }
 \examples{
-\donttest{
+\dontrun{
 get_committee_by_name('Americans FOR A BETTER TOMORROW TODAY', 2016)
 }
 }

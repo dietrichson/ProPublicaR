@@ -16,7 +16,7 @@ TRUE if correct FALSE otherwise
 Validate that a district abbreviation is correct
 }
 \examples{
-\donttest{
+\dontrun{
 validate_district(1)#TRUE
 validate_district(111) #FALSE
 validate_district(us_congressional_districts$district[1]) #FALSE

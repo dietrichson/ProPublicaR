@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_statement_subjects()$results[[11]][3]
 #' get_congressional_statement_by_subjects(get_statement_subjects()$results[[11]][3])
 #' get_congressional_statement_by_subjects("Central Intelligence Agency")

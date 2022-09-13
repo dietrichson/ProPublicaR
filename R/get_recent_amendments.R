@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_recent_amendments(2016)
 #' }
 get_recent_amendments <- function(cycle=2018, page = 1, myAPI_Key){

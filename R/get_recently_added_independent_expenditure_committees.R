@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_recently_added_independent_expenditure_committees(2016)
 #' }
 get_recently_added_independent_expenditure_committees <- function(cycle=2018, page = 1, myAPI_Key){

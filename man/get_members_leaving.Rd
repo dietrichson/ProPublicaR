@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves a list of members who have le
 To get a list of members who have left the Senate or House or have announced plans to do so. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/members/leaving.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_members_leaving(115, 'house')
 }
 }

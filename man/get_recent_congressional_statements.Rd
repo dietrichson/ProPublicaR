@@ -18,7 +18,7 @@ List of returned JSON from endpoint that retrieves  the 20 most recent results a
 To get lists of recent statements published on congressional websites, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/statements/latest.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_congressional_statements()
 }
 }

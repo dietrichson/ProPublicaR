@@ -33,7 +33,7 @@ List of returned JSON from endpoint that retrieves four calculated values: commo
 Use this request type to compare two members’ vote positions in a particular Congress and chamber. Responses include four calculated values, showing the number and percentage of votes in which the members took the same position or opposing positions. HTTP Request: GET https://api.propublica.org/congress/v1/members/{first-member-id}/votes/{second-member-id}/{congress}/{chamber}.json
 }
 \examples{
-\donttest{
+\dontrun{
 compare_two_member_vote_positions('G000575', 'D000624', '114', 'house')
 }
 }

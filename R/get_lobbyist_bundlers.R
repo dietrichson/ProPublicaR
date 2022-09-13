@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_lobbyist_bundlers(2016, 'C00579458')
 #'}
 get_lobbyist_bundlers <- function(cycle=2018, FEC_ID, page = 1, myAPI_Key){

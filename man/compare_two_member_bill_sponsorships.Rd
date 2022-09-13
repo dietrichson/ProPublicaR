@@ -33,7 +33,7 @@ List of bill sponsorship comparison between two members who served in the same C
 To compare bill sponsorship between two members who served in the same Congress and chamber. HTTP Request: GET https://api.propublica.org/congress/v1/members/{first-member-id}/bills/{second-member-id}/{congress}/{chamber}.json
 }
 \examples{
-\donttest{
+\dontrun{
 compare_two_member_bill_sponsorships('G000575', 'D000624', '114', 'house')
 }
 }

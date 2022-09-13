@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves information about FEC reports
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/filings/search
 }
 \examples{
-\donttest{
+\dontrun{
 get_electronic_filing_by_committees(NAME = "UNITED EGG", 2016)
 }
 }

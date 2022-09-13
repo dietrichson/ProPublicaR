@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_independent_expenditure_office_totals(2016, 'president')
 #' get_independent_expenditure_office_totals(2016, 'house')
 #' get_independent_expenditure_office_totals(2016, 'senate')

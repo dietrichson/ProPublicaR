@@ -18,7 +18,7 @@ the result of the API call.
 Get all Candidates in a State for an Election Cycle
 }
 \examples{
-\donttest{
+\dontrun{
 get_races_for_state('DE')
 get_races_for_state('DE', 2016)
 }

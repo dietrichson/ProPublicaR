@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent official c
 To get lists of official communications to Congress from the president, executive branch agencies and state legislatures to congressional committees, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/communications.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_official_communications(115)
 }
 }

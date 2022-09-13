@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves committees designated as “l
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/leadership
 }
 \examples{
-\donttest{
+\dontrun{
 get_committee_leadership(2016)
 }
 }

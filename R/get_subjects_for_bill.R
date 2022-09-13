@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_subjects_for_bill(115, 'hr1628')
 #' }
 get_subjects_for_bill <- function(congress, bill_id, page = 1, myAPI_Key){

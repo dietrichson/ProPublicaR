@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves  the 20 most recent votes fro
 You can get recent votes from the House, Senate or both chambers using this request. This request returns the 20 most recent results, sorted by date and roll call number, and you can paginate through votes using the offset querystring parameter that accepts multiples of 20. HTTP Request: GET https://api.propublica.org/congress/v1/{chamber}/votes/recent.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_votes('senate')
 }
 }

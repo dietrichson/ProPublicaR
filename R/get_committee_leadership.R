@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_committee_leadership(2016)
 #' }
 get_committee_leadership <- function(cycle=2018, page = 1, myAPI_Key){

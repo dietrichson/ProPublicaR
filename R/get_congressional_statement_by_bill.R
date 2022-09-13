@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_congressional_statement_by_bill(115, 's19')
 #' }
 get_congressional_statement_by_bill <- function(congress, bill_id, page = 1, myAPI_Key){

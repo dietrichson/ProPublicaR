@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_electioneering_communications_by_date(2016, 2012, '10', '01')
 #' }
 get_electioneering_communications_by_date <- function(cycle=2018, year, month, day, page = 1, myAPI_Key){

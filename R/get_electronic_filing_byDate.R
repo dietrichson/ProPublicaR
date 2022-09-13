@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_electronic_filing_byDate(2016, 2016, '01', '10')
 #' }
 get_electronic_filing_byDate <- function(cycle=2018, year, month, day, page = 1, myAPI_Key){

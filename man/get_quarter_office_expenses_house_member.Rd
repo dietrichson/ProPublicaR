@@ -30,7 +30,7 @@ the amount a given lawmaker spent during a specified year and quarter by categor
 The House of Representatives publishes quarterly reports detailing official office expenses by lawmakers. The Congress API has data beginning in the third quarter of 2009.  HTTP Request: GET https://api.propublica.org/congress/v1/members/{member-id}/office_expenses/{year}/{quarter}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_quarter_office_expenses_house_member('A000374', 2017, 4)
 }
 }

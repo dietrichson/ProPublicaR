@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results in
 Lawmakers, mostly in the House but also in the Senate, can make personal explanations for missed or mistaken votes in the Congressional Record. These explanations can refer to a single vote or to multiple votes. To get lists of personal explanations, use the following URI structure. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/explanations.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_personal_explanations(114)
 }
 }

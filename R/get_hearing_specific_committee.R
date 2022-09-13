@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_hearing_specific_committee(115, 'house', 'HSRU')
 #' get_hearing_specific_committee(115, 'house', 
 #' lists_of_committees(115, "senate")$results[[1]]$committees[[1]]$id)

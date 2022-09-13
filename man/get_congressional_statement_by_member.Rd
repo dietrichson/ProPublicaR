@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent results an
 Get lists of statements published on a specific member’s congressional website during a particular congress, use the following function.
 }
 \examples{
-\donttest{
+\dontrun{
 get_congressional_statement_by_member("C001084", 115)
 }
 }

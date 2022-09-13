@@ -16,7 +16,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' tmp <- get_candidates_in_race('MI','house',11)
 #' pp_convert_to_data_frame(tmp)
 #' pp_convert_to_data_frame(tmp,'summary')

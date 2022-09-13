@@ -31,7 +31,7 @@ s
 You can get vote information in four categories: missed votes, party votes, lone no votes and perfect votes. Missed votes provides information about the voting attendance of each member of a specific chamber and congress. Party votes provides information about how often each member of a specific chamber and congress votes with a majority of his or her party. Lone no votes provides information lists members in a specific chamber and congress who were the only members to vote No on a roll call vote, and how often that happened. Perfect votes lists members in a specific chamber and congress who voted Yes or No on every vote for which he or she was eligible. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/votes/{vote-type}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_votes_by_type(114, 'house', 'missed')
 }
 }

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_congress_member('K000388')
 #' }
 get_congress_member <- function(member_id, page = 1, myAPI_Key){

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_new_members()
 #' }
 get_new_members <- function(page = 1, myAPI_Key){

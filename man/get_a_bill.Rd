@@ -31,7 +31,7 @@ These responses omit bills that have not yet been assigned a bill number or intr
 may be considered at any time.
 }
 \examples{
-\donttest{
+\dontrun{
 get_a_bill(115, 'hr21')
 }
 }

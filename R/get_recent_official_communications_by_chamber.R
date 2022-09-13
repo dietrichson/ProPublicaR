@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_recent_official_communications_by_chamber(115, 'house')
 #' }
 get_recent_official_communications_by_chamber <- function(congress, chamber, page = 1, myAPI_Key){

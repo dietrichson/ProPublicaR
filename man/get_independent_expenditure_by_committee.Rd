@@ -27,7 +27,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent independen
 #HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/independent_expenditures
 }
 \examples{
-\donttest{
+\dontrun{
 get_independent_expenditure_by_committee(2016, FEC_ID ='C00575423')
 }
 }

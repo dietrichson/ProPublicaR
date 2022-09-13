@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_quarter_office_expenses_by_category_house_member('A000374', 'travel')
 #' }
 get_quarter_office_expenses_by_category_house_member <- function(member_id, category, page = 1, myAPI_Key){

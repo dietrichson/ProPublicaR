@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves bill subjects that contain a 
 Use this request type to search for bill subjects that contain a specified term. HTTP Request: GET https://api.propublica.org/congress/v1/bills/subjects/search.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_specific_bill_subject('meat')
 }
 }

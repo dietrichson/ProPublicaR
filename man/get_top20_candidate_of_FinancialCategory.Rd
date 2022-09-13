@@ -28,7 +28,7 @@ https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/leaders/{category}
 }
 \examples{
-\donttest{
+\dontrun{
 get_top20_candidate_of_FinancialCategory('pac-total', 2016)
 }
 }

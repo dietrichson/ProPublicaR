@@ -27,7 +27,7 @@ List of returned JSON from endpoint that retrieves the 20 most recent bill cospo
 To get the 20 most recent bill cosponsorships for a particular member, either bills cosponsored or bills where cosponsorship was withdrawn. #HTTP Request: GET https://api.propublica.org/congress/v1/members/{member-id}/bills/{type}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_bills_cosponsored_member('B001260', 'cosponsored')
 }
 }

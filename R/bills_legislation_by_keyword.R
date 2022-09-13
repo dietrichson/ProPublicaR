@@ -15,7 +15,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' bills_legislation_by_keyword(query_keyword = 'megahertz')}
 bills_legislation_by_keyword <- function(query_keyword, sort = c('date', '_score'), dir = c('desc', 'asc'), page = 1, myAPI_Key){
   API = 'congress'

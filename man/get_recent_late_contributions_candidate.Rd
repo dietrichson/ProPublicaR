@@ -31,7 +31,7 @@ https://www.propublica.org/datastore/apis
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/candidates/{fec-id}/48hour
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_late_contributions_candidate(2016, 'H4NY11138')
 }
 }

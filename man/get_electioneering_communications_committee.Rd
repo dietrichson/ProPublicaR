@@ -27,7 +27,7 @@ List of returned JSON from endpoint that retrieves the most recent broadcast adv
 HTTP Request: GET https://api.propublica.org/campaign-finance/v1/{cycle}/committees/{fec-id}/electioneering_communications
 }
 \examples{
-\donttest{
+\dontrun{
 get_electioneering_communications_committee(2016, 'C30002034')
 
 }

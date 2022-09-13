@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_independent_expenditure_race_totals_committee(2016, 'C00490375')
 #' }
 get_independent_expenditure_race_totals_committee <- function(cycle, FEC_ID, page = 1, myAPI_Key){

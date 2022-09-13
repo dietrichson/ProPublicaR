@@ -22,7 +22,7 @@ List of returned JSON from endpoint that retrieves  the 20 most recent results f
 To get lists of presidential nominations for civilian positions,, use the following function. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/nominees/{type}.json
 }
 \examples{
-\donttest{
+\dontrun{
 get_recent_nominations_by_category(115, 'confirmed')
 }
 }

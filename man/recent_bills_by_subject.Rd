@@ -20,7 +20,7 @@ List of returned JSON from endpoint that retrieves the 20 most recently updated 
 Use this request type to get the 20 most recently updated bills for a specific legislative subject. Results can include more than one Congress. HTTP Request: GET https://api.propublica.org/congress/v1/bills/subjects/{subject}.json
 }
 \examples{
-\donttest{
+\dontrun{
 recent_bills_by_subject('meat')
 }
 }

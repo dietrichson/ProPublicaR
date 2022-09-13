@@ -39,7 +39,7 @@ Publishing Office. The order of the results depends on the value of type and all
 descending order.
 }
 \examples{
-\donttest{
+\dontrun{
 recent_bills_by_type(115, 'house', 'introduced')
 }
 }

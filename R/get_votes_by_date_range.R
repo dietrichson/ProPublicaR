@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_votes_by_date_range('house', '2017-01-03', '2017-01-31')
 #' }
 get_votes_by_date_range <- function(chamber = c('house', 'senate'), 

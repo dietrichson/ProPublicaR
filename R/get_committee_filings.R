@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_committee_filings('C00553560', 2016)
 #' }
 get_committee_filings <- function(FEC_ID, cycle=2018, page = 1, myAPI_Key){

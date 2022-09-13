@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' get_quarter_office_expenses_house_member('A000374', 2017, 4)
 #' }
 get_quarter_office_expenses_house_member <- function(member_id, year, quarter, page = 1, myAPI_Key){
