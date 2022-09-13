@@ -9,3 +9,4 @@
 ^ProPublicaR\.Rcheck$
 ^ProPublicaR.*\.tar\.gz$
 ^ProPublicaR.*\.tgz$
+^CRAN-SUBMISSION$

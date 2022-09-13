@@ -2,8 +2,9 @@
 * Local Ubuntu 18.04 with R 4.2.1
 * Ubuntu 20.04 (on travis-ci), R-oldrel, R-release, R-devel
 * Rhub:
-  Build ID:	ProPublicaR_1.1.1.tar.gz-578dafa56bbb46738526610442095e3b
-  Platform:	Windows Server 2008 R2 SP1, R-devel, 32/64 bit
+  Windows Server 2022, R-devel, 64 bit
+  Ubuntu Linux 20.04.1 LTS, R-release, GCC
+  Fedora Linux, R-devel, clang, gfortran
 * win-builder (devel and release)
 
 ## R CMD check results
