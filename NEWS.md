@@ -1,3 +1,10 @@
+## Version 1.1.2
+
+September 13 2022
+
+Updates:
+Added support for the 117th Congress
+
 ## Version 1.1.1
 
 April 11 2020

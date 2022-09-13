@@ -6,3 +6,6 @@
 ^\.travis\.yml$
 ^config\.yml$
 ^cran-comments.md
+^ProPublicaR\.Rcheck$
+^ProPublicaR.*\.tar\.gz$
+^ProPublicaR.*\.tgz$

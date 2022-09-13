@@ -4,3 +4,6 @@
 .Ruserdata
 config.yml
 ProPublicaR.Rproj
+ProPublicaR.Rcheck/
+ProPublicaR*.tar.gz
+ProPublicaR*.tgz
