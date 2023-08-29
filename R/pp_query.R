@@ -9,7 +9,8 @@
 #' @inheritParams get_new_members
 #'
 #' @return a list object with the return values.
-#' @import httr config
+#' @import httr
+#' @importFrom config get
 #' @export
 #'
 #' @examples
@@ -21,7 +22,7 @@ pp_query <- function(query, API=c('campaign-finance', 'congress'), version='v1',
   # First check that API-key is available
   if(missing(myAPI_Key))
     myAPI_Key <- retrieve_key(API)
-  
+
   # Construct URL
   myURL <-
     switch (API,
@@ -31,7 +32,7 @@ pp_query <- function(query, API=c('campaign-finance', 'congress'), version='v1',
     )
   if(is.null(myURL)) stop('API not supported.')
   myURL <- paste0(myURL,version,'/',query)
-  
+
   if(page>1){
     offset = 20 * (page - 1)
     if(grepl("\\?query=|\\?q=", myURL)){
