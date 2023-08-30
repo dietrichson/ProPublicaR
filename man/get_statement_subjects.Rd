@@ -20,7 +20,7 @@ These subjects are not automatically assigned but are manually curated by ProPub
 they are based on legislative subjects produced by the Library of Congress.
 }
 \examples{
-if(interactive()){
+\dontrun{
 get_statement_subjects()
 }
 }

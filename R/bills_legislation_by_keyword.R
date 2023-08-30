@@ -15,7 +15,7 @@
 #' @export
 #'
 #' @examples
-#' if(interactive()){
+#' \dontrun{
 #' bills_legislation_by_keyword(query_keyword = 'megahertz')
 #' }
 #' 

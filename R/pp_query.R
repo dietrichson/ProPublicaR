@@ -9,11 +9,12 @@
 #' @inheritParams get_new_members
 #'
 #' @return a list object with the return values.
+#' @import httr
 #' @importFrom config get
 #' @export
 #'
 #' @examples
-#' if(interactive()){
+#' \dontrun{
 #' pp_query('115/bills/hr21.json', API = 'congress', version='v1')
 #' pp_query('2018/races/MI/house/11.json', API='campaign-finance',version='v1')
 #' }

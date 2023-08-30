@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' if(interactive()){
+#' \dontrun{
 #' get_recent_electioneering_communications(2016)
 #'
 #' }

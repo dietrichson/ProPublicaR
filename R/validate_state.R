@@ -3,11 +3,11 @@
 #' @param us_state State abbreviation (e.g. NY)
 #'
 #' @return TRUE if correct FALSE otherwise
-#' @export
 #' @import stringr
-#' @examples
-#' validate_state("MI")#TRUE
-#' validate_state("IM") #FALSE
+#' @export
+
+
+
 validate_state <- function(us_state){
   if(!is.character(us_state))
     warning('State Abbreviation should be a character')

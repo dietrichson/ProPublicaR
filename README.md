@@ -3,14 +3,6 @@ ProPublicaR
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<!-- badges: start -->
-
-[![CRAN
-status](https://www.r-pkg.org/badges/version/cognitoR)](https://cran.r-project.org/package=cognitoR)
-[![Build
-Status](https://travis-ci.org/chi2labs/cognitoR.svg?branch=master)](https://travis-ci.org/chi2labs/cognitoR)
-<!-- badges: end -->
-
 ## Purpose
 
 This package provides wrapper functions to access the ProPublica’s

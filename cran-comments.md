@@ -1,5 +1,5 @@
 ## Test environments
-* Local Ubuntu 18.04 with R 4.2.1
+* Local Ubuntu 18.04 with R 4.2.3
 * Ubuntu 20.04 (on travis-ci), R-oldrel, R-release, R-devel
 * Rhub:
   Windows Server 2022, R-devel, 64 bit

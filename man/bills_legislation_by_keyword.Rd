@@ -34,7 +34,7 @@ Quoting the words (e.g. query = "health care") makes it a phrase search.
 Search results can be sorted by date (the default) or by relevance, and in ascending or descending order.
 }
 \examples{
-if(interactive()){
+\dontrun{
 bills_legislation_by_keyword(query_keyword = 'megahertz')
 }
 

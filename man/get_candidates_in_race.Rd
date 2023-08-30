@@ -36,7 +36,7 @@ The result of the API call (list), unless \code{return_value=query} (mostly for 
 Get Candidates in Race
 }
 \examples{
-if(interactive()){
+\dontrun{
 get_candidates_in_race('MI', 'house', 11)
 }
 }

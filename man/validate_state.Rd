@@ -15,7 +15,3 @@ TRUE if correct FALSE otherwise
 \description{
 Validate that a abbreviation is correct
 }
-\examples{
-validate_state("MI")#TRUE
-validate_state("IM") #FALSE
-}

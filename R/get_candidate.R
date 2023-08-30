@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' if(interactive()){
+#' \dontrun{
 #' get_candidate('P60005915', 2016)
 #' }
 #' 
