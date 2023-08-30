@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' get_specific_bill_subject('meat')
 #' }
 get_specific_bill_subject <- function(subject, page = 1, myAPI_Key){

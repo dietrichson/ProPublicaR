@@ -5,7 +5,7 @@
 #' @param API Which API are you accessing
 #'
 #' @return the key from config.yml or global environment variables key_congress/key_campaign_finance
-#' @import httr config
+#' @importFrom config get
 #' @export
 #'
 #' @examples

@@ -7,7 +7,7 @@
 #' @import stringr
 #' @include data.R
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' validate_district(1)#TRUE
 #' validate_district(111) #FALSE
 #' validate_district(us_congressional_districts$district[1]) #FALSE

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' get_recent_official_communications(115)
 #' }
 get_recent_official_communications <- function(congress, page = 1, myAPI_Key){

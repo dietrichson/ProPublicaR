@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' get_independent_expenditure_by_committee(2016, FEC_ID ='C00575423')
 #' }
 get_independent_expenditure_by_committee<- function(cycle=2018, FEC_ID, page = 1, myAPI_Key){

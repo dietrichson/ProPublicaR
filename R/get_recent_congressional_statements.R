@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' get_recent_congressional_statements()
 #' }
 get_recent_congressional_statements <- function(page = 1, myAPI_Key){

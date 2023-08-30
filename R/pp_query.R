@@ -9,7 +9,7 @@
 #' @inheritParams get_new_members
 #'
 #' @return a list object with the return values.
-#' @import httr config
+#' @importFrom config get
 #' @export
 #'
 #' @examples

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' get_recent_late_contributions(2016)
 #' }
 get_recent_late_contributions <- function(cycle=2018, page = 1, myAPI_Key){

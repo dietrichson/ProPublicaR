@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' recent_bills_by_member('L000287', 'introduced')
 #' }
 recent_bills_by_member <- function(member_id, type, page = 1, myAPI_Key){

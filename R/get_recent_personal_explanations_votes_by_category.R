@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' get_recent_personal_explanations_votes_by_category(115, 'voted-incorrectly')
 #' }
 get_recent_personal_explanations_votes_by_category <- function(congress, category, page = 1, myAPI_Key){

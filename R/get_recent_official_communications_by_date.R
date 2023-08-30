@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' get_recent_official_communications_by_date(2018, '03', '21')
 #' }
 get_recent_official_communications_by_date <- function(year, month, day, page = 1, myAPI_Key){

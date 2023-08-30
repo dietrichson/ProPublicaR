@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' list_members_chamber_congress(115, 'senate')
 #' }
 list_members_chamber_congress <- function(congress, chamber, page = 1, myAPI_Key){
