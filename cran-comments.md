@@ -14,4 +14,4 @@ There were no ERRORs or WARNINGs.
 
 This is a resubmission. In this version I have:
 
-* Added support for the 117th Congress
+* Corrected an import statement to avoid reverse dependency issues with the config package
