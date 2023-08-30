@@ -5,7 +5,8 @@
 #' @param API Which API are you accessing
 #'
 #' @return the key from config.yml or global environment variables key_congress/key_campaign_finance
-#' @import httr config
+#' @import httr
+#' @importFrom config get
 #' @export
 #'
 #' @examples
@@ -24,22 +25,22 @@ retrieve_key <- function(API = c('congress', 'campaign-finance')){
   } else {
     stop(
       "
-      API key not found or is missing. 
-      
-      1. Set a variable 'key_congress' to your API 
-      key for the Congress API, and/or a variable 
-      'key_campaign_finance' to your API key for the 
+      API key not found or is missing.
+
+      1. Set a variable 'key_congress' to your API
+      key for the Congress API, and/or a variable
+      'key_campaign_finance' to your API key for the
       Campaign Finance API. For example:
-      
-      key_congress <- 'my_key_123' 
-      key_campaign_finance <- 'my_other_key_123' 
-      
-      2. Alternatively, set the same two variables 
+
+      key_congress <- 'my_key_123'
+      key_campaign_finance <- 'my_other_key_123'
+
+      2. Alternatively, set the same two variables
       in a file called config.yml (in your working
       directory or higher). These variables should
       be under 'ProPublica' and be named 'congress'
       and 'campaign-finance' respectively.
-      
+
       3. Finally, you may just include the key as
       an argument to each of your functions.
       "
