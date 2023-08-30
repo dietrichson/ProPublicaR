@@ -1,3 +1,10 @@
+## Version 1.2.3
+
+August 30 2023
+
+Updates: 
+Fixed incorrect import statement to avoid dependency problems with the config package.
+
 ## Version 1.1.2
 
 September 13 2022
