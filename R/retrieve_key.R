@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#' if(interactive()){
 #' retrieve_key('congress')
 #' retrieve_key('campaign-finance')
 #' }
