@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' recent_bills_by_subject('meat')
 #' }
 recent_bills_by_subject <- function(subject, page = 1, myAPI_Key){

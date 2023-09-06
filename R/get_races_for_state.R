@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' get_races_for_state('DE')
 #' get_races_for_state('DE', 2016)
 #' }

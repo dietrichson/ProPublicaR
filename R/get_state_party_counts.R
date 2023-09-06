@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' get_state_party_counts()
 #' }
 get_state_party_counts <- function(page = 1, myAPI_Key){

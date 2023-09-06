@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' get_recent_personal_explanations(114)
 #' }
 get_recent_personal_explanations <- function(congress, page = 1, myAPI_Key){

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' get_recent_congressional_statements_by_term('AHCA')
 #' }
 get_recent_congressional_statements_by_term <- function(term, page = 1, myAPI_Key){

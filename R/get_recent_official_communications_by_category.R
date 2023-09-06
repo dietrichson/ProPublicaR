@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' get_recent_official_communications_by_category(115, 'pm')
 #' }
 get_recent_official_communications_by_category <- function(congress, category, page = 1, myAPI_Key){

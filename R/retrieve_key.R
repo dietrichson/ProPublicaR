@@ -5,11 +5,11 @@
 #' @param API Which API are you accessing
 #'
 #' @return the key from config.yml or global environment variables key_congress/key_campaign_finance
-#' @import httr config
+#' @importFrom config get
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' retrieve_key('congress')
 #' retrieve_key('campaign-finance')
 #' }

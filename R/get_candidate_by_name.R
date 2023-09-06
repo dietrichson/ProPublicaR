@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' get_candidate_by_name('Wilson', 2016)
 #' }
 #' 

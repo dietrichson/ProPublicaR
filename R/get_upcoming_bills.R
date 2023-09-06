@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' get_upcoming_bills('senate')
 #' }
 get_upcoming_bills <- function(chamber, page = 1, myAPI_Key){

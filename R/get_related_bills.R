@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' if(interactive()){
 #' get_related_bills(115, 'hr3219')
 #' }
 get_related_bills <- function(congress, bill_id, page = 1, myAPI_Key){
