@@ -7,7 +7,7 @@
 list_members_chamber_congress(congress, chamber, page = 1, myAPI_Key)
 }
 \arguments{
-\item{congress}{102-116 for House, 80-116 for Senate}
+\item{congress}{102-118 for House, 80-118 for Senate}
 
 \item{chamber}{house or senate}
 
