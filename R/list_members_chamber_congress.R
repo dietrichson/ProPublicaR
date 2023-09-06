@@ -2,7 +2,7 @@
 #'
 #'The results include all members who have served in that congress and chamber, including members who are no longer in office. HTTP Request: GET https://api.propublica.org/congress/v1/{congress}/{chamber}/members.json
 #'
-#' @param congress 102-116 for House, 80-116 for Senate
+#' @param congress 102-118 for House, 80-118 for Senate
 #' @param chamber house or senate
 #' @inheritParams get_new_members
 #'
